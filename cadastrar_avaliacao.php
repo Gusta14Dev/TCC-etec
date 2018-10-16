@@ -12,10 +12,10 @@
 
     <!-- Bootstrap e FontAwsome CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
+   	<link rel="stylesheet" href="css/fontawesome-all.css">
     <!-- Menu Lateral e Jumbotron CSS -->
     <link href="css/menu-lateral.css" rel="stylesheet">
     <link href="css/layout_form.css" rel="stylesheet">
-   	<link rel="stylesheet" href="css/fontawesome-all.css">
 	</head>
 <body>
 	<!--Menu Lateral-->

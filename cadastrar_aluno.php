@@ -14,7 +14,7 @@ include_once("includes/conexao.php");
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/all.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
 
     <!-- Menu Lateral e Jumbotron CSS -->
     <link href="css/menu-lateral.css" rel="stylesheet">

@@ -9,8 +9,8 @@
     <title>Cadastrar Artigos</title>
 
     <!-- BootstrapCSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
     <!-- Menu Lateral e Jumbotron CSS -->
     <link href="css/menu-lateral.css" rel="stylesheet">
     <link href="css/layout_form.css" rel="stylesheet">

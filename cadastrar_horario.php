@@ -10,7 +10,6 @@
     <title>Horário dos Coordenadores</title>
    <link rel="stylesheet" href="css/bootstrap.min.css" >
   <link rel="stylesheet" href="css/fontawesome-all.css">
-  <link href="css/layout_form.css" rel="stylesheet">
     <!-- Menu Lateral e Jumbotron CSS -->
     <link href="css/menu-lateral.css" rel="stylesheet">
     <link href="css/layout_form.css" rel="stylesheet">

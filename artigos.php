@@ -10,8 +10,8 @@ include_once("includes/texto.php");
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Página dos Artigos</title>
 	<!-- Bootstrap e FontAwsome CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css" >
-	<link href="css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link href="css/fontawesome-all.css" rel="stylesheet">
 
 	<!-- Menu Lateral e Tabela CSS -->
 	<link href="css/menu-lateral.css" rel="stylesheet">
