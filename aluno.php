@@ -10,12 +10,12 @@ $cd_turma = $_GET['cd'];
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Painel de controle - Alunos</title>
-
-	<!-- Css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/fontawesome-all.css" rel="stylesheet">
-
-	<!-- Custom styles for this template -->
+	<!-- Ícone da pagina-->
+    <link rel="shortcut icon" href="imagens/icone_etec.png" >
+    <!-- CSS Bootstrap e Font Awesome-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
+    <!-- CSS da pagina-->
 	<link href="css/menu-lateraldomenu.css" rel="stylesheet">
 	<link href="css/layout_form.css" rel="stylesheet">
 

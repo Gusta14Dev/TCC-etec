@@ -8,11 +8,15 @@ $itens = $_GET['itens'];
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="imagens/icone_etec.png" >
-  <link rel="stylesheet" href="css/bootstrap.min.css" >
-  <link rel="stylesheet" href="css/fontawesome-all.css">
-  <link href="css/layout_form.css" rel="stylesheet">
   <title>Alterar Coordenadores</title>
+    <!-- Ícone da pagina-->
+    <link rel="shortcut icon" href="imagens/icone_etec.png" >
+    <!-- CSS Bootstrap e Font Awesome-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
+    <!-- CSS da pagina-->
+    <link href="css/layout_form.css" rel="stylesheet">
+  
 </head>
 
 <body>

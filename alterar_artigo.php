@@ -8,10 +8,14 @@ $itens = $_GET['itens'];
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- CSS -->
+    <title>Alterar Artigo</title>
+    <!-- Ícone da pagina-->
+    <link rel="shortcut icon" href="imagens/icone_etec.png" >
+    <!-- CSS Bootstrap e Font Awesome-->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
-    <title>Alterar Artigo</title>
+    <!-- CSS da pagina-->
+    
   </head>
   <body>
     <form method="post">
