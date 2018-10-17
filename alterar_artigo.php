@@ -15,7 +15,7 @@ $itens = $_GET['itens'];
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
     <!-- CSS da pagina-->
-    
+    <link rel="stylesheet" type="text/css" href="css/layout_form.css">
   </head>
   <body>
     <form method="post">
@@ -90,7 +90,6 @@ $itens = $_GET['itens'];
     <script src="js/jquery.min.js" ></script>
     <script src="js/popper.min.js" ></script>
     <script src="js/bootstrap.min.js" ></script>
-    <script src="js/slick.min.js" ></script>
     <script src="js/per.js"></script>
   </body>
 </html>
