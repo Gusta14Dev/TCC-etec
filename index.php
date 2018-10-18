@@ -6,8 +6,9 @@
   <title>Etec de Itanhaém</title>
   <!-- CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" >
-  <link rel="stylesheet" href="css/all.css" >
-  <!--Icone do Title-->
+  <link rel="stylesheet" href="css/fontawesome-all.css" >
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <!--Icone do site-->
   <link rel="shortcut icon" href="imagens/icone_etec.png">
 
   <style>
@@ -161,6 +162,26 @@
       color:#000;
       border-bottom:2px solid #004000;
     }
+    .swiper-container {
+      width: 100%;
+      padding-top: 0px;
+      padding-bottom: 25px;
+      background-color: #f5f5f5;
+      margin-top:50px;
+    }
+    .swiper-container h1{
+    	padding:0;
+    	padding-left:20px;
+    	font-family: sans-serif;
+    	font-size: 1.5em;
+    	color:#323232;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 250px;
+      height: 350px;
+    }
   </style>
 </head>
 <body>
@@ -251,9 +272,15 @@
     </div>
   </div>
 
-  <div class="container-fluid" id="noticia">
-      <h2 class="text-center mx-auto" id="noticia-title">NOTÍCIAS</h2>
-      Gabriel é assassinado por bolsonaro na rua #ELENÃO
+  <div class="swiper-container">
+    <h1>Ultimas noticias</h1>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(image/1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(image/2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(image/3.jpg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
   </div>
 
   <div class="container-fluid p-1" id="colaborador">
@@ -303,5 +330,28 @@
   <script src="js/jquery.min.js" ></script>
   <script src="js/popper.min.js" ></script>
   <script src="js/bootstrap.min.js" ></script>
+  <script src="js/swiper.min.js"></script>
+  
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      loop: true,
+      loopFillGroupWithBlank: true,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 50,
+        depth: 200,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      },
+    });
+  </script>
 </body>
 </html>
