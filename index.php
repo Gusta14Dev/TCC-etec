@@ -166,7 +166,7 @@
       width: 100%;
       padding-top: 0px;
       padding-bottom: 25px;
-      background-color: #f5f5f5;
+      background-color: #fff;
       margin-top:50px;
     }
     .swiper-container h1{
@@ -275,9 +275,9 @@
   <div class="swiper-container">
     <h1>Ultimas noticias</h1>
     <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(image/1.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(image/2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(image/3.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(imagens/cultura-livros.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(imagens/inf2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
