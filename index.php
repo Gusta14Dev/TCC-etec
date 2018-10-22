@@ -236,14 +236,14 @@
   <div class="container-fluid content-title">
     <h2 class="text-center">OS MELHORES CURSOS DA REGIÃO</h2>
   </div>
-  <div class="container-fluid" id="curso">
+  <div class="container" id="curso">
     <div class="row mx-auto mb-5 pt-3 pb-3">
-      <div class="col-sm-5 mx-auto mt-sm-0 mt-1 p-0">
+      <div class="col-sm-6 mx-auto mt-sm-0 mt-1 p-0">
         <div class="image-curso">
-          <img class="img-fluid" src="imagens/inf.jpg" alt="Curso de informática para internet">
+          <img class="img-fluid" src="imagens/pc.svg" alt="Curso de informática para internet">
         </div>
       </div>
-      <div class="col-sm-6 mx-auto mt-sm-0 mt-1">
+      <div class="col-sm-6 mx-auto mt-sm-0 mt-1 p-5">
         <h4 class="text-center">INFORMÁTICA PARA INTERNET</h4>
         <p class="text-justify">O curso de informática para internet esta disponibilizado no periodo noturno com duração de 2 anos e integrado ao ensino médio (Etim) com duração de 3 anos.</p>
       </div>
