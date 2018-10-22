@@ -274,13 +274,22 @@
 
   <div class="swiper-container">
     <h1>Ultimas noticias</h1>
-    <div class="swiper-wrapper">
+    <div class="swiper-wrapper mb-3">
       <div class="swiper-slide" style="background-image:url(imagens/cultura-livros.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(imagens/inf2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
+       <div class="swiper-slide" style="background-image:url(imagens/cultura-livros.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(imagens/inf2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
+       <div class="swiper-slide" style="background-image:url(imagens/cultura-livros.jpg)"></div>
       <div class="swiper-slide" style="background-image:url(imagens/inf2.jpg)"></div>
       <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
+     <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 
   <div class="container-fluid p-1" id="colaborador">
@@ -328,29 +337,70 @@
 
   <!-- JavaScript -->
   <script src="js/jquery.min.js" ></script>
-  <script src="js/popper.min.js" ></script>
   <script src="js/bootstrap.min.js" ></script>
   <script src="js/swiper.min.js"></script>
   
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      loop: true,
-      loopFillGroupWithBlank: true,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 50,
-        depth: 200,
-        modifier: 1,
-        slideShadows : true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true,
-      },
+    $(document).ready(function(){
+      var width = $('body').width();
+
+      if (width <= 600) {
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      }else if (width >= 601 && width <= 900) {
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      }else if (width >= 901 && width <= 1300){
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      }else if (width >= 1301){
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      }
     });
   </script>
 </body>
