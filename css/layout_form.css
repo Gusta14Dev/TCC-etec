@@ -18,10 +18,9 @@
   .jumbotron{
     background-color: #DFDFDF;
     width: 60%;
-    height: 500px;
+    height: 650px;
     margin-top: 100px;
-    padding:0;
-    border-radius: 1rem;
+    padding:0px;
     color: #006634;
     border: 1px #006634 solid;
     overflow: auto;
