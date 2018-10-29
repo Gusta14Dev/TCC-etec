@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" >
   <link rel="stylesheet" href="css/fontawesome-all.css" >
   <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/info.css">
   <!--Icone do site-->
   <link rel="shortcut icon" href="imagens/icone_etec.png">
 
@@ -82,9 +83,7 @@
       border-top:2px solid #004000;
     }
     #colaborador{
-      width:100%;
-      height:auto;
-      background-color: #1EAE98;
+
     }
     #curso{
       width:85%;
@@ -292,18 +291,57 @@
     <div class="swiper-button-prev"></div>
   </div>
 
-  <div class="container-fluid p-1" id="colaborador">
-    <div id="">
-      <div class="row w-100">
-        <div class="col-6 text-center">
-          IMAGEM DA ESCOLA
+    <div class="container-info" id="colaborador">
+      <div class="box">
+        <div class="thumb">
+          <img src="imagens/inf2.jpg">
         </div>
-        <div class="col-6 text-center">
-          INFORMAÇÕES SOBRE A ESCOLA
+        <div class="detalhes">
+          <div class="content">
+            <i class="fa fa-gift" aria-hidden="true"></i>
+            <h3>Lorem</h3>
+            <a href="#">Ler mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="thumb">
+          <img src="imagens/inf2.jpg">
+        </div>
+        <div class="detalhes">
+          <div class="content">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <h3>Lorem Ipsum</h3>
+            <a href="#">Ler mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="thumb">
+          <img src="imagens/inf2.jpg">
+        </div>
+        <div class="detalhes">
+          <div class="content">
+            <i class="fa fa-glass" aria-hidden="true"></i>
+            <h3>Lorem</h3>
+            <a href="#">Ler mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="thumb">
+          <img src="imagens/inf2.jpg">
+        </div>
+        <div class="detalhes">
+          <div class="content">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <h3>Lorem Ipsum</h3>
+            <a href="#">Ler mais</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
 
   <footer class="footer mt-5">
     <div class="nav-header">
@@ -322,11 +360,6 @@
           <p></p>
           <p>Telefone</p>
           <p>(13)34707070</p>
-        </div>
-        <div class="col-4 mx-auto mt-sm-0 mt-1">
-          <p></p>
-          <p>Localização</p>
-          <p>Rua alfredo alquiman</p>
         </div>
       </div>
     </div>
