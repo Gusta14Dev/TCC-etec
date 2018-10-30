@@ -28,24 +28,26 @@
       <form method="post">
         <div class="container-fluid">
           <div class="jumbotron mx-sm-auto">
-            <h1>CADASTRAR ARTIGO</h1>
-            <div class="form-group">
+            <div class="mx-auto pt-3 pb-3 text-center">
+            <h1>Cadastrar Artigos</h1>
+          </div>
+            <div class="form-group ml-2 mr-2">
               <label for="artigo"><b>Nome do artigo:</b></label>
               <div class="row">
-                <div class="col-11">
+                <div class="col-12">
                   <input type="text" class="form-control" name="nome" required autofocus>
                 </div>
               </div>
               <label for="link"><b>Link da Foto do Artigo:</b></label>
               <div class="form-row">
-                <div class="col-sm-11">
-                  <input type="text" class="form-control" name="foto" value="foto-artigos/" required autofocus>
+                <div class="col-12">
+                  <input type="text" class="form-control" name="foto" value="foto-artigos/" required>
                 </div>
               </div>
               <label for="conteudo"><b>Conteúdo:</b></label>
               <div class="row">
-                <div class="col-11">
-                  <input type="text" class="form-control" name="conteudo" required autofocus>
+                <div class="col-12">
+                  <input type="text" class="form-control" name="conteudo" required>
                 </div>
               </div>
             </div>
@@ -63,7 +65,7 @@
           $nome = $_POST['nome'];
           $foto = $_POST['foto'];
           $conteudo = $_POST['conteudo'];
-          $select="INSERT INTO `tb_artigo`(`nm_artigo`, `nm_foto`, `st_noticia`, `ds_conteudo`, `id_administrador`) VALUES ('$nome','$foto','0','$conteudo','1')";
+          $select="INSERT INTO `tb_artigo`(`nm_artigo`, `nm_foto`, `st_noticia`, `ds_conteudo`, `id_usuario`) VALUES ('$nome','$foto','0','$conteudo','1')";
             if ($mysqli->query($select)) {
     ?>
     <script type="text/javascript">
@@ -71,6 +73,14 @@
       document.location="artigos.php";
     </script>
     <?php
+      }else{
+        ?>
+    <script type="text/javascript">
+      alert('Erro ao cadastrar!');
+      document.location="artigos.php";
+    </script>
+    <?php
+        
       }}
     ?>
 

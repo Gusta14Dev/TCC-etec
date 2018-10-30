@@ -35,11 +35,11 @@ body {
     transition-duration: .3s;
     transition-property: right, visibility;
     z-index:1041;
-    box-shadow: 2px 0px 50px;
     }
   .menu-lateral.open {
     right: 75%;
     visibility: visible;
+    box-shadow: 2px 0px 50px;
   }
   .fechar-menu-lateral {
     position: fixed;
@@ -69,6 +69,7 @@ body {
   .menu-lateral.open {
     right: 65%;
     visibility: visible;
+    box-shadow: 2px 0px 50px;
   }
   #menu-sair{
     height:56px;

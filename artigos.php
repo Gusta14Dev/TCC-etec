@@ -6,6 +6,8 @@ include_once("includes/texto.php");
 <html lang="pt-br">
 <meta charset="utf-8">
 <head>
+
+    <link rel="shortcut icon" href="imagens/icone_etec.png" >
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Página dos Artigos</title>
@@ -19,10 +21,12 @@ include_once("includes/texto.php");
 </head>
 	<body>
 		<?php
-		include_once ("includes/menu-adm.php");
-		?>
-
-		<div id="container-table">
+			include_once ("includes/menu-adm.php");
+      	?>
+		<div id="container-form">
+			<?php
+				include_once ("includes/fundo.html");
+			?>
 			<div class="jumbotron mx-auto">
 			<div class="col-md-3 mt-2">
 				<a href="cadastrar_artigo.php" class="btn btn-success h2">Novo Artigo</a>
@@ -51,7 +55,8 @@ include_once("includes/texto.php");
 				echo '<td class="actions">';
 				echo '<a href="artigo.php?view=0&itens='.$obj->cd_artigo.'" TYPE="BUTTON" NAME="submit" class="btn btn-success btn-xs botao" >Visualizar</a>';
 				echo '<a href="alterar_artigo.php?edit=0&itens='.$obj->cd_artigo.'" TYPE="BUTTON" NAME="submit" class="btn btn-warning btn-xs botao">Editar</a>';
-				echo '<a href="excluir_artigo.php?excl=0&itens='.$obj->cd_artigo.'" TYPE="BUTTON" NAME="submit" class="btn btn-danger btn-xs botao">Excluir</a>';
+				echo '<a class="btn btn-danger btn-xs botao" style="color:white;" data-toggle="modal" data-target="#delete-modal';
+										echo $obj->cd_artigo.'">Excluir</a>';
 				echo '</td>';
 				echo "</tr>";
 			}
@@ -64,11 +69,40 @@ include_once("includes/texto.php");
 				</table>
 			</div>
 		</div>
+	</div>
+
+<?php
+    $selectmodal="SELECT * FROM `tb_artigo`";
+    if ($con=$mysqli->query($selectmodal)) {
+    while ($obj= $con->fetch_object()) {
+
+echo '<div class="modal fade" id="delete-modal';
+echo $obj->cd_artigo . '" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content corverdinha">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalLabel">Excluir Artigo</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        Deseja realmente excluir este artigo?
+      </div>
+      <div class="modal-footer">
+        <a href="excluir_artigo.php?cd=';
+        echo $obj->cd_artigo . ' " class="btn btn-primary corverdinha">Sim</a>
+    <button type="button" class="btn btn-default " data-dismiss="modal">N&atilde;o</button>
+      </div>
+    </div>
+  </div>
+</div>';
+        }
+    }
+    ?>
 
 <style type="text/css">
 
 	.botao{
-		width: 80%;
+		width: 100%;
 	}
 			
 </style>

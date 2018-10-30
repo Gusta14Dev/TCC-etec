@@ -25,8 +25,10 @@ include_once("includes/conexao.php");
 		  ?>
 		  <form method="post">
 		    <div class="jumbotron mx-auto p-3">
-		      <h2>Cadastrar coordenador</h2>
-		      <div class="form-group">
+		       <div class="mx-auto pt-3 pb-3 text-center">
+            <h1>Cadastrar Coordenadores</h1>
+          </div>
+		      <div class="form-group ml-2 mr-2">
 		        <div class="row">
 		          <div class="col-6">
 		            <label for="nome"><b>Nome:</b></label>
@@ -63,7 +65,7 @@ include_once("includes/conexao.php");
 		        </div>
 		        <div class="row">
 		          <div class="col-12 mx-auto pt-2 text-center">
-		            <button type="submit" name="butao" class="btn" >Cadastrar</button>
+		            <button type="submit" name="butao" class="btn btn-info" >Cadastrar</button>
 		          </div>
 		        </div>
 		      </div>

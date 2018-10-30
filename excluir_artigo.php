@@ -1,7 +1,7 @@
 <?php
   include_once "includes/conexao.php";
-  $itens = $_GET['itens'];
-  $select="DELETE FROM `tb_artigo` WHERE `cd_artigo` = $itens ";
+  $apagar=$_GET ['cd'];
+  $select="DELETE FROM `tb_artigo` WHERE `cd_artigo` = $apagar ";
  if ($mysqli->query($select)) {
  	?>
  	<script type="text/javascript">
