@@ -9,66 +9,11 @@
   <link rel="stylesheet" href="css/fontawesome-all.css" >
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/info.css">
+  <link rel="stylesheet" href="css/menu.css">
   <!--Icone do site-->
   <link rel="shortcut icon" href="imagens/icone_etec.png">
 
   <style>
-    html {
-      position: relative;
-    }
-    body {
-      /* Margin do footer */
-      margin-bottom: 270px;
-      
-    }
-    footer{
-      padding:0;
-    }
-    .footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      /* Set the fixed height of the footer here */
-      height: 270px;
-      background-color: #3C3D3F;
-      padding:0;
-    }
-    .nav-header{
-      position:relative;
-      width: 90%;
-      height:40px;
-      margin: 0 auto;
-    }
-    .nav-header::after{
-      content:'';
-      width: 100%;
-      height:2px;
-      background-color: #ccc;
-      opacity:0.95;
-      bottom:0;
-      position:absolute;
-    }
-    .nav-body{
-      position:relative;
-      width: 90%;
-      height:120px;
-      margin: 0 auto;
-    }
-    .nav-body::after{
-      content:'';
-      width: 100%;
-      height:2px;
-      background-color: #ccc;
-      opacity:0.95;
-      bottom:0;
-      position:absolute;
-    }
-    .nav-footer{
-      width: 100%;
-      height:40px;
-      text-align:center;
-      line-height: 40px;
-    }
     #video{
       width:100%;
       height:300px;
@@ -95,7 +40,6 @@
       height:auto;
     }
     #fundo{
-      margin-top: 89px;
       position:relative;
       min-height: 80vh;
       background-size:cover;
@@ -113,47 +57,7 @@
       background-color: rgba(0,0,0,0.8);
       min-height: 80vh;
     }
-    .navbar-header{
-      width: 100%;
-      padding-left:5px;
-    }
-    .navbar-body{
-      width: 100%;
-      display: inline-block;
-    }
-    .menu{
-      margin-bottom: 0;
-      padding: 0px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .menu-item{
-      display: inline-block;
-      margin: 0;
-      padding: 10px;
-    }
-    .menu-item:hover{
-      border-bottom: green 1px solid;
-    }
-    .menu-link{
-      padding: 0;
-      color: #fff;
-      text-decoration: none;
-    }
-    .active{
-      font-weight: bold;
-      border-bottom: green 1px solid;
-    }
-    .menu-link:hover{
-      text-decoration: none;
-      color: #fff;
-    }
-    .bg-green{
-      background-color: #004000;
-    }
-    .form-right{
-      float: right;
-    }
+    
     .content-title{
       width:90%;
       height:100px;
@@ -184,53 +88,9 @@
   </style>
 </head>
 <body>
-  <nav class="navbar fixed-top navbar-dark bg-green p-0 pt-1">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">ETEC DE ITANHAÉM</a>
-      <div class="form-row form-right">
-        <div class="form-group col-6">
-          <input class="form-control" type="search" placeholder="Search">
-        </div>
-        <div class="form-group col-2">
-         <button class="btn" type="submit">Search</button>
-        </div>
-      </div>
-    </div>
-    <div class="navbar-body">
-      <ul class="menu">
-        <li class="menu-item active">
-          <a class="menu-link" href="#">Home</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">A escola</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">Eventos</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">Cursos</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">Vestibulinho</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">Corpo docente</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">Coordenação</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">Direção</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">Secretaria</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">TCC</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <?php
+  include_once("includes/menu.html");
+  ?>
   <div id="fundo"></div>
   <div class="container-fluid content-title">
     <h2 class="text-center">OS MELHORES CURSOS DA REGIÃO</h2>
@@ -372,11 +232,11 @@
   <script src="js/jquery.min.js" ></script>
   <script src="js/bootstrap.min.js" ></script>
   <script src="js/swiper.min.js"></script>
-  
+  <script src="js/menu.js"></script>
+
   <script>
     $(document).ready(function(){
       var width = $('body').width();
-
       if (width <= 600) {
         var swiper = new Swiper('.swiper-container', {
           slidesPerView: 1,
