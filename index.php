@@ -85,6 +85,15 @@
       width: 250px;
       height: 350px;
     }
+
+    #info{
+      position: relative;;
+      width: 100%;
+      height: 550px;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
   </style>
 </head>
 <body>
@@ -131,83 +140,85 @@
     </div>
   </div>
 
-  <div class="swiper-container">
-    <h1>Ultimas noticias</h1>
-    <div class="swiper-wrapper mb-3">
-      <div class="swiper-slide" style="background-image:url(imagens/cultura-livros.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(imagens/inf2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
-       <div class="swiper-slide" style="background-image:url(imagens/cultura-livros.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(imagens/inf2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
-       <div class="swiper-slide" style="background-image:url(imagens/cultura-livros.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(imagens/inf2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
+  <div class="container-fluid bg-third">
+    <div class="swiper-container bg-third">
+      <div class="container-fluid content-title">
+        <h2 class="text-center">ULTIMAS NOTÍCIAS</h2>
+      </div>
+      <div class="swiper-wrapper mb-3 pt-3">
+        <div class="swiper-slide" style="background-image:url(imagens/cultura-livros.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/inf2.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/cultura-livros.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/inf2.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/cultura-livros.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/inf2.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-     <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
   </div>
 
-    <div class="container-info" id="colaborador">
-      <div class="box">
-        <div class="thumb">
-          <img src="imagens/inf2.jpg">
+  <div class="container-fluid mb-5" id="info">
+    <div class="container-info">
+        <div class="box">
+          <div class="thumb">
+            <img src="imagens/inf2.jpg">
+          </div>
+          <div class="detalhes">
+            <div class="content">
+              <i class="fa fa-gift" aria-hidden="true"></i>
+              <h3>Lorem Ipsum</h3>
+              <a href="#">Ler Mais</a>
+            </div>
+          </div>
         </div>
-        <div class="detalhes">
-          <div class="content">
-            <i class="fa fa-gift" aria-hidden="true"></i>
-            <h3>Lorem</h3>
-            <a href="#">Ler mais</a>
+        <div class="box">
+          <div class="thumb">
+            <img src="imagens/inf2.jpg">
+          </div>
+          <div class="detalhes">
+            <div class="content">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+              <h3>Lorem Ipsum</h3>
+              <a href="#">Ler Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="thumb">
+            <img src="imagens/inf2.jpg">
+          </div>
+          <div class="detalhes">
+            <div class="content">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+              <h3>Lorem Ipsum</h3>
+              <a href="#">Ler Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="thumb">
+            <img src="imagens/inf2.jpg">
+          </div>
+          <div class="detalhes">
+            <div class="content">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <h3>Lorem Ipsum</h3>
+              <a href="#">Ler Mais</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box">
-        <div class="thumb">
-          <img src="imagens/inf2.jpg">
-        </div>
-        <div class="detalhes">
-          <div class="content">
-            <i class="fa fa-globe" aria-hidden="true"></i>
-            <h3>Lorem Ipsum</h3>
-            <a href="#">Ler mais</a>
-          </div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="thumb">
-          <img src="imagens/inf2.jpg">
-        </div>
-        <div class="detalhes">
-          <div class="content">
-            <i class="fa fa-glass" aria-hidden="true"></i>
-            <h3>Lorem</h3>
-            <a href="#">Ler mais</a>
-          </div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="thumb">
-          <img src="imagens/inf2.jpg">
-        </div>
-        <div class="detalhes">
-          <div class="content">
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-            <h3>Lorem Ipsum</h3>
-            <a href="#">Ler mais</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
+  </div>
 
   <footer class="footer mt-5">
     <div class="nav-header">
-      <div class="row mx-auto">
-        <div class="col-12 bg-danger mx-auto mt-sm-0 mt-1"><i class="fab fa-facebook-square fa-2x text-primary"></i></div>
-      </div>
     </div>
     <div class="nav-body">
       <div class="form-row mx-auto align-items-center text-center text-light">
