@@ -173,7 +173,7 @@
           <div class="detalhes">
             <div class="content">
               <i class="fa fa-gift" aria-hidden="true"></i>
-              <h3>Lorem Ipsum</h3>
+              <h3>Sobre a etec</h3>
               <a href="#">Ler Mais</a>
             </div>
           </div>
@@ -185,7 +185,7 @@
           <div class="detalhes">
             <div class="content">
               <i class="fa fa-globe" aria-hidden="true"></i>
-              <h3>Lorem Ipsum</h3>
+              <h3>Localização</h3>
               <a href="#">Ler Mais</a>
             </div>
           </div>
@@ -197,7 +197,7 @@
           <div class="detalhes">
             <div class="content">
               <i class="fa fa-globe" aria-hidden="true"></i>
-              <h3>Lorem Ipsum</h3>
+              <h3>Infraestrutura</h3>
               <a href="#">Ler Mais</a>
             </div>
           </div>
@@ -209,7 +209,7 @@
           <div class="detalhes">
             <div class="content">
               <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-              <h3>Lorem Ipsum</h3>
+              <h3>Secretaria</h3>
               <a href="#">Ler Mais</a>
             </div>
           </div>
