@@ -172,7 +172,7 @@
           </div>
           <div class="detalhes">
             <div class="content">
-              <i class="fa fa-gift" aria-hidden="true"></i>
+              <i class="fa fa-building" aria-hidden="true"></i>
               <h3>Sobre a etec</h3>
               <a href="#">Ler Mais</a>
             </div>
@@ -184,7 +184,7 @@
           </div>
           <div class="detalhes">
             <div class="content">
-              <i class="fa fa-globe" aria-hidden="true"></i>
+              <i class="fa fa-map-marked-alt" aria-hidden="true"></i>
               <h3>Localização</h3>
               <a href="#">Ler Mais</a>
             </div>
@@ -196,7 +196,7 @@
           </div>
           <div class="detalhes">
             <div class="content">
-              <i class="fa fa-globe" aria-hidden="true"></i>
+              <i class="fa fa-wrench" aria-hidden="true"></i>
               <h3>Infraestrutura</h3>
               <a href="#">Ler Mais</a>
             </div>
@@ -208,7 +208,7 @@
           </div>
           <div class="detalhes">
             <div class="content">
-              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <i class="fa fa-user-tie" aria-hidden="true"></i>
               <h3>Secretaria</h3>
               <a href="#">Ler Mais</a>
             </div>

@@ -269,8 +269,8 @@ include_once("includes/conexao.php");
 				</form>
 			</div>
 			<div class="container-dados">
-				<div class="container-img mt-5">
-					<img src="imagens/logo-vetorizado-branco.png" class="img-fluid">
+				<div class="container-img mt-5 mb-5">
+					<img src="imagens/logo da etec - branco.png" class="img-fluid">
 				</div>
 				<p class="font-weight-bold h3 text-white text-center mt-5">Etec de Itanhaém</p>
 				<p class="h6 text-light">Trabalhando o presente, preparando o futuro!</p>
