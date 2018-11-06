@@ -106,7 +106,7 @@
   </div>
   <div class="container" id="curso">
     <div class="row mx-auto mb-5 pt-3 pb-3">
-      <div class="col-sm-6 mx-auto mt-sm-0 mt-1 p-0">
+      <div class="col-sm-5 mx-auto mt-sm-0 mt-1 p-0">
         <div class="image-curso">
           <img class="img-fluid" src="imagens/pc.png" alt="Curso de informática para internet">
         </div>
@@ -117,7 +117,7 @@
       </div>
     </div>
     <div class="row mx-auto mb-5">
-      <div class="col-sm-6 mx-auto mt-sm-0 mt-1">
+      <div class="col-sm-6 mx-auto mt-sm-0 mt-1 pt-5">
         <h4 class="text-center">ADMINISTRAÇÃO</h4>
         <p class="text-justify">O curso de informática para internet esta disponibilizado no periodo noturno com duração de 2 anos e integrado ao ensino médio (Etim) com duração de 3 anos.</p>
       </div>
@@ -130,10 +130,10 @@
     <div class="row mx-auto mb-3 pt-1 pb-1">
       <div class="col-sm-5 mx-auto mt-sm-0 mt-1 p-0">
         <div class="image-curso">
-          <img src="imagens/inf.jpg" alt="Curso de informática para internet" class="img-fluid">
+          <img src="imagens/planta.svg" alt="Curso de informática para internet" class="img-fluid">
         </div>
       </div>
-      <div class="col-sm-6 mx-auto mt-sm-0 mt-1">
+      <div class="col-sm-6 mx-auto mt-sm-0 mt-1 pt-5">
         <h4 class="text-center">MEIO AMBIENTE</h4>
         <p class="text-justify">O curso de informática para internet esta disponibilizado no periodo noturno com duração de 2 anos e integrado ao ensino médio (Etim) com duração de 3 anos.</p>
       </div>
@@ -168,7 +168,7 @@
     <div class="container-info">
         <div class="box">
           <div class="thumb">
-            <img src="imagens/inf2.jpg">
+            <img src="imagens/etec.png">
           </div>
           <div class="detalhes">
             <div class="content">
@@ -180,7 +180,7 @@
         </div>
         <div class="box">
           <div class="thumb">
-            <img src="imagens/inf2.jpg">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.0822602432277!2d-46.787713684857984!3d-24.168847690191086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce2a7e0dafb751%3A0x2416b73463c04254!2sAv.+Jos%C3%A9+Batista+Campos%2C+1431+-+Cidade+Anchieta%2C+Itanha%C3%A9m+-+SP%2C+11740-000!5e0!3m2!1spt-BR!2sbr!4v1541521296688" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
           <div class="detalhes">
             <div class="content">
