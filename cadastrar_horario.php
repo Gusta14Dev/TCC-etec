@@ -23,10 +23,10 @@
 		  <?php
 		  	include_once ("includes/fundo.html");
 		  ?>
-	    <form method="post" action="">
-		    <div class="container-fluid">
-		      <div class="jumbotron mx-sm-auto corverdinha">
-		        <div class="form-group">
+	    <form method="post">
+		      <div class="jumbotron mx-auto p-3">
+		       <div class="mx-auto pt-3 pb-3 text-center">
+		       	   <h1>Cadastrar Horário</h1> </div>
 		          <div class="row">
 		            <div class="col-6">
 		          		<label for="entrada"><b>Entrada:</b></label>
@@ -49,27 +49,30 @@
 		              </select>
 		            </div>
 		          </div>
-		          <?php
-		          	echo '<label for="coord"><b>Coordenadores:</b></label>
-		          				<div class="row">
-		            				<div class="col-12">
-		              				<select name="coordenadores" class="form-control">';
-		           							$select="SELECT * FROM `tb_usuario` WHERE `id_tipo` = 1";
-		    											if ($con=$mysqli->query($select)) {
-		    												while ($obj= $con->fetch_object()) {
-		              								echo '<option value="'.$obj->cd_usuario.'" required autofocus>'.$obj->nm_usuario.' '.$obj->nm_sobrenome.'';
-																}
-															}else{
-		  													echo 'Não há coordenadores cadastrados';
-															}
-		          ?>
+<?php
+	echo '<label for="coord"><b>Coordenadores:</b></label>
+		    <div class="row">
+		        <div class="col-12">
+		            <select name="coordenadores" class="form-control">';
+		           	$select="SELECT * FROM `tb_usuario` WHERE `id_tipo` = 1";
+		    		if ($con=$mysqli->query($select)) {
+		    			while ($obj= $con->fetch_object()) {
+		            		echo '<option value="'.$obj->cd_usuario.'" required autofocus>'.$obj->nm_usuario.' '.$obj->nm_sobrenome.'';
+						}
+					}else{
+		  				echo 'Não há coordenadores cadastrados';
+					}
+?>
+</option>
+</select>
+</div>
+</div>
+		        
+		     <div class="row">
+		          <div class="col-12 mx-auto pt-2 text-center">
+		            <button type="submit" name="butao" class="btn btn-info" >Cadastrar</button>
+		          </div>
 		        </div>
-		      </div>
-		      <div class="row">
-		        <div class="col-12 mx-auto pt-2 text-center">
-		          <input type="submit" name="butao" value="Cadastrar" class="btn btn-info">
-		        </div>
-		      </div>
 		    </div>
 			</form>
 		</div>
