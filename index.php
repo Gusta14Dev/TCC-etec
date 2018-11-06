@@ -104,36 +104,40 @@
   <div class="container-fluid content-title">
     <h2 class="text-center">OS MELHORES CURSOS DA REGIÃO</h2>
   </div>
-  <div class="container" id="curso">
-    <div class="row mx-auto mb-5 pt-3 pb-3">
-      <div class="col-sm-5 mx-auto mt-sm-0 mt-1 p-0">
+  <div class="container-fluid" id="curso">
+    <div class="row mt-5">
+      <!-- Imagem do curso de informática -->
+      <div class="col-sm-3 mx-auto mt-sm-0 mt-1 p-0">
         <div class="image-curso">
-          <img class="img-fluid" src="imagens/pc.png" alt="Curso de informática para internet">
+          <img src="imagens/pc.svg" alt="Curso de informática para internet" class="img-fluid">
         </div>
       </div>
-      <div class="col-sm-6 mx-auto mt-sm-0 mt-1 pt-5">
+      <!-- Imagem do curso de Administração -->
+      <div class="col-sm-3 mx-auto mt-sm-0 mt-1 p-0">
+        <div class="image-curso">
+          <img src="imagens/caixa.svg" alt="Curso de administração" class="img-fluid">
+        </div>
+      </div>
+      <!-- Imagem do curso de Meio ambiente -->
+      <div class="col-sm-3 mx-auto mt-sm-0 mt-1 p-0">
+        <div class="image-curso">
+          <img src="imagens/planta.svg" alt="Curso de meio ambiente" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Informações do curso de informática para internet -->
+      <div class="col-sm-3 mx-auto mt-sm-0 mt-1 pt-5">
         <h4 class="text-center">INFORMÁTICA PARA INTERNET</h4>
         <p class="text-justify">O curso de informática para internet esta disponibilizado no periodo noturno com duração de 2 anos e integrado ao ensino médio (Etim) com duração de 3 anos.</p>
       </div>
-    </div>
-    <div class="row mx-auto mb-5">
-      <div class="col-sm-6 mx-auto mt-sm-0 mt-1 pt-5">
+      <!-- Informações do curso de administração -->
+      <div class="col-sm-3 mx-auto mt-sm-0 mt-1 pt-5">
         <h4 class="text-center">ADMINISTRAÇÃO</h4>
         <p class="text-justify">O curso de informática para internet esta disponibilizado no periodo noturno com duração de 2 anos e integrado ao ensino médio (Etim) com duração de 3 anos.</p>
       </div>
-      <div class="col-sm-5 mx-auto mt-sm-0 mt-1 p-0">
-        <div class="image-curso">
-          <img src="imagens/caixa.png" alt="Curso de informática para internet" class="img-fluid">
-        </div>
-      </div>
-    </div>
-    <div class="row mx-auto mb-3 pt-1 pb-1">
-      <div class="col-sm-5 mx-auto mt-sm-0 mt-1 p-0">
-        <div class="image-curso">
-          <img src="imagens/planta.svg" alt="Curso de informática para internet" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-sm-6 mx-auto mt-sm-0 mt-1 pt-5">
+      <!-- Informações do curso de meio ambiente -->
+      <div class="col-sm-3 mx-auto mt-sm-0 mt-1 pt-5">
         <h4 class="text-center">MEIO AMBIENTE</h4>
         <p class="text-justify">O curso de informática para internet esta disponibilizado no periodo noturno com duração de 2 anos e integrado ao ensino médio (Etim) com duração de 3 anos.</p>
       </div>
