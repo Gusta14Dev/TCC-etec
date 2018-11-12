@@ -60,7 +60,7 @@ $itens = $_GET['itens'];
                       <label for="conteudo"><b>Conteúdo:</b></label>
                       <div class="form-row">
                         <div class="col-sm-12">
-                          <input type="text" class="form-control" name="conteudo" value="'.$obj->ds_conteudo.'" required autofocus>
+                          <textarea rows="10" cols="50" class="form-control" name="conteudo" required>'.$obj->ds_conteudo.'</textarea>
                         </div>
                       </div>
                       <div class="row">

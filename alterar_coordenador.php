@@ -34,7 +34,7 @@ $itens = $_GET['itens'];
             include_once ("includes/fundo.html");
           ?>
          <div class="jumbotron mx-sm-auto">
-            <div class="mx-auto pt-3 pb-3 text-center">
+            <div class="mx-auto p-3 text-center">
             <h1>Alterar Coordenadores</h1>
           </div>
           <div class="form-group ml-2 mr-2">

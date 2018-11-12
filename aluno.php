@@ -16,13 +16,10 @@ $cd_turma = $_GET['cd'];
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
     <!-- CSS da pagina-->
-	<link href="css/menu-lateraldomenu.css" rel="stylesheet">
+	<link href="css/menu-lateral.css" rel="stylesheet">
 	<link href="css/layout_form.css" rel="stylesheet">
 
 	<style>
-	.table{
-		min-width:600px;
-	}
 </style>
 </head>
 <body>

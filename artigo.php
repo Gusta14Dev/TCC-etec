@@ -45,7 +45,7 @@
     include_once ("includes/menu-adm.php");
     while($obj = $artigo->fetch_object()){
 	?>
-          
+      <div class="container">
           <div class="mt-5"> 
 			<?php
 				echo '<h1> <div class="mx-auto pt-3 pb-3 text-center">'. $obj->nm_artigo .'</div></h1>';
@@ -58,13 +58,16 @@
 ?>
 
 	<div class="ml-5 mr-5 mb-3" align="justify">
-		<?php
+    <p>
+		  <?php
 				echo $obj->ds_conteudo;
-		?>
+		  ?>
+    </p>
 	</div>
 	<?php
 	}
 	?>
+</div>
 
     <!-- JavaScript -->
     <script src="js/jquery.min.js" ></script>

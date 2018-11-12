@@ -8,8 +8,58 @@
     <title>Icones de ação</title>
     
     <style>
-    <a class="remove"  href="#" data-toggle="modal" <?php echo 'data-target="#delete-modal'.$obj->cd_turma.'"'; ?> ></a>
-    
+        body{
+            background-color: #007bff;
+        }
+        .container-config{
+            position: relative;
+            width: 110px;
+            height: 110px;
+        }
+        .container-edit{
+            position: relative;
+            width: 50px;
+            height: 60px;
+            right: 0;
+            bottom: 50px;
+            background-color: #e5bb00;
+        }
+        .edit{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            right: 0;
+            bottom: 60px;
+            border: none;
+            border-radius: 100%;
+            color:#fff;
+            font-size: 1em;
+            background-color: #e5bb00;
+        }
+        .remove{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            right: 60;
+            bottom: 0;
+            border: none;
+            border-radius: 100%;
+            color:#fff;
+            font-size: 1em;
+            background-color: #b70000;
+        }
+        .config{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            right: 0;
+            bottom: 0;
+            border: none;
+            border-radius: 100%;
+            color:#fff;
+            font-size: 1em;
+            background-color: #000000;
+        }
 	</style>
   </head>
   <body>
