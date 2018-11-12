@@ -43,7 +43,7 @@ include_once("includes/conexao.php");
 		        <div class="row">
 		          <div class="col-12">
 		            <label for="foto"><b>Foto:</b></label>
-		            <input type="text" class="form-control" name="foto" value="foto-funcionarios/" required>
+		            <input type="text" class="form-control" name="foto" value="foto-funcionario/" required>
 		          </div>
 		        </div>
 		        <div class="row">

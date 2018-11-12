@@ -52,7 +52,7 @@
 				</li>
 			</ul>
 			<li class="menu-item">
-				<a class="menu-link ml-4" href="funcionario.php"><i class="fas fa-user fa-lg mr-3"></i>Funcionários</a>
+				<a class="menu-link ml-4" href="funcionarios.php"><i class="fas fa-user fa-lg mr-3"></i>Funcionários</a>
 			</li>
 			<li class="menu-item">
 				<a class="menu-link ml-4" href="coordenadores.php"><i class="fas fa-user-tie fa-lg mr-3"></i>Coordenadores</a>

@@ -57,6 +57,7 @@
 						<tr>
 							<th>CD</th>
 							<th>Funcionários</th>
+							<th>Cargo</th>
 							<th class="actions">Ações</th>
 						</tr>
 					</thead>
@@ -69,6 +70,7 @@
 			while ($obj= $con->fetch_object()) {
 				echo  "<td>".$obj->cd_funcionario."</td>";
 				echo "<td>".$obj->nm_funcionario." ".$obj->nm_sobrenome."</td>";
+				echo "<td>".$obj->nm_cargo."</td>";
 				echo '<td> <a href="funcionario.php?view=0&itens='.$obj->cd_funcionario.'" TYPE="BUTTON" NAME="submit" class="btn btn-success btn-xs botao" >Visualizar</a>';
 				echo ' <a href="alterar_funcionario.php?edit=0&itens='.$obj->cd_funcionario.'" TYPE="BUTTON" NAME="submit" class="btn btn-warning btn-xs botao">Editar</a>';
 				echo ' <a class="btn btn-danger btn-xs botao" style="color:white;" data-toggle="modal" data-target="#delete-modal';
