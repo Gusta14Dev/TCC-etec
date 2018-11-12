@@ -85,15 +85,6 @@
       width: 250px;
       height: 350px;
     }
-
-    #info{
-      position: relative;;
-      width: 100%;
-      height: 550px;
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
   </style>
 </head>
 <body>
@@ -150,14 +141,14 @@
         <h2 class="text-center">ULTIMAS NOTÍCIAS</h2>
       </div>
       <div class="swiper-wrapper mb-3 pt-3">
-        <div class="swiper-slide" style="background-image:url(imagens/cultura-livros.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/inf2.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/)"></div>
         <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/cultura-livros.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/inf2.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/)"></div>
         <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/cultura-livros.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/inf2.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/)"></div>
         <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
       </div>
       <!-- Add Pagination -->
@@ -196,7 +187,7 @@
         </div>
         <div class="box">
           <div class="thumb">
-            <img src="imagens/inf2.jpg">
+            <img src="imagens/">
           </div>
           <div class="detalhes">
             <div class="content">
@@ -208,7 +199,7 @@
         </div>
         <div class="box">
           <div class="thumb">
-            <img src="imagens/inf2.jpg">
+            <img src="imagens/">
           </div>
           <div class="detalhes">
             <div class="content">

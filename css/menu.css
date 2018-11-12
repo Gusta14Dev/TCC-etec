@@ -75,7 +75,8 @@
       height:40px;
       text-align:center;
       line-height: 40px;
-    }.navbar-header{
+    }
+    .navbar-header{
       width: 100%;
       padding-left:5px;
     }
@@ -127,15 +128,15 @@
       height: 40px; 
       width: 100px;
       padding: 5px;
-      background-color: #ccc;
+      border-left: 1px solid #1e7e34;
       font-size: 1.1em;
       font-weight: bold;
       text-align: center;
       color: #343a40 !important;
     }
     #logar:hover{
-      background-color: #1e7e34;
-      color: #fff !important;
+      background-color: #B2B2B2;
+      color: #000 !important;
       text-decoration: none;
     }
     #redes-sociais{

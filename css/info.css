@@ -3,7 +3,14 @@ body{
 	padding: 0;
 	font-family: sans-serif;
 }
-
+#info{
+    position: relative;;
+    width: 100%;
+    height: 550px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 .container-info{
 	position: absolute;
 	top: 50%;
@@ -124,5 +131,45 @@ body{
 	.container-info{
 		width: 100%;
 		height: auto;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.container-info .box{
+		height: 250px;
+	}
+
+	.container-info .box .thumb{
+		display: none;
+	}
+}
+
+@media (max-width: 768px){
+	.container-info{
+		display: initial;
+	}
+
+	.container-info .box{
+		width: 50%;
+		height: 250px;
+		float: left;
+	}
+}
+
+@media (max-width: 480px){
+	#info{
+    	width: 100%;
+    	height: 1040px;
+	}
+	.container-info{
+		top: 0;
+		left: 0;
+		transform: translate(0);
+	}
+
+	.container-info .box{
+		width: 100%;
+		height: 250px;
+		float: left;
 	}
 }
