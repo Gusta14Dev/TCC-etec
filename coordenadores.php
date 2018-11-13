@@ -69,7 +69,7 @@
 						<tr>
 							<!--Mostrar conteúdo da tabela-->
 						 	<?php
-								$select="SELECT * FROM `tb_usuario` WHERE `id_tipo` = 1 ORDER BY  `cd_usuario` ASC ";
+								$select="SELECT * FROM `tb_usuario` WHERE `id_tipo` = 2 ORDER BY  `cd_usuario` ASC ";
 									if ($con=$mysqli->query($select)) {
 										while ($obj= $con->fetch_object()) {
 											echo  "<td>".$obj->cd_usuario."</td>";

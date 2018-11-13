@@ -1,5 +1,5 @@
 <?php
-session_start();
+include_once("includes/conexao.php");
 if(!isset($_SESSION['nm_usuario'])){
     $_SESSION['msg-fim']= "<div class='alert alert-danger' role='alert'>Logue primeiro antes de tentar entrar aqui!</div>";
     $_SESSION['fim']= 1;
@@ -9,16 +9,12 @@ if(!isset($_SESSION['nm_usuario'])){
     </script>
     <?php
 }
-include_once("includes/conexao.php");
 ?>
 <!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
     <title>Home</title>
 
     <style type="text/css">

@@ -1,7 +1,7 @@
 <?php
 	include_once("includes/conexao.php");
   $itens = $_GET['itens'];
-	$select0= "SELECT * FROM `tb_usuario` WHERE cd_usuario = $itens and id_tipo = 1 ";
+	$select0= "SELECT * FROM `tb_usuario` WHERE cd_usuario = $itens and id_tipo = 2 ";
 	if($coordenador = $mysqli->query($select0)){
 	}else {
 		echo "Não foi!!!!";

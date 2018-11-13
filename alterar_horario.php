@@ -15,12 +15,13 @@
     <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
     <!-- CSS da pagina-->
     <link href="css/layout_form.css" rel="stylesheet">
+    <link href="css/menu-lateral.css" rel="stylesheet">
   </head>
 
   <body>
-    <?php
-      include_once("includes/menu-adm.php");  
-    ?>
+  <?php
+  include_once("includes/menu-adm.php");
+  ?>
     <div id="container-form">
       <?php
         include_once ("includes/fundo.html");
@@ -167,14 +168,13 @@ echo $obj->cd_horario_coordenador. '" tabindex="-1" role="dialog" aria-labelledb
 ?>
 
     <!-- JavaScript -->
-    <link href="css/menu-lateral.css" rel="stylesheet">
-    <link href="css/layout_form.css" rel="stylesheet">
+    <script src="js/menu.js" ></script>
     <script src="js/jquery.min.js" ></script>
     <script src="js/popper.min.js" ></script>
     <script src="js/bootstrap.min.js" ></script>
     <script src="js/slick.min.js" ></script>
     <script src="js/per.js"></script>
-
+<script src="js/footer-navbar-segundamento.js"></script>
 
   </body>
 </html>

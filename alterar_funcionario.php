@@ -16,12 +16,12 @@ $itens = $_GET['itens'];
     <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
     <!-- CSS da pagina-->
     <link href="css/layout_form.css" rel="stylesheet">
-  
+    <link href="css/menu-lateral.css" rel="stylesheet"> 
 </head>
 
 <body>
   <?php
-  include_once("includes/menu-adm.php")
+  include_once("includes/menu-adm.php");
   ?>
   <form method="post">
     <?php
@@ -66,7 +66,7 @@ $itens = $_GET['itens'];
               <label for="conteudo"><b>Descrição do Cargo:</b></label>
                 <div class="form-row">
                   <div class="col-sm-12">
-                    <textarea rows="5" cols="50" class="form-control" name="descricao" required> <?php echo $obj->ds_cargo;?></textarea>
+                    <textarea rows="5" cols="50" class="form-control" name="descricao" required> <?php echo $obj->ds_cargo; ?></textarea>
                   </div>
                 </div>
 
@@ -115,8 +115,7 @@ $itens = $_GET['itens'];
   </form>
 
   <!-- JavaScript -->
-  <link href="css/menu-lateral.css" rel="stylesheet">
-    <link href="css/layout_form.css" rel="stylesheet">
+  
   <script src="js/jquery.min.js" ></script>
   <script src="js/bootstrap.min.js" ></script>
   <script src="js/per2.js"></script>

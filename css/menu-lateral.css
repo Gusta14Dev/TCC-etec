@@ -2,7 +2,7 @@ html {
   position: relative;
   min-height: 100%;
 }
-
+.fixed{width: 100%;}
 html,
 body {
   overflow-x: hidden;
@@ -111,7 +111,7 @@ body {
     transition-property: right, visibility;
   }
   .menu-lateral.open {
-    right: 15%;
+    right: 55%;
     visibility: visible;
   }
   #menu-sair{
@@ -133,7 +133,7 @@ body {
     transition-property: right, visibility;
   }
   .menu-lateral.open {
-    right: 15%;
+    right: 40%;
     visibility: visible;
   }
   #menu-sair{

@@ -55,7 +55,7 @@ include_once("includes/conexao.php");
 		        <label for="conteudo"><b>Descrição do Cargo:</b></label>
                 <div class="form-row">
                   <div class="col-sm-12">
-                    <textarea rows="5" cols="50" class="form-control" name="descricao" required> </textarea>
+                    <textarea rows="5" cols="50" class="form-control" name="descr_cargo" required></textarea>
                   </div>
                 </div>
 		        <div class="row">

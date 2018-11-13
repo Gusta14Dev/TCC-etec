@@ -1,6 +1,4 @@
-<?php
-	session_start();
-?>
+<?php?>
 <header>
 	<!-- Fixed navbar -->
 	<nav class="navbar fixed-top navbar-dark bg-black p-0">

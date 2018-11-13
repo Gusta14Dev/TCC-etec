@@ -12,7 +12,7 @@
 
     <meta charset="utf-8">
   <head>
-    <link rel="shortcut icon" href="imagens/icone_etec.png" >
+  <link rel="shortcut icon" href="imagens/icone_etec.png" >
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap e FontAwsome CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" >
@@ -33,15 +33,12 @@
     position:relative;
   }
 }
-
-
     </style>
 		<link rel="shortcut icon" href="imagens/icone_etec.png" >
   </head>
   <body class="bg-light">
-
 	<?php
-    include_once ("includes/menu-adm.php");
+  include_once ("includes/menu-adm.php");
 	while($obj = $funcionario->fetch_object()){
 	?>
 <div class="container-table" style="margin-top:100px;">
@@ -55,16 +52,14 @@
 		</p>
 	</div>
   <?php
-
-  echo '<div id="foto_funcionario"  ><img class="img-fluid" src="'.$obj->nm_foto.'"></div>';
-  echo '<div class="border p-5 pb-5" style="color: #fff; background-color: #212529;">';
-  echo '<div class="row"> <h1>' .$obj->nm_cargo.'</h1> ';
-
-	echo "</div>";
-  echo '<div class="row mt-5 mb-3" > '.$obj->ds_cargo.' <br><br><br><br><br><br>';
-
-  echo "</div>";
-		?>
+    echo '<div id="foto_funcionario"  ><img class="img-fluid" src="'.$obj->nm_foto.'"></div>';
+    echo '<div class="border p-5 pb-5" style="color: #fff; background-color: #212529;">';
+    echo '<div class="row"> <h1>' .$obj->nm_cargo.'</h1> ';
+  	echo "</div>";
+    echo '<div class="row mt-5 mb-3" > '.$obj->ds_cargo.' <br><br><br><br><br><br>';
+    echo "</div>";
+    echo "</div>";
+	?>
 </div>
 	<?php
 	}
@@ -76,12 +71,6 @@
     <script src="js/slick.min.js" ></script>
     <script src="js/per.js"></script>
     <script src="js/footer-navbar-segundamento.js"></script>
-
-    <script>
-        $(document).ready(function(){
-          alert("nfjfjfg");
-        }
-    </script>
 
   </body>
 </html>

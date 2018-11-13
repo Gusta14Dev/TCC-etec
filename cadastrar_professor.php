@@ -17,8 +17,7 @@ include_once("includes/conexao.php");
 <body> 
 		<?php
 		 include_once ("includes/menu-adm.php");
-		?>
-
+		?>	
 	 	<div id="container-form">
 		  <?php
 		  	include_once ("includes/fundo.html");

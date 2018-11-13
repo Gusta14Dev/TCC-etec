@@ -81,7 +81,7 @@ include_once("includes/conexao.php");
 		      $sobrenome = $_POST['sobrenome'];
 	       	$foto = $_POST['foto'];
 		      $login = $_POST['login'];
-	      	$insert="INSERT INTO `tb_usuario`(`nm_usuario`, `nm_sobrenome`, `nm_foto`, `nm_login`, `nm_senha`, `id_tipo`) VALUES ('$nome','$sobrenome','$foto','$login','$senha', 1)";
+	      	$insert="INSERT INTO `tb_usuario`(`nm_usuario`, `nm_sobrenome`, `nm_foto`, `nm_login`, `nm_senha`, `id_tipo`) VALUES ('$nome','$sobrenome','$foto','$login','$senha', 2)";
 	      		if ($mysqli->query($insert)) {
 	  ?>
 	  <script type="text/javascript">

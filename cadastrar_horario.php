@@ -54,7 +54,7 @@
 		    <div class="row">
 		        <div class="col-12">
 		            <select name="coordenadores" class="form-control">';
-		           	$select="SELECT * FROM `tb_usuario` WHERE `id_tipo` = 1";
+		           	$select="SELECT * FROM `tb_usuario` WHERE `id_tipo` = 2";
 		    		if ($con=$mysqli->query($select)) {
 		    			while ($obj= $con->fetch_object()) {
 		            		echo '<option value="'.$obj->cd_usuario.'" required autofocus>'.$obj->nm_usuario.' '.$obj->nm_sobrenome.'';
