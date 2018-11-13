@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 13-Nov-2018 às 11:40
+-- Data de Criação: 13-Nov-2018 às 17:31
 -- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
@@ -60,7 +60,7 @@ INSERT INTO `tb_aluno` (`cd_aluno`, `nm_aluno`, `nr_rm`, `nm_login`, `nm_senha`,
 (14, 'FERNANDO GUSTAVO ALVES DOS SANTOS', '16084', NULL, NULL, 3),
 (15, 'GABRIEL FERREIRA DE OLIVEIRA', '16024', NULL, NULL, 3),
 (16, 'GUILHERME BALOG GARDINO', '16063', NULL, NULL, 3),
-(17, 'GUSTAVO GUIMARÃƒES CERVO', '16191', 'gustavo.cervo14@gmail.com', NULL, 3),
+(17, 'GUSTAVO GUIMARÃƒES CERVO', '16191', 'gustavo.cervo14@gmail.com', '123', 3),
 (18, 'HARISON COSTA DOS SANTOS', '16007', 'hcosta959@gmail.com', NULL, 3),
 (19, 'ISABELA PEREIRA MELIM', '16164', NULL, NULL, 3),
 (20, 'LETÍCIA VITÓRIA RODRIGUES ROSA', '16036', NULL, NULL, 3),
@@ -687,15 +687,17 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
   `id_tipo` int(11) NOT NULL,
   PRIMARY KEY (`cd_usuario`),
   KEY `id_tipo` (`id_tipo`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Extraindo dados da tabela `tb_usuario`
 --
 
 INSERT INTO `tb_usuario` (`cd_usuario`, `nm_usuario`, `nm_sobrenome`, `nm_foto`, `nm_login`, `nm_senha`, `id_tipo`) VALUES
-(1, 'Gustavo', 'Guimarães Cervo', 'foto-coordenadores/mulher.jpg', 'gustavo.cervo14@gmail.com', '123', 1),
-(2, 'Gabriel', 'Ferreira', 'foto-coordenadores/mulher', 'Gabito', '159357', 1);
+(1, 'Gustavo', 'GuimarÃ£es Cervo', 'foto-coordenadores/mulher.jpg', 'gustavo.adm@gmail.com', '123', 1),
+(2, 'Gabriel', 'Ferreira', 'foto-coordenadores/mulher', 'Gabito', '159357', 1),
+(3, 'Gustavo', 'Guimarães', 'adada', 'gustavo.coord@gmail.com', '123', 2),
+(4, 'Gustavo', 'Guimarães', 'adada', 'gustavo.prof@gmail.com', '123', 3);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
