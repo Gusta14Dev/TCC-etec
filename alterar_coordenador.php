@@ -84,7 +84,7 @@ $itens = $_GET['itens'];
              </div>
              <div class="row">
                <div class="col-12 mx-auto pt-2 text-center">
-                 <button type="submit" name="butao" class="btn btn-info corverdinha" >Cadastrar</button>
+                 <button type="submit" name="butao" class="btn btn-info corverdinha" >Alterar</button>
                </div>
              </div>
            </div>

@@ -52,12 +52,12 @@ include_once("includes/conexao.php");
 		            <input type="text" class="form-control" name="cargo" required>
 		          </div>
 		        </div>
-		        <label for="descr_cargo"><b>Descrição do Cargo:</b></label>
-		        <div class="form-row">
-		          <div class="col-12">
-		            <input type="text" class="form-control" name="descr_cargo" required>
-		          </div>
-		        </div>
+		        <label for="conteudo"><b>Descrição do Cargo:</b></label>
+                <div class="form-row">
+                  <div class="col-sm-12">
+                    <textarea rows="5" cols="50" class="form-control" name="descricao" required> </textarea>
+                  </div>
+                </div>
 		        <div class="row">
 		          <div class="col-12 mx-auto pt-2 text-center">
 		            <button type="submit" name="butao" class="btn btn-info" >Cadastrar</button>

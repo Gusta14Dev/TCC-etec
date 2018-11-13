@@ -25,14 +25,16 @@
     <style>
 
 	
-@media (min-width: 990px) {
+@media (min-width: 900px) {
   #foto_funcionario {
-    width: 30%;
+    width: 20%;
     height: auto;
     float:left;
     position:relative;
   }
 }
+
+
     </style>
 		<link rel="shortcut icon" href="imagens/icone_etec.png" >
   </head>
@@ -53,14 +55,13 @@
 		</p>
 	</div>
   <?php
-	echo '<div id="foto_funcionario"  ><img class="img-fluid"
-    src="'.$obj->nm_foto.'"></div>';
- echo '<div class="border p-5" style="color: #fff; background-color: #212529;">';
 
+  echo '<div id="foto_funcionario"  ><img class="img-fluid" src="'.$obj->nm_foto.'"></div>';
+  echo '<div class="border p-5 pb-5" style="color: #fff; background-color: #212529;">';
   echo '<div class="row"> <h1>' .$obj->nm_cargo.'</h1> ';
 
 	echo "</div>";
-  echo '<div class="row mt-5" > '.$obj->ds_cargo.'';
+  echo '<div class="row mt-5 mb-3" > '.$obj->ds_cargo.' <br><br><br><br><br><br>';
 
   echo "</div>";
 		?>
