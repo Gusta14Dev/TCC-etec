@@ -314,7 +314,7 @@ if (isset($_POST['entrar'])) {
 				$_SESSION['tipo']=$obj->id_tipo;
 				$_SESSION['email']=$obj->nm_login;
 			}
-			$_SESSION['msg-inicio']= "<div class='alert alert-success' role='alert'>Bem vindo, ".$_SESSION['nm_usuario']."!</div>";
+			$_SESSION['msg-inicio']= "<div class='alert alert-success' role='alert'>Bem vindo, ".$_SESSION['cd_usuario']."!</div>";
 			$_SESSION['inicio']= 1;
 			?>
 			<script type="text/javascript">
