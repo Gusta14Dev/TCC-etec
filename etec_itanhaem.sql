@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 08-Out-2018 às 12:22
+-- Data de Criação: 13-Nov-2018 às 11:40
 -- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
@@ -434,6 +434,7 @@ CREATE TABLE IF NOT EXISTS `tb_calendario` (
   `nm_tipo` varchar(220) NOT NULL,
   `ds_conteudo` varchar(10000) NOT NULL,
   `nm_foto` varchar(220) DEFAULT NULL,
+  `nm_cor` varchar(220) NOT NULL,
   `dt_inicio` date NOT NULL,
   `dt_fim` date NOT NULL,
   `st_ativo` tinyint(1) DEFAULT NULL,
@@ -441,7 +442,14 @@ CREATE TABLE IF NOT EXISTS `tb_calendario` (
   `id_usuario` int(11) DEFAULT NULL,
   PRIMARY KEY (`cd_calendario`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Extraindo dados da tabela `tb_calendario`
+--
+
+INSERT INTO `tb_calendario` (`cd_calendario`, `nm_tipo`, `ds_conteudo`, `nm_foto`, `nm_cor`, `dt_inicio`, `dt_fim`, `st_ativo`, `st_publico_privado`, `id_usuario`) VALUES
+(1, 'safrsfds', 'dsfsfs', 'imagens/eventos/artigo.jpg', 'verde', '2018-11-13', '2018-11-14', 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -620,14 +628,16 @@ CREATE TABLE IF NOT EXISTS `tb_tipo` (
   `cd_tipo` int(11) NOT NULL AUTO_INCREMENT,
   `nm_tipo` varchar(220) NOT NULL,
   PRIMARY KEY (`cd_tipo`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Extraindo dados da tabela `tb_tipo`
 --
 
 INSERT INTO `tb_tipo` (`cd_tipo`, `nm_tipo`) VALUES
-(1, 'adm');
+(1, 'adm'),
+(2, 'Coordenador'),
+(3, 'Professor');
 
 -- --------------------------------------------------------
 
