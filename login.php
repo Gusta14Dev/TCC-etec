@@ -321,15 +321,8 @@ if (isset($_POST['entrar'])) {
 				document.location="home.php";
 			</script>
 		    <?php
-		}else{
-		?>
-		<script type="text/javascript">
-	        alert('Email ou senha incorretos!');
-	        document.location="login.php";
-		</script>
-	    <?php
 		}
-	}else{
+	}
 		$select="SELECT * FROM `tb_aluno` WHERE `nm_login` = '$email' and `nm_senha` = '$senha' ";
 		if ($con=$mysqli->query($select)) {
 		    $row =  $con->num_rows;
@@ -342,9 +335,10 @@ if (isset($_POST['entrar'])) {
 					$_SESSION['rm']=$obj->nr_rm;
 					$_SESSION['turma']=$obj->id_turma;
 				}
+				$_SESSION['msg-inicio']= "<div class='alert alert-success' role='alert'>Bem vindo, ".$_SESSION['nm_usuario']."!</div>";
+				$_SESSION['inicio']= 1;
 		    ?>
 			<script type="text/javascript">
-				alert('Bem-vindo!');
 		        document.location="home.php";
 			</script>
 		    <?php
@@ -356,7 +350,6 @@ if (isset($_POST['entrar'])) {
 			</script>
 		    <?php
 			}
-		}
 	}
 }
 ?>
