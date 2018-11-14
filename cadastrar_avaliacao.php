@@ -20,7 +20,7 @@
 <body>
 	<!--Menu Lateral-->
   <?php
-  	include_once ("includes/menu-adm.php");
+  	include_once ("includes/menu-professor.php");
   ?>
   <div id="container-form">
    	<?php

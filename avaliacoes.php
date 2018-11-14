@@ -17,19 +17,30 @@
     <link href="css/layout_form.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fontawesome-all.css">
 	</head>
+	<style type="text/css">
+		@media (min-width: 576px){
+	.botao{
+		width: 70%;
+	}
+}
+
+.botao{
+		width: 24%;
+	}
+	</style>
 	<body>
 		<!--Menu Lateral-->
   	<?php
-  		include_once ("includes/menu-adm.php");
+  		include_once ("includes/menu-professor.php");
   	?>
 		<div id="container-form">
 			<?php
       	include_once ("includes/fundo.html");
     	?>
 			<div class="jumbotron mx-sm-auto p-5">
-	 			<div class="col-md-3 mt-2">
-	        <a href="cadastrar_avaliacao.php" class="btn btn-info pull-right h2 corverdinha">Nova Avaliação</a>
-	      </div>
+	 			<div class="col-md-3 col-12 mt-2 ml-auto pr-0">
+					<a href="cadastrar_avaliacao.php" class="btn btn-success form-control my-2 my-sm-0" style="padding:2px; margin-bottom:5px;"><i>Cadastrar Avaliação</i> <i class="fas fa-plus fa-sm"></i></a>
+		</div>
 	      <hr/>
 	      <div id="list" class="row">
 	        <div class="table-responsive col-md-12">
@@ -65,7 +76,17 @@
 	    								echo "Não há nenhum item cadastrado!";
 	    							}
 
-										$selectmodal="SELECT * FROM `tb_calendario`";
+									
+	    						?>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php
+		$selectmodal="SELECT * FROM `tb_calendario`";
 	    							if ($con=$mysqli->query($selectmodal)) {
 	    								while ($obj= $con->fetch_object()) {
 												echo '<div class="modal fade" id="delete-modal';
@@ -89,14 +110,7 @@
 												</div>';
 	        						}
 	    							}
-	    						?>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
+	    							?>
 
 	  <!-- JavaScript -->
 	  <script src="js/jquery.min.js" ></script>

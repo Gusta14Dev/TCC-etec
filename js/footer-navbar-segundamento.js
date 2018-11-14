@@ -22,5 +22,11 @@ $(function () {
   	$('#menu-dropdown2').slideToggle("fast");
   	$('#seta2').toggleClass('fa-caret-down');
   	$('#seta2').toggleClass('fa-caret-up');
-  })
+  });
+  $('#menu-dropdown3').hide();
+  $('[data-dropdawn-toggle="menu-dropdown3"]').on('click', function () {
+    $('#menu-dropdown3').slideToggle("fast");
+    $('#seta3').toggleClass('fa-caret-down');
+    $('#seta3').toggleClass('fa-caret-up');
+  });
 })
