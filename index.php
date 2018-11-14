@@ -89,7 +89,7 @@
 </head>
 <body>
   <?php
-  include_once("includes/menu.html");
+    include_once("includes/menu.html");
   ?>
   <div id="fundo"></div>
   <div class="container-fluid content-title">
@@ -119,8 +119,8 @@
     <div class="row">
       <!-- Informações do curso de informática para internet -->
       <div class="col-sm-3 mx-auto mt-sm-0 mt-1 pt-5">
-        <h4 class="text-center">INFORMÁTICA PARA INTERNET</h4>
-        <p class="text-justify">O curso de informática para internet esta disponibilizado no periodo noturno com duração de 2 anos e integrado ao ensino médio (Etim) com duração de 3 anos.</p>
+        <h4 class="text-center">DESENVOLVIMENTO DE SISTEMAS</h4>
+        <p class="text-justify">O curso de informática para internet esta disponibilizado no periodo noturno com duração de 1 ano e 6 meses e integrado ao ensino médio (Etim) com duração de 3 anos.</p>
       </div>
       <!-- Informações do curso de administração -->
       <div class="col-sm-3 mx-auto mt-sm-0 mt-1 pt-5">
@@ -141,6 +141,7 @@
         <h2 class="text-center">ULTIMAS NOTÍCIAS</h2>
       </div>
       <div class="swiper-wrapper mb-3 pt-3">
+        <!-- Imagens do slide de Notícias -->
         <div class="swiper-slide" style="background-image:url(imagens/)"></div>
         <div class="swiper-slide" style="background-image:url(imagens/)"></div>
         <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
@@ -151,9 +152,9 @@
         <div class="swiper-slide" style="background-image:url(imagens/)"></div>
         <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
       </div>
-      <!-- Add Pagination -->
+      <!-- Adicionar Paginação -->
       <div class="swiper-pagination"></div>
-      <!-- Add Arrows -->
+      <!-- Adicionar Setas -->
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
