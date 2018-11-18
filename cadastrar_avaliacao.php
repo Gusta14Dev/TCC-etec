@@ -40,58 +40,97 @@
 	              </select>
 	            </div>
 	          </div>
-	          <label for="link"><b>Conteúdo:</b></label>
-	          <div class="form-row">
-	            <div class="col-sm-11">
-	              <input type="text" class="form-control" name="conteudo" required autofocus>
-	            </div>
-	          </div>
-	          <label for="conteudo"><b>Data:</b></label>
+	         <label for="conteudo"><b>Conteúdo:</b></label>
+                <div class="form-row">
+                  <div class="col-sm-11">
+                    <textarea rows="5" cols="50" class="form-control" name="conteudo" required></textarea>
+                  </div>
+                </div>
+	          <label for="data"><b>Data:</b></label>
 	          <div class="row">
 	            <div class="col-11">
-	              <input type="date" class="form-control" name="data" required autofocus>
+	              <input type="date" class="form-control" name="data" required>
 	            </div>
 	          </div>
-	          <label for="conteudo"><b>Horário inicial:</b></label>
-	          <div class="row">
-	            <div class="col-11">
-	              <input type="time" class="form-control" name="inicio" required autofocus>
-	            </div>
-	          </div>
-	          <label for="conteudo"><b>Horário final:</b></label>
-	          <div class="row">
-	            <div class="col-11">
-	              <input type="time" class="form-control" name="fim" required autofocus>
-	            </div>
-	          </div>
+	          
+	         <?php
+echo '<label for="sala"><b>Sala:</b></label>
+		<div class="row">
+		    <div class="col-11">
+		        <select name="sala" class="form-control">';
+	$select="SELECT * FROM `tb_turma` JOIN `tb_curso` ON `id_curso` = `cd_curso` WHERE `st_ativo` = 1";
+			if ($con=$mysqli->query($select)) {
+		    	while ($obj= $con->fetch_object()) {
+		            echo '<option value="'.$obj->cd_turma.'" required>'.$obj->nr_ano.'º '.$obj->sg_curso.'';
+						}
+					}else{
+		  				echo 'Não há nenhuma sala cadastrada';
+					}
+?>
+</option>
+</select>
+</div>
+</div>
+
 	        </div>
+
 	        <div class="row">
 	          <div class="col-12 mx-auto pt-2 text-center">
-	            <button type="submit" name="butao" class="btn btn-info corverdinha">Cadastrar</button>
+	            <button type="submit" name="butao" class="btn btn-info">Cadastrar</button>
 	          </div>
 	        </div>
 	      </div>
 		</form>
 	</div>
-    <?php
-			if (isset($_POST['butao'])) {
-		    $tipo = $_POST['tipo'];
-		    $conteudo = $_POST['conteudo'];
-		    $data = str_replace("/", "-", $_POST["data"]);
-				$inicio = $_POST['inicio'].':00';
-				$fim = $_POST['fim'].':00';
-				$datainicio = date('Y-m-d', strtotime($data)).' '.$inicio;
-				$datafinal = date('Y-m-d', strtotime($data)).' '.$fim;
-				$select="INSERT INTO `tb_calendario`(`nm_tipo`, `ds_conteudo`, `dt_inicio`, `dt_fim`, `id_usuario`) VALUES ('$tipo','$conteudo','$datainicio','$datafinal', 2)";
- 					if ($mysqli->query($select)) {
-  	?>
-  	<script type="text/javascript">
+<?php
+	if (isset($_POST['butao'])) {
+	$tipo = $_POST['tipo'];
+	$conteudo = $_POST['conteudo'];
+	$datainicio = str_replace("/", "-", $_POST["data"]);
+	$usuario = $_SESSION['cd_usuario'];			
+
+	$insert="INSERT INTO `tb_calendario`(`nm_tipo`, `ds_conteudo`, `dt_inicio`, `dt_fim`, `id_usuario`) VALUES ('$tipo','$conteudo','$datainicio','$datainicio', $usuario)";
+ 					if ($mysqli->query($insert)) {
+
+
+ 		$select00 = "SELECT * FROM `tb_calendario` WHERE `nm_tipo` = '$tipo' and `ds_conteudo` = '$conteudo' and `dt_inicio` = '$datainicio' and `dt_fim` = '$datainicio' and `id_usuario` = '$usuario' ";
+ 		if ($mysqli->query($select00)) {
+ 			while ($obj= $con->fetch_object()) {
+
+ 			$sala = $_POST['sala'];
+ 			$calendario = $obj->cd_calendario;
+
+
+
+ 			$insert00 = "INSERT INTO `tb_calendario_turma`(`id_calendario`, `id_turma`) VALUES ('$calendario','$sala')";
+
+if ($mysqli->query($insert00)) {
+ 		?>
+ 		<script type="text/javascript">
       alert('Cadastrado com sucesso!');
       document.location="avaliacoes.php";
     </script>
-    <?php
+<?php
+}else{
+	?>
+ 		<script type="text/javascript">
+      alert('erro no insert00');
+    </script>
+<?php
+}
+}}else{
+	?>
+ 		<script type="text/javascript">
+      alert('erro no select00');
+    </script>
+<?php
+}
 			}else{
-				echo 'errou';
+				?>
+ 		<script type="text/javascript">
+      alert('Erro no primeiro insert!');
+    </script>
+<?php
 			}}
 		?>
 
