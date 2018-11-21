@@ -5,9 +5,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Alterar Horário dos Coordenadores</title>
+    <meta charset="utf-8">
     <!-- Ícone da pagina-->
     <link rel="shortcut icon" href="imagens/icone_etec.png" >
     <!-- CSS Bootstrap e Font Awesome-->
@@ -17,15 +16,10 @@
     <link href="css/layout_form.css" rel="stylesheet">
     <link href="css/menu-lateral.css" rel="stylesheet">
   </head>
-
   <body>
-  <?php
-  include_once("includes/menu-adm.php");
-  ?>
+  <?php include_once("includes/menu-adm.php"); ?>
     <div id="container-form">
-      <?php
-        include_once ("includes/fundo.html");
-      ?>
+      <?php include_once ("includes/fundo.html"); ?>
       <div class="jumbotron mx-auto">  
           <table class="table" cellspacing="0" cellpadding="0">
             <thead>
@@ -40,12 +34,12 @@
             <tbody>
               <tr>
               <?php
-              $select="SELECT * FROM `tb_horario_coordenador` WHERE  `id_usuario` = $itens ORDER BY FIELD(`nm_dia_semana`, 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira')";
-
+                $select="SELECT * FROM `tb_horario_coordenador` WHERE  `id_usuario` = $itens ORDER BY FIELD(`nm_dia_semana`, 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira')";
                 if ($con=$mysqli->query($select)) {
                   $row =  $con->num_rows;
                 if ($row == 0) {
-                  echo '<th class="text-center">Não há horário cadastrado!</th>';
+                  echo '<th>Não há horário cadastrado!</th>
+                        <th><a href="cadastrar_horario.php">Cadastrar Horário</a></th>';
                 }
                   while ($obj= $con->fetch_object()) {
                     echo "<td>".$obj->cd_horario_coordenador."</td>";

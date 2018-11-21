@@ -16,12 +16,6 @@
 			width:98%;
 			margin:1%;
 		}
-    @media (min-width: 576px) {
-      #calendario{
-        width:90%;
-        margin:5%;
-      }
-    }
 	</style>
     <title>Olá, Full Calendar!</title>
   </head>
@@ -34,7 +28,7 @@
     <script src="js/jquery.min.js" ></script>
     <!-- JavaScript Full Calendar -->
 	<script src="js/moment.min.js"></script>
-	<script src="js/fullcalendar.min.js"></script>
+	<script src="js/fullcalendar.js"></script>
 	<script src="js/pt-br.js"></script>
     <!-- JavaScript Bootstrap-->
     <script src="js/popper.min.js" ></script>
@@ -42,23 +36,23 @@
     <!-- Scripts personalizados -->
     <script type="text/javascript">
     $(document).ready(function() {
-    var largura = $(window).width();
-    if (largura <= 570) {
-      var tam = 450;
-    }else{
-      var tam = 675;
-    }
 	$('#calendar').fullCalendar({
 		themeSystem: 'bootstrap4',
+		themeName: 'Simplex',
 		titleFormat: 'MMMM YYYY',
-    height: tam,
-		contentHeight: tam,
+		height: 475,
+		contentHeight: 475,
 		handleWindowResize: false,
 		header: {
         left: 'title',
         center: ''
       },
       eventLimit: true,
+      views: {
+	   month : {
+      eventLimit: 2 // adjust to 6 only for agendaWeek/agendaDay
+    }
+  },
       businessHours: true, // display business hours
       editable: true,
       events: [

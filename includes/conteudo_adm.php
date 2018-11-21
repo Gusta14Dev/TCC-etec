@@ -1,24 +1,4 @@
-<?php
-	include_once("includes/conexao.php");
-	$aluno = "SELECT COUNT(`nm_aluno`) as qt_alunos FROM `tb_aluno`";
-	$professor = "SELECT COUNT(`nm_usuario`) as qt_professor FROM `tb_usuario` WHERE `id_tipo` = 3";
-	$coordenador = "SELECT COUNT(`nm_usuario`) as qt_coordenador FROM `tb_usuario` WHERE `id_tipo` = 2";
-	$funcionario = "SELECT COUNT(`nm_funcionario`) as qt_funcionario FROM `tb_funcionario`";
-?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>ALunossssss</title>
-	<link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
-	<link rel="stylesheet" type="text/css" href="css/painel.css">
-	<style type="text/css">
-		
-	</style>
-</head>
-<body>
-	<div class="container-user">
+<div class="container-user">
 		<div class="user" style="background: #007bff">
 			<?php
 				if ($select = $mysqli->query($aluno)) {
@@ -77,5 +57,3 @@
 			?>
 		</div>
 	</div>
-</body>
-</html>

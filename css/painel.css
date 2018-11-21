@@ -1,0 +1,54 @@
+		.container-user{
+			width: 90%;
+			padding: 0;
+			margin: auto;
+			margin-top: 20px;
+		}
+		.user{
+			display: inline-block;
+			width: 50%;
+			height: 150px;
+			margin: -2px;
+			text-align: center;
+			color: #fff;
+			font-weight: bold;
+			font-size: 1.3em;
+		}
+		.title{
+			padding: 0;
+			margin: 0;
+		}
+
+		.number{
+			padding: 30px;
+			margin: 0;
+			font-size: 2em;
+		}
+
+		@media only screen and (min-width: 600px) {
+    		.container-user{
+				width: 80%;
+			}
+			.user{
+				width: 25%;
+			}
+		}
+		#alert{
+            position: fixed;
+            width: 50%;
+            z-index: 100000;
+            top: -10%;
+            left: 50%;
+            right: 50%;
+            opacity: 0;
+            transform: translate(-50%, 0);
+            animation-name: alert;
+            animation-duration: 4s;
+        }
+        @keyframes alert {
+            0%{top: -10%;}
+            10%{opacity: 1;}
+            50%{top: 5%;}
+            90%{top: -10%;}
+            100%{opacity: 1;}
+        }

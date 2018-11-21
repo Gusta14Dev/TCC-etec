@@ -9,6 +9,10 @@ if(!isset($_SESSION['nm_usuario'])){
     </script>
     <?php
 }
+    $aluno = "SELECT COUNT(`nm_aluno`) as qt_alunos FROM `tb_aluno`";
+    $professor = "SELECT COUNT(`nm_usuario`) as qt_professor FROM `tb_usuario` WHERE `id_tipo` = 3";
+    $coordenador = "SELECT COUNT(`nm_usuario`) as qt_coordenador FROM `tb_usuario` WHERE `id_tipo` = 2";
+    $funcionario = "SELECT COUNT(`nm_funcionario`) as qt_funcionario FROM `tb_funcionario`";
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -17,28 +21,6 @@ if(!isset($_SESSION['nm_usuario'])){
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home</title>
 
-    <style type="text/css">
-        #alert{
-            position: fixed;
-            width: 50%;
-            z-index: 100000;
-            top: -10%;
-            left: 50%;
-            right: 50%;
-            opacity: 0;
-            transform: translate(-50%, 0);
-            animation-name: alert;
-            animation-duration: 4s;
-        }
-        @keyframes alert {
-            0%{top: -10%;}
-            10%{opacity: 1;}
-            50%{top: 5%;}
-            90%{top: -10%;}
-            100%{opacity: 1;}
-        }
-    </style>
-
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
@@ -46,8 +28,9 @@ if(!isset($_SESSION['nm_usuario'])){
     <!-- Menu Lateral e Jumbotron CSS -->
     <link href="css/menu-lateral.css" rel="stylesheet">
     <link href="css/layout_form.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/painel.css">
+    
   </head>
-  <body>
     <!--Menu Lateral-->
     <?php
       include_once ("includes/menu-adm.php");
@@ -56,9 +39,13 @@ if(!isset($_SESSION['nm_usuario'])){
         unset($_SESSION['inicio']);
       }
     ?>
+  <body style="margin-top: 48px;">
     <!--Layout do Fundo-->
     <div id="container-form">
     </div>
+    <?php
+        include_once("includes/conteudo_adm.php");
+    ?>
 
     <!-- Bootstrap e JavaScript-->
     <script src="js/jquery.min.js"></script>
