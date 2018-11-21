@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 13-Nov-2018 às 17:31
+-- Data de Criação: 21-Nov-2018 às 17:31
 -- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
@@ -435,8 +435,8 @@ CREATE TABLE IF NOT EXISTS `tb_calendario` (
   `ds_conteudo` varchar(10000) NOT NULL,
   `nm_foto` varchar(220) DEFAULT NULL,
   `nm_cor` varchar(220) NOT NULL,
-  `dt_inicio` date NOT NULL,
-  `dt_fim` date NOT NULL,
+  `dt_inicio` datetime NOT NULL,
+  `dt_fim` datetime NOT NULL,
   `st_ativo` tinyint(1) DEFAULT NULL,
   `st_publico_privado` tinyint(1) DEFAULT NULL,
   `id_usuario` int(11) DEFAULT NULL,
@@ -449,7 +449,7 @@ CREATE TABLE IF NOT EXISTS `tb_calendario` (
 --
 
 INSERT INTO `tb_calendario` (`cd_calendario`, `nm_tipo`, `ds_conteudo`, `nm_foto`, `nm_cor`, `dt_inicio`, `dt_fim`, `st_ativo`, `st_publico_privado`, `id_usuario`) VALUES
-(1, 'safrsfds', 'dsfsfs', 'imagens/eventos/artigo.jpg', 'verde', '2018-11-13', '2018-11-14', 1, 1, 1);
+(1, 'safrsfds', 'dsfsfs', 'imagens/eventos/artigo.jpg', 'verde', '2018-11-13 00:00:00', '2018-11-14 00:00:00', 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -543,7 +543,14 @@ CREATE TABLE IF NOT EXISTS `tb_funcionario` (
   `id_usuario` int(11) NOT NULL,
   PRIMARY KEY (`cd_funcionario`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Extraindo dados da tabela `tb_funcionario`
+--
+
+INSERT INTO `tb_funcionario` (`cd_funcionario`, `nm_funcionario`, `nm_sobrenome`, `nm_foto`, `nm_cargo`, `ds_cargo`, `id_usuario`) VALUES
+(1, 'gdggd', 'dggsd', 'dgsgsgsgsg', 'sgsg', 'sgsg', 1);
 
 -- --------------------------------------------------------
 
@@ -559,7 +566,7 @@ CREATE TABLE IF NOT EXISTS `tb_horario_coordenador` (
   `id_usuario` int(11) DEFAULT NULL,
   PRIMARY KEY (`cd_horario_coordenador`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
 
 --
 -- Extraindo dados da tabela `tb_horario_coordenador`
@@ -573,7 +580,8 @@ INSERT INTO `tb_horario_coordenador` (`cd_horario_coordenador`, `hr_entrada`, `h
 (12, '14:30:00', '18:30:00', 'Sexta-feira', 1),
 (11, '14:00:00', '17:00:00', 'Quinta-feira', 1),
 (13, '20:30:00', '21:30:00', 'Sexta-feira', 1),
-(16, '16:01:00', '22:00:00', 'Segunda-feira', 1);
+(16, '16:01:00', '22:00:00', 'Segunda-feira', 1),
+(17, '12:00:00', '14:00:00', 'Quinta-feira', 3);
 
 -- --------------------------------------------------------
 
@@ -687,7 +695,7 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
   `id_tipo` int(11) NOT NULL,
   PRIMARY KEY (`cd_usuario`),
   KEY `id_tipo` (`id_tipo`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- Extraindo dados da tabela `tb_usuario`
@@ -696,8 +704,9 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
 INSERT INTO `tb_usuario` (`cd_usuario`, `nm_usuario`, `nm_sobrenome`, `nm_foto`, `nm_login`, `nm_senha`, `id_tipo`) VALUES
 (1, 'Gustavo', 'GuimarÃ£es Cervo', 'foto-coordenadores/mulher.jpg', 'gustavo.adm@gmail.com', '123', 1),
 (2, 'Gabriel', 'Ferreira', 'foto-coordenadores/mulher', 'Gabito', '159357', 1),
-(3, 'Gustavo', 'Guimarães', 'adada', 'gustavo.coord@gmail.com', '123', 2),
-(4, 'Gustavo', 'Guimarães', 'adada', 'gustavo.prof@gmail.com', '123', 3);
+(3, 'Gustavo', 'Guimaraes', 'sflasf', 'gustavo.coord@gmail.com', '123', 2),
+(4, 'Gustavo', 'Guimarães', 'adada', 'gustavo.prof@gmail.com', '123', 3),
+(6, 'gfrytdty', 'ytrt7', 'foto-coordenadores/tfrtrt', 'tfrtr@rsr', '123', 2);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
