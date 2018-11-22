@@ -54,15 +54,15 @@
 	          </div>
 	          
 	         <?php
-echo '<label for="sala"><b>Sala:</b></label>
-		<div class="row">
-		    <div class="col-11">
-		        <select name="sala" class="form-control">';
-	$select="SELECT * FROM `tb_turma` JOIN `tb_curso` ON `id_curso` = `cd_curso` WHERE `st_ativo` = 1";
-			if ($con=$mysqli->query($select)) {
-		    	while ($obj= $con->fetch_object()) {
-		            echo '<option value="'.$obj->cd_turma.'" required>'.$obj->nr_ano.'º '.$obj->sg_curso.'';
-						}
+						echo '<label for="sala"><b>Sala:</b></label>
+										<div class="row">
+		    							<div class="col-11">
+		        						<select name="sala" class="form-control">';
+													$select="SELECT * FROM `tb_turma` JOIN `tb_curso` ON `id_curso` = `cd_curso` WHERE `st_ativo` = 1";
+													if ($con=$mysqli->query($select)) {
+		    										while ($obj= $con->fetch_object()) {
+		            							echo '<option value="'.$obj->cd_turma.'" required>'.$obj->nr_ano.'º '.$obj->sg_curso.'';
+														}
 					}else{
 		  				echo 'Não há nenhuma sala cadastrada';
 					}

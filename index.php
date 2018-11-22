@@ -10,82 +10,9 @@
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/info.css">
   <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/index.css">
   <!--Icone do site-->
   <link rel="shortcut icon" href="imagens/icone_etec.png">
-
-  <style>
-    #video{
-      width:100%;
-      height:300px;
-      background-color:#343a40;
-    }
-    #noticia{
-      width:85%;
-      height:auto;
-    }
-    #noticia-title{
-      width:90%;
-      border-top:2px solid #004000;
-    }
-    #colaborador{
-
-    }
-    #curso{
-      width:85%;
-      height:auto;
-      z-index:-1;
-    }
-    .image-curso{
-      width:100%;
-      height:auto;
-    }
-    #fundo{
-      position:relative;
-      min-height: 80vh;
-      background-size:cover;
-      background-attachment: fixed;
-      background-image: url(imagens/etec-itanhaem.jpg);
-      background-position: center center;
-    }
-    #fundo::after{
-      content:'';
-      position:absolute;
-      top:0;
-      right:0;
-      bottom:0;
-      left:0;
-      background-color: rgba(0,0,0,0.8);
-      min-height: 80vh;
-    }
-    
-    .content-title{
-      width:90%;
-      height:100px;
-      padding-top:30px;
-      color:#000;
-      border-bottom:2px solid #004000;
-    }
-    .swiper-container {
-      width: 100%;
-      padding-top: 0px;
-      padding-bottom: 25px;
-      background-color: #fff;
-      margin-top:50px;
-    }
-    .swiper-container h1{
-    	padding:0;
-    	padding-left:20px;
-    	font-family: sans-serif;
-    	font-size: 1.5em;
-    	color:#323232;
-    }
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 250px;
-      height: 350px;
-    }
-  </style>
 </head>
 <body>
   <?php
@@ -142,11 +69,11 @@
       </div>
       <div class="swiper-wrapper mb-3 pt-3">
         <!-- Imagens do slide de Notícias -->
-        <div class="swiper-slide" style="background-image:url(imagens/)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/)"></div>
         <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/Alunos_Etec.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/Alunos_Etec.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
         <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
         <div class="swiper-slide" style="background-image:url(imagens/)"></div>
         <div class="swiper-slide" style="background-image:url(imagens/)"></div>
