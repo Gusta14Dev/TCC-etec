@@ -1,14 +1,18 @@
     html {
       position: relative;
     }
+
+    html,
+    body {
+      overflow-x: hidden; /* Prevent scroll on narrow devices */
+    }
+
     body {
       /* Margin do footer */
       margin-bottom: 270px;
-      
     }
-    footer{
-      padding:0;
-    }
+
+    /*Css do scrool da pagina*/
     ::-webkit-scrollbar {
       width: 10px;
       height: 10px;
@@ -31,102 +35,32 @@
       background-color: #666;
       -webkit-border-radius: 3px;
     }
+    /*Css do footer*/
     .footer {
       position: absolute;
       bottom: 0;
       width: 100%;
-      /* Set the fixed height of the footer here */
+      /* Tamanho do footer*/
       height: 270px;
       background-color: #3C3D3F;
       padding:0;
     }
-    .nav-header{
-      position:relative;
-      width: 90%;
-      height:40px;
-      margin: 0 auto;
+    footer{
+      padding:0;
     }
-    .nav-header::after{
-      content:'';
-      width: 100%;
-      height:2px;
-      background-color: #ccc;
-      opacity:0.95;
-      bottom:0;
-      position:absolute;
-    }
-    .nav-body{
-      position:relative;
-      width: 90%;
-      height:120px;
-      margin: 0 auto;
-    }
-    .nav-body::after{
-      content:'';
-      width: 100%;
-      height:2px;
-      background-color: #ccc;
-      opacity:0.95;
-      bottom:0;
-      position:absolute;
-    }
-    .nav-footer{
-      width: 100%;
-      height:40px;
-      text-align:center;
-      line-height: 40px;
-    }
-    .navbar-header{
-      width: 100%;
-      padding-left:5px;
-    }
-    .navbar-body{
-      width: 100%;
-      display: inline-block;
-    }
-    .menu{
-      margin-bottom: 0;
-      padding: 0px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .menu-item{
-      display: inline-block;
-      margin: 0;
-      padding: 10px;
-    }
-    .menu-item:hover{
-      border-bottom: green 1px solid;
-    }
-    .menu-link{
-      padding: 0;
-      color: #fff;
-      text-decoration: none;
-    }
-    .active{
-      font-weight: bold;
-      border-bottom: green 1px solid;
-    }
-    .menu-link:hover{
-      text-decoration: none;
-      color: #fff;
-    }
-    .bg-green{
-      background-color: #004000;
-    }
-    .form-right{
-      float: right;
-    }
-    .f-nav{ z-index: 9999; position: fixed; left: 0; top: 0; width: 100%;}
+    /*Aqui começa a div em cima do menu*/
+
+    /*Css da div que engloba o login, o endereço e a area de redes sociais*/
     .login{
       width: 100%;
       height: 40px;
       background-color: #f5f5f5;
     }
+    /*Css do botão de login*/
     #logar{
       float: right;
       height: 40px; 
-      width: 100px;
+      min-width: 10%;
       padding: 5px;
       border-left: 1px solid #1e7e34;
       font-size: 1.1em;
@@ -139,7 +73,9 @@
       color: #000 !important;
       text-decoration: none;
     }
+    /*Div das redes sociais*/
     #redes-sociais{
+      min-width: 7%;
       float: left;
       padding-left: 5px;
     }
@@ -152,12 +88,224 @@
       font-size: 1.7em;
       margin-left: 10px;
     }
+    /*Div do endereço*/
     #endereco{
-      width: 85%;
-      height: auto;
-      margin-left: 1%;
-      padding-top: 5px;
+      width: 83%;
+      height: 40px;
+      line-height: 40px;
       font-size: 1em;
       text-align: center;
       color: #343a40 !important;
+    }
+
+    /*Aqui começa o menu lateral do index */
+
+    /* A cor do menu */
+    .bg-green{
+      background-color: #004000;
+    }
+    /* Resetando o css de todas as linhas*/
+    ul{
+      list-style: none;
+    }
+    /* CSS de cada item do menu */
+    .menu-item{
+      display: inline-block;
+      margin: 0;
+      padding: 14px 5px;
+      height:auto;
+      width: auto;
+      cursor: pointer;
+      color:#f8f9fa !important;
+    }
+    /* Classe para a pagina que estiber ativa */
+    .active{
+      font-weight: bold;
+      border-bottom: green 3px solid;
+    }
+    /*Tamanho do menu fixo*/
+    .menu{
+      height: 56px;
+      margin-top: 0;
+    }
+    .fixed{
+      position: fixed;
+    }
+    .fixed-top2{
+      position: fixed;
+      top: 96px;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+    /*Paddind com cerca de 2.5 do bootstrap*/
+    .p-25{
+      padding: 0.8rem !important;
+    }
+    /* Div onde ficam os itens do menu*/
+    .navbar-collapse{
+      padding: 0;
+      color: #f8f9fa;
+    }
+    /*Css do Nome da instituição no menu*/
+    .navbar-brand{
+      font-size: 1.4em;
+      padding: 0.7rem;
+    }
+    /*Resetando o Css dos links da pagina*/
+    a , .menu-link{
+      padding: 0;
+      margin: 0;
+    }
+    /*Hover de cada item do menu*/
+    .menu-item:hover{
+      border-bottom: 1px green solid;
+    }
+    /*Css dos links do menu*/
+    .menu-link{
+      text-decoration:none;
+      list-style:none;
+      color:#f8f9fa !important;
+    }
+    /*Css dos itens que estão em dropdawn*/
+    .menu-dropdown-item{
+      width:100%;
+      height:auto;
+      padding:10px 5px;
+      border-bottom: solid 1px #f8f9fa;
+    }
+    /*Css dos links dos itens que estão em dropdawn*/
+    .menu-dropdown-link{
+      width:100% !important;
+      height:auto;
+      display:block;
+      text-decoration:none;
+      list-style:none;
+      color:#f5f5f5 !important ;
+    }
+    /*Resetando o hover dos links*/
+    a:hover{
+      text-decoration: none;
+    }
+    /*Corpo do itens que vão ser dropdawn*/
+    .menu-dropdown-body{
+      position: absolute;
+      display: none;
+      min-width: 200px;
+      top: 56px;
+      padding: 0;
+    }
+    /*Efeito dropdawn*/
+    li:hover ul{
+      display: block;
+    }
+    /*Css dos textos que ficam dentro dos itens do menu*/
+    span{
+      padding-left: 0; 
+    }
+    /*Css da div que fecha o menu lateral*/
+    .fechar-menu-lateral {
+      position: fixed;
+      top: 56px;
+      right: 100%;
+      bottom: 0;
+      left: 0;
+      z-index: 1010;
+      background-color: #000;
+      opacity: 0.5;
+    }
+    /*Classe que faz a transição da div de fechar o menu*/
+    .fechar-menu-lateral.open {
+      right: 0;
+    }
+    /*Media query para trablets*/
+    @media (max-width: 991.9px) {
+      /*Parte do menu*/
+      .active{
+        border-bottom: none;
+      }
+      .navbar-collapse{
+        position: fixed;
+        padding: 0;
+        background-color: #f8f9fa;  
+        width: 60%;
+        border-left: solid 1px #343a40;
+      }
+      .menu-link{
+        color:#343a40 !important ;
+      }
+      .menu-item{
+        width: 100%;
+        padding: 15px 0;
+        background-color: #f8f9fa;
+        border-bottom: solid 1px #343a40;
+        color:#343a40 !important; 
+      }
+      .dropdawn{
+        padding: 15px 0;
+        padding-bottom: none;
+        background-color: #f8f9fa;
+        color: #343a40 !important;
+        border-bottom: solid 1px #343a40;
+      }
+      .menu-dropdown-body{
+        position: relative;
+        width: 100%;
+        top: 15px;
+      }
+      .menu-item:hover{
+        background-color:#e5e5e5;
+      }
+      span{
+        padding-left: 30px; 
+      }
+      .float-right{
+        float: right;
+      }
+      /*Parte do menu enconder e recolher*/
+      .offcanvas-collapse {
+        position: fixed;
+        top: 56px; /* Height of navbar */
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        z-index: 2000;
+        transition-timing-function: ease-in-out;
+        transition-duration: .3s;
+        transition-property: left, visibility;
+      }
+      .offcanvas-collapse.open {
+        left: 40%;
+        visibility: visible;
+      }
+      /*Parte da div com endereço e redes sociais*/
+      #logar{
+        display: none;
+      }
+      #redes-sociais{
+        width: 22%;      
+      }
+      #endereco{
+        width: 78%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1em;
+        text-align: center;
+        color: #343a40 !important;
+      }
+    }
+    /*Media query para celulares*/
+    @media (max-width: 576px){
+      /*Parte do menu*/
+      .navbar-collapse{
+        width: 80%;
+      }
+      .offcanvas-collapse.open {
+        left: 20%;
+        visibility: visible;
+      }
     }
