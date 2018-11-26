@@ -65,22 +65,17 @@
   width: 250px;
   height: 350px;
 }
-@media (min-width: 575.95px) {
 
+/*Media query para trablets*/
+@media (max-width: 991.9px) {
+  #curso{
+    width:85%;
+    height:auto;
+    z-index:-1;
+  }
 }
 
-@media (min-width: 575.95px) {
-  
-}
+/*Media query para celulares*/
+@media (max-width: 576px){
 
-@media (min-width: 575.95px) {
-  
-}
-
-@media (min-width: 575.95px) {
-  
-}
-
-@media (min-width: 575.95px) {
-  
 }

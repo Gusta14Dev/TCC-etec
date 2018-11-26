@@ -26,7 +26,7 @@
    	<?php
       include_once ("includes/fundo.html");
     ?>
-    <form method="post">
+    	<form method="post">
 	      <div class="jumbotron mx-sm-auto">
 	        <div class="form-group mt-5 ml-5">
 	          <label for="artigo"><b>Tipo da Avaliação:</b></label>
@@ -40,61 +40,54 @@
 	              </select>
 	            </div>
 	          </div>
-	         <label for="conteudo"><b>Conteúdo:</b></label>
-                <div class="form-row">
-                  <div class="col-sm-11">
-                    <textarea rows="5" cols="50" class="form-control" name="conteudo" required></textarea>
-                  </div>
+	         	<label for="conteudo"><b>Conteúdo:</b></label>
+              <div class="form-row">
+                <div class="col-sm-11">
+                  <textarea rows="5" cols="50" class="form-control" name="conteudo" required></textarea>
                 </div>
+              </div>
 	          <label for="data"><b>Data:</b></label>
 	          <div class="row">
 	            <div class="col-11">
 	              <input type="date" class="form-control" name="data" required>
 	            </div>
 	          </div>
-	          
-	         <?php
-						echo '<label for="sala"><b>Sala:</b></label>
-										<div class="row">
-		    							<div class="col-11">
-		        						<select name="sala" class="form-control">';
-													$select="SELECT * FROM `tb_turma` JOIN `tb_curso` ON `id_curso` = `cd_curso` WHERE `st_ativo` = 1";
-													if ($con=$mysqli->query($select)) {
-		    										while ($obj= $con->fetch_object()) {
-		            							echo '<option value="'.$obj->cd_turma.'" required>'.$obj->nr_ano.'º '.$obj->sg_curso.'';
-														}
-					}else{
-		  				echo 'Não há nenhuma sala cadastrada';
-					}
-?>
-</option>
-</select>
-</div>
-</div>
-
-	        </div>
-
-	        <div class="row">
-	          <div class="col-12 mx-auto pt-2 text-center">
-	            <button type="submit" name="butao" class="btn btn-info">Cadastrar</button>
-	          </div>
-	        </div>
+	          <label for="sala"><b>Sala:</b></label>
+	          <div class="row">
+	          	<div class="col-11">
+	          		<select name="sala" class="form-control">
+	         	<?php				
+							$select="SELECT * FROM `tb_turma` JOIN `tb_curso` ON `id_curso` = `cd_curso` WHERE `st_ativo` = 1";
+							if ($con=$mysqli->query($select)) {
+		   					while ($obj= $con->fetch_object()) {
+		 							echo '<option value="'.$obj->cd_turma.'" required>'.$obj->nr_ano.'º '.$obj->sg_curso.'</option>';
+								}
+							}else{
+		  					echo '<option>Não há nenhuma sala cadastrada</option>';
+							}
+						?>	
+								</select>
+							</div>
+						</div>
+	        	<div class="row">
+	          	<div class="col-12 mx-auto pt-2 text-center">
+	            	<button type="submit" name="butao" class="btn btn-info">Cadastrar</button>
+	          	</div>
+	        	</div>
+	      	</div>
 	      </div>
-		</form>
-	</div>
-<?php
-	if (isset($_POST['butao'])) {
-	$tipo = $_POST['tipo'];
-	$conteudo = $_POST['conteudo'];
-	$datainicio = str_replace("/", "-", $_POST["data"]);
-	$usuario = $_SESSION['cd_usuario'];			
-
-	$insert="INSERT INTO `tb_calendario`(`nm_tipo`, `ds_conteudo`, `dt_inicio`, `dt_fim`, `id_usuario`) VALUES ('$tipo','$conteudo','$datainicio','$datainicio', $usuario)";
+			</form>
+		</div>
+			<?php
+				if (isset($_POST['butao'])) {
+					$tipo = $_POST['tipo'];
+					$conteudo = $_POST['conteudo'];
+					$datainicio = str_replace("/", "-", $_POST["data"]);
+					$usuario = $_SESSION['cd_usuario'];			
+					$insert="INSERT INTO `tb_calendario`(`nm_tipo`, `ds_conteudo`, `dt_inicio`, `dt_fim`, `id_usuario`) VALUES ('$tipo','$conteudo','$datainicio','$datainicio', $usuario)";
  					if ($mysqli->query($insert)) {
-
-
- 		$select00 = "SELECT * FROM `tb_calendario` WHERE `nm_tipo` = '$tipo' and `ds_conteudo` = '$conteudo' and `dt_inicio` = '$datainicio' and `dt_fim` = '$datainicio' and `id_usuario` = '$usuario' ";
- 		if ($mysqli->query($select00)) {
+ 						$select00 = "SELECT * FROM `tb_calendario` WHERE `nm_tipo` = '$tipo' and `ds_conteudo` = '$conteudo' and `dt_inicio` = '$datainicio' and `dt_fim` = '$datainicio' and `id_usuario` = '$usuario' ";
+ 		if ($con = $mysqli->query($select00)) {
  			while ($obj= $con->fetch_object()) {
 
  			$sala = $_POST['sala'];
