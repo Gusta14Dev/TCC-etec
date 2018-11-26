@@ -243,9 +243,9 @@ include_once("includes/conexao.php");
       <a class="menu-link" href="#">
        <li class="menu-item">
          <span>Coordenação</span>
+       </li>
       </a>
       <a class="menu-link" href="#">
-       </li>
        <li class="menu-item">
          <span>Direção</span>
        </li>
@@ -260,7 +260,7 @@ include_once("includes/conexao.php");
         <span>TCC</span>
         </li>
       </a>
-      <li id="login"></li>
+      <a href="login.php" id="login"></a>
     </ul>
   </div>
 </nav>

@@ -30,8 +30,8 @@ $(function () {
         $('#menu-dropdown1').slideToggle("fast");
         $('#seta1').toggleClass('fa-caret-down');
         $('#seta1').toggleClass('fa-caret-up');
-        $('#login').addClass('menu-item');
-        $('#login').html('<a class="menu-link" href="#">Login</a>')
+        $('#login').addClass('menu-link');
+        $('#login').html('<li class="menu-item"> <span>Login</span> </li>')
       });
     };
 })
