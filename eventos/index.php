@@ -1,5 +1,5 @@
 ﻿<?php
-include_once("../includes/conexao.php");
+include_once("conexao.php");
 $result_events = "SELECT * FROM tb_evento";
 $resultado_events = $mysqli->query($result_events);
 ?>
@@ -9,7 +9,7 @@ $resultado_events = $mysqli->query($result_events);
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- CSS -->
-		<link rel="stylesheet" href="../css/bootstrap.css" >
+		<link rel="stylesheet" href="../css/bootstrap.min.css" >
 		<link rel="stylesheet" href="../css/fontawesome-all.css" >
 		<link href='../css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
     	<link rel="stylesheet" href="../css/fullcalendar.min.css" >
@@ -90,7 +90,7 @@ $resultado_events = $mysqli->query($result_events);
 							<dd id="id"></dd>
 							<dt>Titulo do Evento</dt>
 							<dd id="title"></dd>
-							<dt>Foto do Evento</dt>
+							<dt>Banner do Evento</dt>
 							<dd id="image"></dd>
 							<dt>Inicio do Evento</dt>
 							<dd id="start"></dd>

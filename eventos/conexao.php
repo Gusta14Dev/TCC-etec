@@ -3,7 +3,7 @@ session_start();
 $servidor = 'localhost';
 $usuario = 'root';
 $senha = 'usbw';
-$banco = 'celke';
+$banco = 'db_etec_itanhaem';
 $mysqli = new mysqli($servidor, $usuario, $senha, $banco);
 
 	if ($mysqli->connect_error) {
