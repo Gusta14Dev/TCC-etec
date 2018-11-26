@@ -65,10 +65,12 @@
 				echo $obj->ds_conteudo;
 		  ?>
       <br>
+      <center>
       <?php
-      echo '<input type="BUTTON" class="btn btn-secondary btn-xs botao" value="voltar">';
+      echo '<button value="voltar" class="mr-5 btn btn-secondary btn-xs botao" onClick="goBack()"><i class="fas fa-chevron-left"></i></button>';
       echo '<a href="alterar_artigo.php?edit=0&itens='.$obj->cd_artigo.'" TYPE="BUTTON" NAME="submit" class="btn btn-warning btn-xs botao">Editar</a>';
       ?>
+    </center>
     </p>
 	</div>
 	<?php
@@ -76,6 +78,13 @@
 	?>
 </div>
 
+<script>
+
+function goBack() {
+  window.history.back();
+}
+
+ </script> 
 
 
     <!-- JavaScript -->
