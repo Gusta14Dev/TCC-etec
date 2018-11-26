@@ -57,17 +57,26 @@
   <img class="img-fluid" src="'.$obj->nm_foto.'"></div></div>';
 ?>
 
+
+
 	<div class="ml-5 mr-5 mb-3" align="justify">
     <p>
 		  <?php
 				echo $obj->ds_conteudo;
 		  ?>
+      <br>
+      <?php
+      echo '<input type="BUTTON" class="btn btn-secondary btn-xs botao" value="voltar">';
+      echo '<a href="alterar_artigo.php?edit=0&itens='.$obj->cd_artigo.'" TYPE="BUTTON" NAME="submit" class="btn btn-warning btn-xs botao">Editar</a>';
+      ?>
     </p>
 	</div>
 	<?php
 	}
 	?>
 </div>
+
+
 
     <!-- JavaScript -->
     <script src="js/jquery.min.js" ></script>
