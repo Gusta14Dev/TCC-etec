@@ -16,12 +16,10 @@ $(function () {
     var loading = 1;
     $('.offcanvas-collapse').toggleClass('open');
     $('.fechar-menu-lateral').toggleClass('open');
-    $(".menu").addClass('fixed-top');
   });
   $('.fechar-menu-lateral').on('click', function () {
     $('.offcanvas-collapse').toggleClass('open');
     $('.fechar-menu-lateral').toggleClass('open');
-    $(".menu").removeClass('fixed-top');
   });
     var largura = $(document).width();
     if (largura <= 991.9) {
