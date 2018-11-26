@@ -33,7 +33,15 @@ if(!isset($_SESSION['nm_usuario'])){
   </head>
     <!--Menu Lateral-->
     <?php
-      include_once ("includes/menu-adm.php");
+      if ($_SESSION['tipo'] == 1) {
+        include_once ("includes/menu-adm.php");
+      }else if ($_SESSION['tipo'] == 2) {
+        include_once ("includes/menu-.php");
+      }else if ($_SESSION['tipo'] == 3) {
+        include_once ("includes/menu-professor.php");
+      }else if ($_SESSION['tipo'] == 4) {
+        include_once ("includes/menu-aluno.php");
+      }
       if (isset($_SESSION['inicio'])) {
         echo "<div id='alert'>".$_SESSION['msg-inicio']."</div>";
         unset($_SESSION['inicio']);
@@ -44,7 +52,16 @@ if(!isset($_SESSION['nm_usuario'])){
     <div id="container-form">
     </div>
     <?php
+        if ($_SESSION['tipo'] == 1) {
         include_once("includes/conteudo_adm.php");
+      }else if ($_SESSION['tipo'] == 2) {
+        
+      }else if ($_SESSION['tipo'] == 3) {
+        
+      }else if ($_SESSION['tipo'] == 4) {
+        
+      }
+        
     ?>
 
     <!-- Bootstrap e JavaScript-->
