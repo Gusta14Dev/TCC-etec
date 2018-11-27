@@ -27,16 +27,9 @@
 				<a class="menu-link ml-4" href="home.php"><i class="fas fa-home fa-lg mr-3"></i>Home</a>
 			</li>
 			<li class="menu-item" data-dropdawn-toggle="menu-dropdown1">
-				<a class="menu-link ml-4 " href="#"><i class="far fa-calendar-alt fa-lg mr-3"></i>Eventos<i class="fas fa-caret-down ml-2" id="seta1"></i> </a>
+				<a class="menu-link ml-4 " href="eventos/"><i class="far fa-calendar-alt fa-lg mr-3"></i>Eventos</i> </a>
 			</li>
-			<ul class="menu-dropdown-body bg-dark" id="menu-dropdown1" >
-				<li class="menu-dropdown-item">
-					<a class="menu-dropdown-link" href="evento-publico.php"><i class="fas fa-caret-right ml-5 mr-2"></i>Eventos públicos</a>
-				</li>
-				<li class="menu-dropdown-item">
-					<a class="menu-dropdown-link" href="evento-privado.php"><i class="fas fa-caret-right ml-5 mr-2"></i>Eventos privados</a>
-				</li>
-			</ul>
+
 			<li class="menu-item" data-dropdawn-toggle="menu-dropdown2">
 				<a class="menu-link ml-4" href="#"><i class="far fa-newspaper fa-lg mr-3"></i>Artigos<i class="fas fa-caret-down ml-2" id="seta2"></i></a>
 			</li>

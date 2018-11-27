@@ -18,6 +18,7 @@
 	$query="INSERT INTO `tb_calendario`(`nm_foto`, `nm_evento`, `ds_conteudo`, `nm_cor`, `dt_inicio`, `dt_fim`, `st_ativo`, `st_publico_privado`, `id_usuario`) VALUES ('imagens/eventos/$foto_evento', '$nome','$ds_descricao', '$cor','$timeset_inicio','$timeset_fim',1,$st_publico_privado, $usuario)";
 	if ($mysqli->query($query)) {
 		echo 'Certo';
+		header('location:index.php');
 	}else{
 		die("Connection failed: " . $mysqli->error);
 	}

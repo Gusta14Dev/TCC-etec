@@ -1,9 +1,33 @@
 ﻿<?php
 	date_default_timezone_set('UTC');
 	include_once("conexao.php");
-	$evento = $_GET['editar'];
-	$result_events = "SELECT * FROM tb_calendario WHERE cd_calendario = ".$evento;
-	$resultado = $mysqli->query($result_events);
+	if (isset($_GET['editar'])) {
+		$evento = $_GET['editar'];
+		$result_events = "SELECT * FROM tb_calendario WHERE cd_calendario = ".$evento;
+		$resultado = $mysqli->query($result_events);
+	}
+	if (isset($_POST['butao'])) {
+		$evento = $_POST['evento'];
+		$nome = $_POST['nome'];
+		$ds_descricao = $_POST['ds_descricao'];
+		$cor = $_POST['cor'];
+		$dt_inicio = $_POST['dt_inicio'];
+		$tm_inicio = $_POST['tm_inicio'];
+		$dt_fim = $_POST['dt_fim'];
+		$tm_fim = $_POST['tm_fim'];
+		$st_publico_privado = $_POST['st_publico_privado'];
+		$usuario = $_SESSION['cd_usuario'];
+
+		$timeset_inicio = $dt_inicio.' '.$tm_inicio.':00';
+		$timeset_fim = $dt_fim.' '.$tm_fim.':00';
+
+		$query="UPDATE `tb_calendario` SET `nm_evento`= '$nome',`ds_conteudo`= '$ds_descricao',`nm_cor`= '$cor',`dt_inicio`= '$timeset_inicio' ,`dt_fim`= '$timeset_fim ' ,`st_ativo`= 1 ,`st_publico_privado`= $st_publico_privado ,`id_usuario`= $usuario WHERE cd_calendario = $evento";
+		if ($mysqli->query($query)) {
+			header('location:https://localhost:8080/TCC-etec/eventos/index.php');
+		}else{
+			die("Connection failed: " . $mysqli->error);
+		}
+	}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -91,6 +115,7 @@
 			  <label class="custom-control-label" for="privado" >Evento privado</label>
 			</div>
 		</div>
+			<input type="hidden" <?php echo 'value="'. $evento . '"'; ?> name="evento">
 		<div class="form-group mt-5">
 			<button type="submit" name="butao" class="btn btn-primary btn-lg form-control">Editar</button>
 		<?php
@@ -98,29 +123,6 @@
 		?>
 		</div>
 	</form>
-	<?php
-		if (isset($_POST['butao'])) {
-			$nome = $_POST['nome'];
-			$ds_descricao = $_POST['ds_descricao'];
-			$cor = $_POST['cor'];
-			$dt_inicio = date('Y-m-d', strtotime($_POST['dt_inicio']));
-			$tm_inicio = $_POST['tm_inicio'];
-			$dt_fim = date('Y-m-d', strtotime($_POST['dt_fim']));
-			$tm_fim = $_POST['tm_fim'];
-			$st_publico_privado = $_POST['st_publico_privado'];
-			$usuario = $_SESSION['cd_usuario'];
-
-			$timeset_inicio = $dt_inicio.' '.$tm_inicio.':00';
-			$timeset_fim = $dt_fim.' '.$tm_fim.':00';
-
-			$query="UPDATE `tb_calendario` SET `nm_evento`= '$nome',`ds_conteudo`= '$ds_descricao',`nm_cor`= '$cor',`dt_inicio`= '$timeset_inicio' ,`dt_fim`= '$timeset_fim ' ,`st_ativo`= 1 ,`st_publico_privado`= $st_publico_privado ,`id_usuario`= $usuario WHERE cd_calendario = $eventos)";
-			if ($mysqli->query($query)) {
-				echo 'Certo';
-			}else{
-				die("Connection failed: " . $mysqli->error);
-			}
-		}
-	?>
 </body>
 </html>
 	<script>
