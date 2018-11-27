@@ -1,6 +1,6 @@
 ﻿<?php
 include_once("conexao.php");
-$result_events = "SELECT * FROM tb_evento";
+$result_events = "SELECT * FROM tb_calendario";
 $resultado_events = $mysqli->query($result_events);
 ?>
 <!DOCTYPE html>
@@ -80,8 +80,8 @@ $resultado_events = $mysqli->query($result_events);
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<h4 class="modal-title text-center">Dados do Evento</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					</div>
 					<div class="modal-body">
 						<div class="visualizar">
@@ -97,7 +97,9 @@ $resultado_events = $mysqli->query($result_events);
 							<dt>Fim do Evento</dt>
 							<dd id="end"></dd>
 							</dl>
-							<button class="btn btn-canc-vis btn-warning">Editar</button>
+							<form action="editar-eventos.php" method="get">
+							<button type="submit" name="editar" class="btn btn-warning" id="editar">Editar</a>
+							</form>
 						</div>
 						<div class="form">
 							<form class="form-horizontal" method="POST" action="proc_edit_evento.php">
@@ -178,7 +180,6 @@ $resultado_events = $mysqli->query($result_events);
       var tam = 675;
     }
 	$('#calendar').fullCalendar({
-		themeSystem: 'bootstrap4',
 		titleFormat: 'MMMM YYYY',
 		height: tam,
 		contentHeight: tam,
@@ -195,6 +196,7 @@ $resultado_events = $mysqli->query($result_events);
 						
 			$('#visualizar #id').text(event.id);
 			$('#visualizar #id').val(event.id);
+			$('#visualizar #editar').val(event.id);
 			$('#visualizar #title').text(event.title);
 			$('#visualizar #title').val(event.title);
 			$('#visualizar #start').text(event.start.format('DD/MM/YYYY HH:mm:ss'));
@@ -210,7 +212,7 @@ $resultado_events = $mysqli->query($result_events);
 			while($obj = $resultado_events->fetch_object()){
 		?>
 				{
-					id: '<?php echo $obj->cd_evento; ?>',
+					id: '<?php echo $obj->cd_calendario; ?>',
 					title: '<?php echo $obj->nm_evento; ?>',
 					start: '<?php echo $obj->dt_inicio; ?>',
 					end: '<?php echo $obj->dt_fim; ?>',

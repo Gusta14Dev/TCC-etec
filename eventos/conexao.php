@@ -2,7 +2,7 @@
 session_start();
 $servidor = 'localhost';
 $usuario = 'root';
-$senha = 'usbw';
+$senha = '';
 $banco = 'db_etec_itanhaem';
 $mysqli = new mysqli($servidor, $usuario, $senha, $banco);
 
