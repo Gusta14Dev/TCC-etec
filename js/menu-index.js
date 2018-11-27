@@ -6,10 +6,12 @@ $(function () {
      $(".menu").addClass('fixed-top');
      $('.offcanvas-collapse').css("top","56px");
      $('.fechar-menu-lateral').css("top","56px");
+     $('.menu-dropdown-body').css("top","56px");
     } else {
      $(".menu").removeClass('fixed-top');
      $('.offcanvas-collapse').css("top","96px");
      $('.fechar-menu-lateral').css("top","96px");
+     $('.menu-dropdown-body').css("top","96px");
     }
   });
   $('[data-toggle="menu"]').on('click', function () {

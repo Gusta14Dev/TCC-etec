@@ -46,27 +46,27 @@ include_once("includes/conexao.php");
 
 
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>Histórico
+                <span>Histórico</span>
               </li>
             </a>
             <a class="menu-dropdown-link" href="download/calendario.xlsx" download="Calendário.xlsx" >
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>Calendário
+                <span>Calendário</span>
               </li>
             </a>
              <a class="menu-dropdown-link" href="download/horario.xlsx" download="Horário Escolar.xlsx" >
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>Horário Escolar
+                <span>Horário Escolar</span>
               </li>
             </a>
             <a class="menu-dropdown-link" href="download/observatorio.pdf" download="Observatório.pdf" >
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>Observatório
+                <span>Observatório</span>
               </li>
             </a>
              <a class="menu-dropdown-link" href="download/regimento.pdf" download="Regimento Comum.pdf" >
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>Regimento Comum
+                <span>Regimento Comum</span>
               </li>
             </a>
             <?php
@@ -83,17 +83,17 @@ include_once("includes/conexao.php");
                   }
               ?>
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>APM
+                <span>APM</span>
               </li>
             </a>
              <a class="menu-dropdown-link" href="download/sobre o conselho da escola.pdf" download="Sobre o Conselho da Escola.pdf" >
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>Sobre o Conselho da Escola
+                <span>Sobre o Conselho da Escola</span>
               </li>
             </a>
             <a class="menu-dropdown-link" href="download/membros do conselho.pdf" download="Membros do Conselho Escolar.pdf" >
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>Membros do Conselho Escolar
+                <span>Membros do Conselho Escolar</span>
               </li>
             </a>
           </ul>
@@ -121,7 +121,7 @@ include_once("includes/conexao.php");
                   }
               ?>
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>ETIM-Administração
+                <span>ETIM-Administração</span>
               </li>
             </a>
 
@@ -139,7 +139,7 @@ include_once("includes/conexao.php");
                   }
               ?>
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>ETIM-Informática p/ Internet
+                <span>ETIM-Informática p/ Internet</span>
               </li>
             </a>
 
@@ -157,7 +157,7 @@ include_once("includes/conexao.php");
                   }
               ?>
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>ETIM-Meio Ambiente
+                <span>ETIM-Meio Ambiente</span>
               </li>
             </a>
 
@@ -175,7 +175,7 @@ include_once("includes/conexao.php");
                   }
               ?>
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>Informática para Internet
+                <span>Informática para Internet</span>
               </li>
             </a>
 
@@ -193,7 +193,7 @@ include_once("includes/conexao.php");
                   }
               ?>
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>Administração
+                <span>Administração</span>
               </li>
             </a>
 
@@ -211,7 +211,7 @@ include_once("includes/conexao.php");
                   }
               ?>
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>Meio Ambiente
+                <span>Meio Ambiente</span>
               </li>
             </a>
               
@@ -224,12 +224,12 @@ include_once("includes/conexao.php");
           <ul class="menu-dropdown-body bg-dark" id="menu-dropdown2" >
             <a class="menu-dropdown-link" href="https://www.vestibulinhoetec.com.br/home/" >
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>Inscrições
+                <span>Inscrições</span>
               </li>
             </a>
              <a class="menu-dropdown-link" href="https://www.vestibulinhoetec.com.br/calendario/" >
               <li class="menu-dropdown-item">
-                <i class="fas fa-caret-right ml-0 mr-2"></i>Cronograma
+                <span>Cronograma</span>
               </li>
             </a>
           </ul>

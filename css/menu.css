@@ -173,6 +173,7 @@
       height:auto;
       padding:10px 5px;
       border-bottom: solid 1px #f8f9fa;
+      background-color: #B0B0B0;
     }
     /*Css dos links dos itens que estão em dropdawn*/
     .menu-dropdown-link{
@@ -192,8 +193,10 @@
       position: absolute;
       display: none;
       min-width: 200px;
-      top: 56px;
+      top: 96px;
       padding: 0;
+      border-radius: 0.5em;
+      overflow: hidden;
     }
     /*Efeito dropdawn*/
     li:hover ul{
