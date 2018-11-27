@@ -25,9 +25,9 @@
   <div class="container-fluid" id="curso">
     <div class="row">
       <!-- Imagem do curso de informática -->
-      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-2">
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-5">
         <div class="image-curso">
-          <img src="imagens/pc.png" alt="Curso de informática para internet" class="img-fluid">
+          <img src="imagens/pc.svg" alt="Curso de informática para internet" class="img-fluid">
         </div> 
         <!-- Informações do curso de informática para internet -->
         <h4 class="text-center">DESENVOLVIMENTO DE SISTEMAS</h4>
@@ -35,9 +35,9 @@
       </div>
 
       <!-- Imagem do curso de Administração -->
-      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-2">
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-5">
         <div class="image-curso">
-          <img src="imagens/caixa.png" alt="Curso de administração" class="img-fluid">
+          <img src="imagens/caixa.svg" alt="Curso de administração" class="img-fluid">
         </div>
         <!-- Informações do curso de administração -->
         <h4 class="text-center">ADMINISTRAÇÃO</h4>
@@ -45,9 +45,9 @@
       </div>
 
       <!-- Imagem do curso de Meio ambiente -->
-      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-2">
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-5">
         <div class="image-curso">
-          <img src="imagens/planta.png" alt="Curso de meio ambiente" class="img-fluid">
+          <img src="imagens/planta.svg" alt="Curso de meio ambiente" class="img-fluid">
         </div>
         <!-- Informações do curso de meio ambiente -->
         <h4 class="text-center">MEIO AMBIENTE</h4>
