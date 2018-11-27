@@ -18,7 +18,6 @@ $itens = $_GET['itens'];
   <!-- Menu Lateral e Tabela CSS -->
   <link href="css/menu-lateral.css" rel="stylesheet">
   <link href="css/layout_form.css" rel="stylesheet">
-    
   </head>
   <body>
     <?php
@@ -36,8 +35,8 @@ $itens = $_GET['itens'];
             echo '<div class="container-fluid">
                     <div class="jumbotron mx-sm-auto">
                         <div class="mx-auto pt-3 pb-3 text-center">
-                        <h1>Alterar Notícias</h1>
-                    </div>
+                          <h1>Alterar Notícias</h1>
+                        </div>
                        <div class="form-group ml-2 mr-2">
                         <label for="artigo"><b>Título da Notícia:</b></label>
                         <div class="row">
