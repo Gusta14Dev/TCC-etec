@@ -69,9 +69,26 @@
 /*Media query para trablets*/
 @media (max-width: 991.9px) {
   #curso{
-    width:85%;
-    height:auto;
-    z-index:-1;
+    width: 85%;
+    height: auto;
+    z-index: -1;
+  }
+
+  .container-titulo{
+    height: 60px;
+  }
+
+  .titulo{
+    font-size: 1.5em;
+  }
+  /*Swiper-pagination*/
+  .swiper-slide{
+    width: 80%;
+    height: 200px;
+  }
+
+  .swiper-container{
+    height: 500px;
   }
 }
 

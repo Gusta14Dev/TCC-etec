@@ -19,14 +19,13 @@
 	</head>
 	<style type="text/css">
 		@media (min-width: 576px){
-	.botao{
-		width: 70%;
-	}
-}
-
-.botao{
-		width: 24%;
-	}
+			.botao{
+				width: 70%;
+			}
+		}
+		.botao{
+			width: auto;
+		}
 	</style>
 	<body>
 		<!--Menu Lateral-->

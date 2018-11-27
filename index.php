@@ -20,7 +20,7 @@
   ?>
   <div id="fundo"></div>
   <div class="container-fluid content-title">
-    <h2 class="text-center">OS MELHORES CURSOS DA REGIÃO</h2>
+    <h2 class="text-center titulo">OS MELHORES CURSOS DA REGIÃO</h2>
   </div>
   <div class="container-fluid" id="curso">
     <div class="row">
@@ -60,8 +60,8 @@
 
   <div class="container-fluid bg-third">
     <div class="swiper-container bg-third">
-      <div class="container-fluid content-title">
-        <h2 class="text-center">ULTIMAS NOTÍCIAS</h2>
+      <div class="container-fluid content-title container-titulo">
+        <h2 class="text-center titulo">ULTIMAS NOTÍCIAS</h2>
       </div>
       <div class="swiper-wrapper mb-3 pt-3">
         <!-- Imagens do slide de Notícias -->
