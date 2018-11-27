@@ -1,4 +1,3 @@
-<?php?>
 <header>
 	<!-- Fixed navbar -->
 	<nav class="navbar fixed-top navbar-dark bg-black p-0">
@@ -43,7 +42,7 @@
 			</li>
 			<ul class="menu-dropdown-body bg-dark" id="menu-dropdown2" >
 				<li class="menu-dropdown-item">
-					<a class="menu-dropdown-link" href="noticia.php"><i class="fas fa-caret-right ml-5 mr-2"></i>Notícias</a>
+					<a class="menu-dropdown-link" href="noticias.php"><i class="fas fa-caret-right ml-5 mr-2"></i>Notícias</a>
 				</li>
 				<li class="menu-dropdown-item">
 					<a class="menu-dropdown-link" href="artigos.php"><i class="fas fa-caret-right ml-5 mr-2"></i>Artigos</a>

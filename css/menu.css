@@ -230,6 +230,7 @@
         background-color: #f8f9fa;  
         width: 60%;
         border-left: solid 1px #343a40;
+        overflow-y: scroll;
       }
       .menu-link{
         color:#343a40 !important ;

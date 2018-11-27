@@ -80,7 +80,8 @@ $itens = $_GET['itens'];
           $foto = $_POST['foto'];
           $noticia = $_POST['noticia'];
           $conteudo = $_POST['conteudo'];
-          $update="UPDATE `tb_artigo` SET `nm_artigo`='$artigo',`nm_foto`='$foto',`st_noticia`='$noticia',`ds_conteudo`='$conteudo',`id_usuario`='1' WHERE `cd_artigo` = $itens ";
+          $usuario = $_SESSION['cd_usuario'];
+          $update="UPDATE `tb_artigo` SET `nm_artigo`='$artigo',`nm_foto`='$foto',`st_noticia`='$noticia',`ds_conteudo`='$conteudo',`id_usuario`='$usuario' WHERE `cd_artigo` = $itens ";
             if ($mysqli->query($update)) {
       ?>
       <script type="text/javascript">

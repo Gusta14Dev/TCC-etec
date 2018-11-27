@@ -65,7 +65,8 @@
           $nome = $_POST['nome'];
           $foto = $_POST['foto'];
           $conteudo = $_POST['conteudo'];
-          $select="INSERT INTO `tb_artigo`(`nm_artigo`, `nm_foto`, `st_noticia`, `ds_conteudo`, `id_usuario`) VALUES ('$nome','$foto','0','$conteudo','1')";
+          $usuario = $_SESSION['cd_usuario'];
+          $select="INSERT INTO `tb_artigo`(`nm_artigo`, `nm_foto`, `st_noticia`, `ds_conteudo`, `id_usuario`) VALUES ('$nome','$foto','0','$conteudo','$usuario')";
             if ($mysqli->query($select)) {
     ?>
     <script type="text/javascript">
