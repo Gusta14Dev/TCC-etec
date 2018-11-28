@@ -61,7 +61,7 @@ $resultado_events = $mysqli->query($result_events);
 			width:98%;
 			margin:1%;
 		}
-    @media (min-width: 576px) {
+    @media (max-width: 576px) {
       #calendario{
         width:90%;
         margin:5%;
@@ -90,6 +90,8 @@ $resultado_events = $mysqli->query($result_events);
 							<dd id="id"></dd>
 							<dt>Titulo do Evento</dt>
 							<dd id="title"></dd>
+							<dt>Descrição do Evento</dt>
+							<dd id="desc"></dd>
 							<dt>Banner do Evento</dt>
 							<dd id="image"></dd>
 							<dt>Inicio do Evento</dt>
@@ -98,9 +100,30 @@ $resultado_events = $mysqli->query($result_events);
 							<dd id="end"></dd>
 							</dl>
 							<form action="editar-eventos.php" method="get">
-							<button type="submit" name="editar" class="btn btn-warning" id="editar">Editar</a>
+							<button type="submit" name="editar" class="btn btn-warning mr-2" id="editar">Editar</a>
+							<button type="button" name="excluir" class="btn btn-danger" id="excluir">Excluir</a>
 							</form>
+
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="static">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title text-center">Excluir evento</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="modal-body">
+						Deseja realmente exlcuir esta turma?
+					</div>
+					<div class="modal-footer">
+						<form action="excluir_evento.php" method="post">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+							<button type="submit" name="excluir"  class="btn btn-danger" id="id">Excluir</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -116,17 +139,16 @@ $resultado_events = $mysqli->query($result_events);
 		
 
  $(document).ready(function() {
-	$('.btn-canc-vis').on("click", function() {
-		$('.form').slideToggle();
-		$('.visualizar').slideToggle();
+	$('#excluir').on("click", function() {
+		$('#visualizar').modal('hide');
+		$('#delete').modal('show');
 	 });
-	$('.btn-canc-edit').on("click", function() {
-		$('.visualizar').slideToggle();
-		$('.form').slideToggle();
-	});
     var largura = $(window).width();
-    if (largura <= 570) {
+    if (largura <= 400) {
+      var tam = 350;
+    }else if (largura <= 570) {
       var tam = 450;
+      $('#calendario h2').css("font-size", "0.5em");
     }else{
       var tam = 675;
     }
@@ -146,14 +168,12 @@ $resultado_events = $mysqli->query($result_events);
 					eventClick: function(event) {
 						
 			$('#visualizar #id').text(event.id);
-			$('#visualizar #id').val(event.id);
 			$('#visualizar #editar').val(event.id);
+			$('#delete #id').val(event.id);
+			$('#visualizar #desc').text(event.desc);
 			$('#visualizar #title').text(event.title);
-			$('#visualizar #title').val(event.title);
 			$('#visualizar #start').text(event.start.format('DD/MM/YYYY HH:mm:ss'));
-			$('#visualizar #start').val(event.start.format('DD/MM/YYYY HH:mm:ss'));
 			$('#visualizar #end').text(event.end.format('DD/MM/YYYY HH:mm:ss'));
-			$('#visualizar #end').val(event.end.format('DD/MM/YYYY HH:mm:ss'));
 			$('#visualizar #color').val(event.color);
 			$('#visualizar').modal('show');
 			return false;
@@ -165,6 +185,7 @@ $resultado_events = $mysqli->query($result_events);
 				{
 					id: '<?php echo $obj->cd_calendario; ?>',
 					title: '<?php echo $obj->nm_evento; ?>', 
+					desc: '<?php echo $obj->ds_conteudo; ?>', 
 					start: '<?php echo $obj->dt_inicio; ?>',
 					end: '<?php echo $obj->dt_fim; ?>',
 					color: '<?php echo $obj->nm_cor; ?>',

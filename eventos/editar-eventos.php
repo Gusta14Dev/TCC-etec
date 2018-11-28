@@ -11,9 +11,11 @@
 		$nome = $_POST['nome'];
 		$ds_descricao = $_POST['ds_descricao'];
 		$cor = $_POST['cor'];
-		$dt_inicio = $_POST['dt_inicio'];
+		$dt = explode("/", $_POST['dt_inicio']);
+		$dt_inicio = $dt[2]."-".$dt[1]."-".$dt[0];
 		$tm_inicio = $_POST['tm_inicio'];
-		$dt_fim = $_POST['dt_fim'];
+		$dt1 = explode("/", $_POST['dt_fim']);
+		$dt_fim = $dt1[2]."-".$dt1[1]."-".$dt1[0];
 		$tm_fim = $_POST['tm_fim'];
 		$st_publico_privado = $_POST['st_publico_privado'];
 		$usuario = $_SESSION['cd_usuario'];
@@ -23,7 +25,11 @@
 
 		$query="UPDATE `tb_calendario` SET `nm_evento`= '$nome',`ds_conteudo`= '$ds_descricao',`nm_cor`= '$cor',`dt_inicio`= '$timeset_inicio' ,`dt_fim`= '$timeset_fim ' ,`st_ativo`= 1 ,`st_publico_privado`= $st_publico_privado ,`id_usuario`= $usuario WHERE cd_calendario = $evento";
 		if ($mysqli->query($query)) {
-			header('location:https://localhost:8080/TCC-etec/eventos/index.php');
+			?>
+			<script type="text/javascript">
+				window.location.href = "index.php";
+			</script>
+			<?php
 		}else{
 			die("Connection failed: " . $mysqli->error);
 		}
@@ -35,7 +41,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta charset="utf-8">
 
-	<title>Cadastrar eventos</title>
+	<title>Editar eventos</title>
 
 	<link rel="stylesheet" href="../css/bootstrap.min.css" >
 	<link rel="stylesheet" href="css/cadastrar-eventos.css" >
@@ -52,7 +58,7 @@
 				$dt_inicio = date('d/m/Y', strtotime($explode[0]));
 				$hr_inicio = $explode[1];
 
-				$explode2 = explode(" ", $obj->dt_inicio);
+				$explode2 = explode(" ", $obj->dt_fim);
 				$dt_final = date('d/m/Y', strtotime($explode2[0]));
 				$hr_final = $explode2[1];
 		?>
