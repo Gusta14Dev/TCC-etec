@@ -86,7 +86,7 @@ $resultado_events = $mysqli->query($result_events);
 					<div class="modal-body">
 						<div class="visualizar">
 							<dl class="dl-horizontal">
-								<dt>ID do Evento</dt>
+							<dt>ID do Evento</dt>
 							<dd id="id"></dd>
 							<dt>Titulo do Evento</dt>
 							<dd id="title"></dd>

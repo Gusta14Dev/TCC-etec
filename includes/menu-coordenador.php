@@ -5,7 +5,7 @@
 		<button class="navbar-toggler p-1 border-1" type="button" data-toggle="menu">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand h1" href="home.php">Painel Administrativo - Professor</a>
+		<a class="navbar-brand h1" href="home.php">Painel Administrativo - Coordenador</a>
 		<a href="sair.php" class="p-0 border-0 text-white p-0">
 			<i>Sair</i> <i class="fas fa-sign-out-alt"></i>
 		</a>
@@ -26,9 +26,6 @@
 		<ul id="navbar-body">
 			<li class="menu-item">
 				<a class="menu-link ml-4" href="home.php"><i class="fas fa-home fa-lg mr-3"></i>Home</a>
-			</li>
-			<li class="menu-item" data-dropdawn-toggle="menu-dropdown3">
-				<a class="menu-link ml-4 " href="avaliacoes.php"><i class="far fa-calendar-alt fa-lg mr-3"></i>Avaliações</a>
 			</li>
 			<li class="menu-item" data-dropdawn-toggle="menu-dropdown1">
 				<a class="menu-link ml-4 " href="#"><i class="far fa-calendar-alt fa-lg mr-3"></i>Eventos<i class="fas fa-caret-down ml-2" id="seta1"></i> </a>

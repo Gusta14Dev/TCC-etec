@@ -131,9 +131,9 @@
     .fixed{
       position: fixed;
     }
-    .fixed-top2{
+    .fixed-top{
       position: fixed;
-      top: 96px;
+      top: 0px;
       right: 0;
       left: 0;
       z-index: 1030;
@@ -193,9 +193,9 @@
       position: absolute;
       display: none;
       min-width: 200px;
-      top: 96px;
       padding: 0;
       border-radius: 0.5em;
+      z-index: 3000;
       overflow: hidden;
     }
     /*Efeito dropdawn*/
@@ -209,7 +209,6 @@
     /*Css da div que fecha o menu lateral*/
     .fechar-menu-lateral {
       position: fixed;
-      top: 56px;
       right: 100%;
       bottom: 0;
       left: 0;
@@ -269,12 +268,11 @@
       /*Parte do menu enconder e recolher*/
       .offcanvas-collapse {
         position: fixed;
-        top: 56px; /* Height of navbar */
         bottom: 0;
         left: 100%;
         width: 100%;
         padding-right: 1rem;
-        padding-left: 1rem;
+        padding-left: 1rem; 
         overflow-y: auto;
         visibility: hidden;
         z-index: 2000;

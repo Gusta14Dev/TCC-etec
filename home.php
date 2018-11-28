@@ -36,7 +36,7 @@ if(!isset($_SESSION['nm_usuario'])){
       if ($_SESSION['tipo'] == 1) {
         include_once ("includes/menu-adm.php");
       }else if ($_SESSION['tipo'] == 2) {
-        include_once ("includes/menu-.php");
+        include_once ("includes/menu-coordenador.php");
       }else if ($_SESSION['tipo'] == 3) {
         include_once ("includes/menu-professor.php");
       }else if ($_SESSION['tipo'] == 4) {

@@ -17,7 +17,6 @@ include_once("includes/conexao.php");
   <button class="navbar-toggler p-25 border-0 float-right " type="button" data-toggle="menu">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="navbar-collapse offcanvas-collapse float-right p-0 mr-2">
     <ul class="navbar-nav mr-auto">
       <a class="menu-link" href="index.php">
