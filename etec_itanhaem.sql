@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 21-Nov-2018 às 17:31
+-- Data de Criação: 28-Nov-2018 às 17:11
 -- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `tb_aluno` (
   `id_turma` int(11) NOT NULL,
   PRIMARY KEY (`cd_aluno`),
   KEY `id_turma` (`id_turma`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=348 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=349 ;
 
 --
 -- Extraindo dados da tabela `tb_aluno`
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `tb_aluno` (
 INSERT INTO `tb_aluno` (`cd_aluno`, `nm_aluno`, `nr_rm`, `nm_login`, `nm_senha`, `id_turma`) VALUES
 (1, 'ABNER LIMA TAVARES DE FREITAS', '16031', NULL, NULL, 3),
 (2, 'BRUNNO LUKAS MOURA TEIXEIRA', '16004', NULL, NULL, 3),
-(3, 'CAIO HENRIQUE DE OLIVEIRA SEVERO', '16079', NULL, NULL, 3),
+(3, 'CAIO HENRIQUE DE OLIVEIRA SEVERO', '16079', 'caioh_severo@hotmail.com', NULL, 3),
 (4, 'CAIO LUIZ PIRAMIDES OLIVEIRA', '16148', NULL, NULL, 3),
 (5, 'CAROLINE ALMEIDA LINS DO CARMO', '16088', NULL, NULL, 3),
 (6, 'CAUÃŠ MARTINS DO NASCIMENTO', '16029', 'ynevisk@bol.com', NULL, 3),
@@ -390,7 +390,8 @@ INSERT INTO `tb_aluno` (`cd_aluno`, `nm_aluno`, `nr_rm`, `nm_login`, `nm_senha`,
 (344, 'VICTOR HUGO DA COSTA FERNANDES', '16054', NULL, NULL, 9),
 (345, 'VITORIA APARECIDA PRADO ALMEIDA', '16131', NULL, NULL, 9),
 (346, 'YNGRID DE SOUZA TAKANO', '16106', NULL, NULL, 9),
-(347, 'Gabriel Ferrreira', '13565', 'gabito@hot.com', '1236', 1);
+(347, 'Gabriel Ferrreira', '13565', 'gabito@hot.com', '1236', 1),
+(348, 'caue gayzao', '24242', '', 'minecraft', 3);
 
 -- --------------------------------------------------------
 
@@ -407,7 +408,7 @@ CREATE TABLE IF NOT EXISTS `tb_artigo` (
   `id_usuario` int(11) DEFAULT NULL,
   PRIMARY KEY (`cd_artigo`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=21 ;
 
 --
 -- Extraindo dados da tabela `tb_artigo`
@@ -421,7 +422,10 @@ INSERT INTO `tb_artigo` (`cd_artigo`, `nm_artigo`, `nm_foto`, `st_noticia`, `ds_
 (5, 'ETIM - Meio Ambiente', 'foto-artigos/artigo.jpg', 0, 'O Ensino MÃ©dio integrado da ETEC de ItanhaÃ©m oferece ao aluno todo conhecimento da base nacional comum do ensino mÃ©dio porÃ©m oferece tambÃ©m a EducaÃ§Ã£o Profissional, o que Ã© uma forma de fazer o ensino mÃ©dio (formaÃ§Ã£o bÃ¡sica) junto com a educaÃ§Ã£o profissional (formaÃ§Ã£o tÃ©cnica), um atalho paraos alunos, pois ao concluirem o ensino mÃ©dio,jÃ¡ terÃ£o uma formaÃ§Ã£o profissional tÃ©cnica.  O TÃ©cnico em Meio Ambiente Ã© o profissional que coleta, armazena e interpreta informaÃ§Ãµes, dados e documentaÃ§Ãµes ambientais. Colabora na elaboraÃ§Ã£o de laudos, relatÃ³rios, estudos e no acompanhamento e execuÃ§Ã£o de sistemas de gestÃ£o ambiental. Atua na organizaÃ§Ã£o de programas de educaÃ§Ã£o ambiental, de conservaÃ§Ã£o e preservaÃ§Ã£o de recursos naturais, de reduÃ§Ã£o, reuso e reciclagem. Identifica as intervenÃ§Ãµes ambientais, analisa suas consequÃªncias e operacionaliza a execuÃ§Ã£o de aÃ§Ãµes para preservaÃ§Ã£o, conservaÃ§Ã£o, otimizaÃ§Ã£o, minimizaÃ§Ã£o e remediaÃ§Ã£o dos seus efeitos.   Mercado de trabalho  InstituiÃ§Ãµes pÃºblicas, terceiro setor, empresas prestadoras de serviÃ§os na Ã¡rea ambiental, laboratÃ³rios e centros de pesquisa, industrias, consultorias tÃ©cnico-ambientais.', 1),
 (6, 'InformÃ¡tica para Internet', 'foto-artigos/predio_etec.jpg', 0, 'O Ensino TÃ©cnico modular de InformÃ¡tica para Internet tem duraÃ§Ã£o de 3 semestres (3 mÃ³dulos).    O TÃ©cnico em InformÃ¡tica para Internet desenvolve e realiza manutenÃ§Ãµes em Websites, portais na Internet e Intranet. Utiliza ferramentas de desenvolvimento de projetos para construir soluÃ§Ãµes que auxiliam o processo de criaÃ§Ã£o de interfaces e aplicativos empregados no comÃ©rcio e marketing eletrÃ´nicos.  Mercado de Trabalho:  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor que demandem programaÃ§Ã£o de computadores para Internet.', 1),
 (7, 'AdministraÃ§Ã£o', 'foto-artigos/predio_etec.jpg', 0, 'O Ensino TÃ©cnico modular de AdministraÃ§Ã£o tem duraÃ§Ã£o de 3 semestres (3 mÃ³dulos).  O TÃ©cnico em AdministraÃ§Ã£o Ã© o profissional que adota postura Ã©tica na execuÃ§Ã£o da rotina administrativa, na elaboraÃ§Ã£o do planejamento da produÃ§Ã£o e materiais, recursos humanos, financeiros e mercadolÃ³gicos.  Realiza atividades de controles e auxilia nos processos de direÃ§Ã£o utilizando ferramentas da informÃ¡tica bÃ¡sica. Fomenta ideias e prÃ¡ticas empreendedoras.  Mercado de Trabalho:  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor.', 1),
-(8, 'Meio Ambiente', 'foto-artigos/predio_etec.jpg', 0, 'O Ensino TÃ©cnico modular de Meio Ambiente tem duraÃ§Ã£o de 3 semestres (3 mÃ³dulos).  O TÃ©cnico em Meio Ambiente Ã© o profissional que coleta, armazena e interpreta informaÃ§Ãµes, dados e documentaÃ§Ãµes ambientais. Colabora na elaboraÃ§Ã£o de laudos, relatÃ³rios, estudos e no acompanhamento e execuÃ§Ã£o de sistemas de gestÃ£o ambiental. Atua na organizaÃ§Ã£o de programas de educaÃ§Ã£o ambiental, de conservaÃ§Ã£o e preservaÃ§Ã£o de recursos naturais, de reduÃ§Ã£o, reuso e reciclagem. Identifica as intervenÃ§Ãµes ambientais, analisa suas consequÃªncias e operacionaliza a execuÃ§Ã£o de aÃ§Ãµes para preservaÃ§Ã£o, conservaÃ§Ã£o, otimizaÃ§Ã£o, minimizaÃ§Ã£o e remediaÃ§Ã£o dos seus efeitos.   Mercado de trabalho  InstituiÃ§Ãµes pÃºblicas, terceiro setor, empresas prestadoras de serviÃ§os na Ã¡rea ambiental, laboratÃ³rios e centros de pesquisa, industrias, consultorias tÃ©cnico-ambientais.', 1);
+(8, 'Meio Ambiente', 'foto-artigos/predio_etec.jpg', 0, 'O Ensino TÃ©cnico modular de Meio Ambiente tem duraÃ§Ã£o de 3 semestres (3 mÃ³dulos).  O TÃ©cnico em Meio Ambiente Ã© o profissional que coleta, armazena e interpreta informaÃ§Ãµes, dados e documentaÃ§Ãµes ambientais. Colabora na elaboraÃ§Ã£o de laudos, relatÃ³rios, estudos e no acompanhamento e execuÃ§Ã£o de sistemas de gestÃ£o ambiental. Atua na organizaÃ§Ã£o de programas de educaÃ§Ã£o ambiental, de conservaÃ§Ã£o e preservaÃ§Ã£o de recursos naturais, de reduÃ§Ã£o, reuso e reciclagem. Identifica as intervenÃ§Ãµes ambientais, analisa suas consequÃªncias e operacionaliza a execuÃ§Ã£o de aÃ§Ãµes para preservaÃ§Ã£o, conservaÃ§Ã£o, otimizaÃ§Ã£o, minimizaÃ§Ã£o e remediaÃ§Ã£o dos seus efeitos.   Mercado de trabalho  InstituiÃ§Ãµes pÃºblicas, terceiro setor, empresas prestadoras de serviÃ§os na Ã¡rea ambiental, laboratÃ³rios e centros de pesquisa, industrias, consultorias tÃ©cnico-ambientais.', 1),
+(18, 'APM', 'download/apm.jpg', 0, '', NULL),
+(19, 'gustavo corta o cabelo', 'foto-artigos/', 1, 'ele fica careca', 1),
+(20, 'Adoglio Ã© corno ', 'foto-artigos/', 0, 'Foi oficialmente divulgado sobre a sexualidade do colega de classe eduardo adoglio pq ele Ã© corno aaaaaaaaaaaaaaaaaaaaaaaa', 1);
 
 -- --------------------------------------------------------
 
@@ -440,16 +444,21 @@ CREATE TABLE IF NOT EXISTS `tb_calendario` (
   `st_ativo` tinyint(1) DEFAULT NULL,
   `st_publico_privado` tinyint(1) DEFAULT NULL,
   `id_usuario` int(11) DEFAULT NULL,
+  `nm_evento` varchar(220) DEFAULT NULL,
   PRIMARY KEY (`cd_calendario`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- Extraindo dados da tabela `tb_calendario`
 --
 
-INSERT INTO `tb_calendario` (`cd_calendario`, `nm_tipo`, `ds_conteudo`, `nm_foto`, `nm_cor`, `dt_inicio`, `dt_fim`, `st_ativo`, `st_publico_privado`, `id_usuario`) VALUES
-(1, 'safrsfds', 'dsfsfs', 'imagens/eventos/artigo.jpg', 'verde', '2018-11-13 00:00:00', '2018-11-14 00:00:00', 1, 1, 1);
+INSERT INTO `tb_calendario` (`cd_calendario`, `nm_tipo`, `ds_conteudo`, `nm_foto`, `nm_cor`, `dt_inicio`, `dt_fim`, `st_ativo`, `st_publico_privado`, `id_usuario`, `nm_evento`) VALUES
+(1, 'safrsfds', 'Apresentação dos trabalhos de conclusão de curso', 'imagens/eventos/artigo.jpg', '#dc3545', '2023-04-06 14:00:00', '2024-06-06 15:40:00', 1, 1, 1, 'Previa do TCC'),
+(6, '', 'Cuquinha farÃ¡ 20 anos', 'imagens/eventos/', '#6f42c1', '2033-12-12 14:58:00', '2033-12-12 15:00:00', 1, 2, 4, 'AnivesÃ¡rio'),
+(5, '', 'AvaliaÃ§Ã£o de MatemÃ¡tica', 'imagens/eventos/etec-itanhaem.jpg', '#007bff', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 2, 4, 'AvaliaÃ§Ã£o'),
+(7, '', 'AvaliaÃ§Ã£o de matemÃ¡tica dificÃ­lima', 'imagens/eventos/', '#007bff', '2018-11-28 14:00:00', '2018-11-28 14:50:00', 1, 2, 4, 'AvaliacÃ£o'),
+(8, '', 'Festa, Bebidas, Weeds e muito mais. TUDO isso aqui no ETEC FEST! Venha conferir. EndereÃ§o no site www.etecitanhaem.com', 'imagens/eventos/', '#28a745', '2018-12-01 22:00:00', '2018-12-02 01:00:00', 1, 1, 1, 'ETEC FEST');
 
 -- --------------------------------------------------------
 
@@ -695,7 +704,7 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
   `id_tipo` int(11) NOT NULL,
   PRIMARY KEY (`cd_usuario`),
   KEY `id_tipo` (`id_tipo`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
 -- Extraindo dados da tabela `tb_usuario`
@@ -703,10 +712,9 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
 
 INSERT INTO `tb_usuario` (`cd_usuario`, `nm_usuario`, `nm_sobrenome`, `nm_foto`, `nm_login`, `nm_senha`, `id_tipo`) VALUES
 (1, 'Gustavo', 'GuimarÃ£es Cervo', 'foto-coordenadores/mulher.jpg', 'gustavo.adm@gmail.com', '123', 1),
-(2, 'Gabriel', 'Ferreira', 'foto-coordenadores/mulher', 'Gabito', '159357', 1),
+(7, 'Adoglio', 'Corno', 'foto-coordenadores/', 'gayadoglio_corno@gmail.com', 'gaygay', 2),
 (3, 'Gustavo', 'Guimaraes', 'sflasf', 'gustavo.coord@gmail.com', '123', 2),
-(4, 'Gustavo', 'Guimarães', 'adada', 'gustavo.prof@gmail.com', '123', 3),
-(6, 'gfrytdty', 'ytrt7', 'foto-coordenadores/tfrtrt', 'tfrtr@rsr', '123', 2);
+(4, 'Gustavo', 'Guimarães', 'adada', 'gustavo.prof@gmail.com', '123', 3);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
