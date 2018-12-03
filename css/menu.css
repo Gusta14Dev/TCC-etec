@@ -130,6 +130,7 @@
     }
     .fixed{
       position: fixed;
+      z-index:0;
     }
     .fixed-top{
       position: fixed;
@@ -191,6 +192,7 @@
     /*Corpo do itens que vão ser dropdawn*/
     .menu-dropdown-body{
       position: absolute;
+      top:96px;
       display: none;
       min-width: 200px;
       padding: 0;
@@ -210,6 +212,7 @@
     .fechar-menu-lateral {
       position: fixed;
       right: 100%;
+      top:96px;
       bottom: 0;
       left: 0;
       z-index: 1010;
@@ -268,6 +271,7 @@
       /*Parte do menu enconder e recolher*/
       .offcanvas-collapse {
         position: fixed;
+        top:96px;
         bottom: 0;
         left: 100%;
         width: 100%;

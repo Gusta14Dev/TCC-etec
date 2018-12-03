@@ -27,8 +27,7 @@ if(!isset($_SESSION['nm_usuario'])){
 
     <!-- Menu Lateral e Jumbotron CSS -->
     <link href="css/menu-lateral.css" rel="stylesheet">
-    <link href="css/layout_form.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/painel.css">
+    <link href="css/painel.css" rel="stylesheet" >
     
   </head>
     <!--Menu Lateral-->

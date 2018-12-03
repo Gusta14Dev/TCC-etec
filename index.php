@@ -25,7 +25,7 @@
   <div class="container-fluid" id="curso">
     <div class="row">
       <!-- Imagem do curso de informática -->
-      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-5">
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-5 p-sm-0">
         <div class="image-curso">
           <img src="imagens/pc.svg" alt="Curso de informática para internet" class="img-fluid">
         </div> 
@@ -35,7 +35,7 @@
       </div>
 
       <!-- Imagem do curso de Administração -->
-      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-5">
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-5 p-sm-0">
         <div class="image-curso">
           <img src="imagens/caixa.svg" alt="Curso de administração" class="img-fluid">
         </div>
@@ -45,7 +45,7 @@
       </div>
 
       <!-- Imagem do curso de Meio ambiente -->
-      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-5">
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-5 p-sm-0">
         <div class="image-curso">
           <img src="imagens/planta.svg" alt="Curso de meio ambiente" class="img-fluid">
         </div>

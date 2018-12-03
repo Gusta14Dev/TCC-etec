@@ -95,5 +95,7 @@
 
 /*Media query para celulares*/
 @media (max-width: 576px){
-
+p-sm-0{
+	padding:0;
+}
 }

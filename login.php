@@ -167,6 +167,23 @@ include_once("includes/conexao.php");
 			background-color:green;
 			box-shadow: 0px 0px 20px #0F340F;
 		}
+		#alert{
+	    position: absolute;
+	    width: 50%;
+	    z-index: 2000;
+	    top: -10%;
+	    left: 50%;
+	    right: 50%;
+	    opacity: 0;
+	    transform: translate(-50%, 0);
+	    animation-name: alert;
+	    animation-duration: 4s;
+	  }
+		#voltar{
+			position:absolute;
+			top:5px;
+			left:5px;
+		}
 		@media(min-width:1010px){
 			.container-desk{
 				display:block;
@@ -208,19 +225,10 @@ include_once("includes/conexao.php");
 			.btn-block{
 				width:90%;
 			}
+			#alert{
+			    width: 90%;
+			}
 		}
-		#alert{
-	    position: absolute;
-	    width: 50%;
-	    z-index: 100000;
-	    top: -10%;
-	    left: 50%;
-	    right: 50%;
-	    opacity: 0;
-	    transform: translate(-50%, 0);
-	    animation-name: alert;
-	    animation-duration: 4s;
-	  }
 	  @keyframes alert {
 	    0%{top: -10%;}
 	    10%{opacity: 1;}
@@ -278,6 +286,7 @@ include_once("includes/conexao.php");
 		
 		<div class="container-mob">
 			<div class="container-login">
+			<a href="index.php" class="btn btn-success" id="voltar"><i class="fas fa-arrow-left"></i></a>
 				<form method="post">
 					<div class="text-center mx-auto" id="users"><i class="fas fa-users h1 text-light"></i></div>
 					<h1 class="text-center">Login</h1>

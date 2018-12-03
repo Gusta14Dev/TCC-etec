@@ -72,7 +72,7 @@ $resultado_events = $mysqli->query($result_events);
 	<body class="bg-light">
 
   	<div id="calendario" class="mt-3">
-	<a href="cadastrar-eventos.html" class="btn btn-primary">Adicionar Evento</a> 
+	<a href="cadastrar-eventos.html" class="btn btn-success">Adicionar Evento</a> 
 		<div id='calendar'></div>
 	</div>
 		

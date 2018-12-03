@@ -3,14 +3,14 @@ html {
   min-height: 100%;
 }
 .fixed{width: 100%;}
-html,
 body {
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: #009976;
 }
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 1px;
+  height: 1px;
   -webkit-border-radius: 16px;
 }
 
@@ -20,6 +20,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:vertical {
+  width:1px;
   height: 3px;
   background-color: #666;
   -webkit-border-radius: 2px;
@@ -27,6 +28,7 @@ body {
 
 ::-webkit-scrollbar-thumb:horizontal {
   width: 3px;
+  height: 1px;
   background-color: #666;
   -webkit-border-radius: 3px;
 }

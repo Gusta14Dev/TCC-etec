@@ -1,12 +1,11 @@
-<?php?>
 <header>
 	<!-- Fixed navbar -->
 	<nav class="navbar fixed-top navbar-dark bg-black p-0">
 		<button class="navbar-toggler p-1 border-1" type="button" data-toggle="menu">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand h1" href="home.php">Painel Administrativo - Coordenador</a>
-		<a href="sair.php" class="p-0 border-0 text-white p-0">
+		<a class="navbar-brand h1 pl-4" href="home.php">Painel do Coordenador</a>
+		<a href="sair.php" class="p-2 border-0 text-white p-0">
 			<i>Sair</i> <i class="fas fa-sign-out-alt"></i>
 		</a>
 	</nav>
