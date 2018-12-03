@@ -58,6 +58,13 @@ $itens = $_GET['itens'];
 
              <div class="row">
                <div class="col-12">
+                 <label for="cargo"><b>Cargo:</b></label>
+                 <input type="text" class="form-control" name="cargo" <?php echo 'value="'.$obj->ds_descricao.'"'; ?> required autofocus>
+               </div>
+             </div>
+
+             <div class="row">
+               <div class="col-12">
                  <label for="login"><b>Login:</b></label>
                  <input type="text" class="form-control" name="login" <?php echo 'value="'.$obj->nm_login.'"'; ?> required autofocus>
                </div>
@@ -104,9 +111,10 @@ $itens = $_GET['itens'];
           $nome = $_POST['nome'];
           $sobrenome = $_POST['sobrenome'];
           $foto = $_POST['foto'];
+          $cargo = $_POST['cargo'];
           $login = $_POST['login'];
 
-          $update="UPDATE `tb_usuario` SET `nm_usuario`='$nome',`nm_sobrenome`='$sobrenome',`nm_foto`='$foto',`nm_login`='$login',`nm_senha`='$senha' WHERE `cd_usuario` = $itens ";
+          $update="UPDATE `tb_usuario` SET `nm_usuario`='$nome',`nm_sobrenome`='$sobrenome',`nm_foto`='$foto', `ds_descricao`='$cargo', `nm_login`='$login',`nm_senha`='$senha' WHERE `cd_usuario` = $itens ";
           if ($mysqli->query($update)) {
             ?>
             <script type="text/javascript">

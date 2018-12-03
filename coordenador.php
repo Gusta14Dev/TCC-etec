@@ -61,9 +61,8 @@
         </div>';
 
   echo '<div class="row">
-        Cargo: Coordenador';
-
-	echo "</div>";
+        Cargo: '.$obj->ds_descricao.'
+        </div>';
 		?>
 </div>
 	<?php

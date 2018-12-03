@@ -36,31 +36,37 @@ include_once("includes/conexao.php");
 		          </div>
 		          <div class="col-6">
 		            <label for="snome"><b>Sobrenome:</b></label>
-		            <input type="text" class="form-control" name="sobrenome" required autofocus>
+		            <input type="text" class="form-control" name="sobrenome" required>
 		          </div>
 		        </div>
 		        <div class="row">
 		          <div class="col-12">
 		            <label for="foto"><b>Foto:</b></label>
-		            <input type="text" class="form-control" name="foto" value="foto-coordenadores/" required autofocus>
+		            <input type="text" class="form-control" name="foto" value="foto-coordenadores/" required>
+		          </div>
+		        </div>
+		         <div class="row">
+		          <div class="col-12">
+		            <label for="cargo"><b>Cargo:</b></label>
+		            <input type="text" class="form-control" name="cargo" required>
 		          </div>
 		        </div>
 		        <div class="row">
 		          <div class="col-12">
 		            <label for="login"><b>Login:</b></label>
-		            <input type="text" class="form-control" name="login" required autofocus>
+		            <input type="text" class="form-control" name="login" required>
 		          </div>
 		        </div>
 		        <label for="senha"><b>Senha:</b></label>
 		        <div class="form-row">
 		          <div class="col-12">
-		            <input type="password" class="form-control" id="senha" name="senha" required autofocus>
+		            <input type="password" class="form-control" id="senha" name="senha" required>
 		          </div>
 		        </div>
 		        <label for="csenha"><b>Confirmar Senha:</b></label>
 		        <div class="form-row">
 		          <div class="col-12">
-		            <input type="password" class="form-control" id="csenha" name="csenha" required autofocus>
+		            <input type="password" class="form-control" id="csenha" name="csenha" required>
 		          </div>
 		        </div>
 		        <div class="row">
@@ -80,8 +86,9 @@ include_once("includes/conexao.php");
 		      $nome = $_POST['nome'];
 		      $sobrenome = $_POST['sobrenome'];
 	       	$foto = $_POST['foto'];
+	       	$cargo = $_POST['cargo'];
 		      $login = $_POST['login'];
-	      	$insert="INSERT INTO `tb_usuario`(`nm_usuario`, `nm_sobrenome`, `nm_foto`, `nm_login`, `nm_senha`, `id_tipo`) VALUES ('$nome','$sobrenome','$foto','$login','$senha', 2)";
+	      	$insert="INSERT INTO `tb_usuario`(`nm_usuario`, `nm_sobrenome`, `nm_foto`, `ds_descricao`, `nm_login`, `nm_senha`, `id_tipo`) VALUES ('$nome','$sobrenome','$foto', '$cargo', '$login','$senha', 2)";
 	      		if ($mysqli->query($insert)) {
 	  ?>
 	  <script type="text/javascript">

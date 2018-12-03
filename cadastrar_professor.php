@@ -44,6 +44,12 @@ include_once("includes/conexao.php");
 		            <input type="text" class="form-control" name="foto" value="foto-professor/" required autofocus>
 		          </div>
 		        </div>
+		         <div class="row">
+		          <div class="col-12">
+		            <label for="cargo"><b>Cargo:</b></label>
+		            <input type="text" class="form-control" name="cargo" required autofocus>
+		          </div>
+		        </div>
 		        <div class="row">
 		          <div class="col-12">
 		            <label for="login"><b>Login:</b></label>
@@ -79,8 +85,9 @@ include_once("includes/conexao.php");
 		      $nome = $_POST['nome'];
 		      $sobrenome = $_POST['sobrenome'];
 	       	$foto = $_POST['foto'];
+	       	$cargo = $_POST['cargo'];
 		      $login = $_POST['login'];
-	      	$insert="INSERT INTO `tb_usuario`(`nm_usuario`, `nm_sobrenome`, `nm_foto`, `nm_login`, `nm_senha`, `id_tipo`) VALUES ('$nome','$sobrenome','$foto','$login','$senha', 3)";
+	      	$insert="INSERT INTO `tb_usuario`(`nm_usuario`, `nm_sobrenome`, `nm_foto`, `ds_descricao`, `nm_login`, `nm_senha`, `id_tipo`) VALUES ('$nome','$sobrenome','$foto', '$cargo', '$login','$senha', 3)";
 	      		if ($mysqli->query($insert)) {
 	  ?>
 	  <script type="text/javascript">
