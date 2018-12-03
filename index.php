@@ -25,7 +25,7 @@
   <div class="container-fluid" id="curso">
     <div class="row">
       <!-- Imagem do curso de informática -->
-      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-5 p-sm-0">
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-0 p-sm-5">
         <div class="image-curso">
           <img src="imagens/pc.svg" alt="Curso de informática para internet" class="img-fluid">
         </div> 
@@ -35,7 +35,7 @@
       </div>
 
       <!-- Imagem do curso de Administração -->
-      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-5 p-sm-0">
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-0 p-sm-5">
         <div class="image-curso">
           <img src="imagens/caixa.svg" alt="Curso de administração" class="img-fluid">
         </div>
@@ -45,7 +45,7 @@
       </div>
 
       <!-- Imagem do curso de Meio ambiente -->
-      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-5 p-sm-0">
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-0 p-sm-5">
         <div class="image-curso">
           <img src="imagens/planta.svg" alt="Curso de meio ambiente" class="img-fluid">
         </div>
@@ -58,27 +58,21 @@
     </div>
   </div>
 
-  <div class="container-fluid bg-third">
-    <div class="swiper-container bg-third">
+  <div class="container-fluid bg-third" id="noticia">
       <div class="container-fluid content-title container-titulo">
         <h2 class="text-center titulo">ULTIMAS NOTÍCIAS</h2>
       </div>
       <!-- Swiper Carrossel -->
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <!-- Imagens do slide de Notícias -->
-          <div class="swiper-slide"><img src="imagens/etec.png" class="img-fluid"></div>
-          <div class="swiper-slide"><img src="imagens/etec.png" class="img-fluid"></div>
-          <div class="swiper-slide"><img src="imagens/etec.png" class="img-fluid"></div>
-          <div class="swiper-slide"><img src="imagens/etec.png" class="img-fluid"></div>
-          <div class="swiper-slide"><img src="imagens/etec.png" class="img-fluid"></div>
+          <div class="swiper-slide" style="background-image: url(imagens/Alunos_Etec.jpg);"></div>
+          <div class="swiper-slide" style="background-image: url(imagens/caixa.png);"></div>
         </div>
-        <!-- Adicionar Paginação -->
-        <div class="swiper-pagination"></div>
-        <!-- Adicionar Setas -->
+        <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-      </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
     </div>
   </div>
 
@@ -135,28 +129,6 @@
       </div>
   </div>
 
-  <footer class="footer mt-5">
-    <div class="nav-header">
-    </div>
-    <div class="nav-body">
-      <div class="form-row mx-auto align-items-center text-center text-light">
-        <div class="col-4 mx-auto mt-sm-0 mt-1 p-0">
-          <p></p>
-          <p>Email</p>
-          <p>email.da@escola.com</p>
-        </div>
-        <div class="col-4 mx-auto mt-sm-0 mt-1">
-          <p></p>
-          <p>Telefone</p>
-          <p>(13)34707070</p>
-        </div>
-      </div>
-    </div>
-    <div class="nav-footer">
-      <span class="text-muted">Todos os direitos reservados &copy; para Brunno Lukas, Caio Henrique, Gabriel Ferreira, Gustavo Guimarães, Harison Costa e Pedro Rocha.</span>
-    </div>
-  </footer>
-
   <!-- JavaScript -->
   <script src="js/jquery.min.js" ></script>
   <script src="js/bootstrap.min.js" ></script>
@@ -165,17 +137,18 @@
 
   <script>
     $(document).ready(function(){
-      var width = $('body').width();
-        var swiper = new Swiper('.swiper-container', {
-          slidesPerView: 'auto',
-          centeredSlides: true,
-          spaceBetween: 30,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-        });
-      }
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+        },
+      });
     });
   </script>
 </body>
