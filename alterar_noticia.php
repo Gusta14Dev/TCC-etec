@@ -64,6 +64,7 @@ $itens = $_GET['itens'];
                       </div>
                       <div class="row">
               <div class="col-12 mx-auto pt-2 text-center">
+              <button value="voltar" class="mr-5 btn btn-secondary btn-xs" onClick="goBack()"><i class="fas fa-chevron-left"></i></button>
                 <button type="submit" name="botion" class="btn btn-info">Alterar</button>
               </div>
             </div>
@@ -92,14 +93,15 @@ $itens = $_GET['itens'];
       ?>
       <script type="text/javascript">
         alert('Erro ao alterar!');
-        document.location="noticias.php";
+        <?php
+        print '<script>window.location.href = "noticia.php"</script>';
+        ?>
       </script>
       <?php
         }}
       ?>       
     </form>
   </div>
-
     <!-- JavaScript -->
     <script src="js/jquery.min.js" ></script>
     <script src="js/popper.min.js" ></script>
@@ -107,5 +109,13 @@ $itens = $_GET['itens'];
     <script src="js/slick.min.js" ></script>
     <script src="js/per.js"></script>
     <script src="js/footer-navbar-segundamento.js"></script>
+
+    <script>
+
+        function goBack() {
+        window.history.back();
+      }
+
+ </script> 
   </body>
 </html>
