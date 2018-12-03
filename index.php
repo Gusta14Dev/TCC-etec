@@ -63,23 +63,22 @@
       <div class="container-fluid content-title container-titulo">
         <h2 class="text-center titulo">ULTIMAS NOTÍCIAS</h2>
       </div>
-      <div class="swiper-wrapper mb-3 pt-3">
-        <!-- Imagens do slide de Notícias -->
-        <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/Alunos_Etec.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/Alunos_Etec.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/)"></div>
-        <div class="swiper-slide" style="background-image:url(imagens/etec.png)"></div>
+      <!-- Swiper Carrossel -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Imagens do slide de Notícias -->
+          <div class="swiper-slide"><img src="imagens/etec.png" class="img-fluid"></div>
+          <div class="swiper-slide"><img src="imagens/etec.png" class="img-fluid"></div>
+          <div class="swiper-slide"><img src="imagens/etec.png" class="img-fluid"></div>
+          <div class="swiper-slide"><img src="imagens/etec.png" class="img-fluid"></div>
+          <div class="swiper-slide"><img src="imagens/etec.png" class="img-fluid"></div>
+        </div>
+        <!-- Adicionar Paginação -->
+        <div class="swiper-pagination"></div>
+        <!-- Adicionar Setas -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-      <!-- Adicionar Paginação -->
-      <div class="swiper-pagination"></div>
-      <!-- Adicionar Setas -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
     </div>
   </div>
 
@@ -167,60 +166,13 @@
   <script>
     $(document).ready(function(){
       var width = $('body').width();
-      if (width <= 600) {
         var swiper = new Swiper('.swiper-container', {
-          slidesPerView: 1,
+          slidesPerView: 'auto',
+          centeredSlides: true,
           spaceBetween: 30,
-          freeMode: true,
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-      }else if (width >= 601 && width <= 900) {
-        var swiper = new Swiper('.swiper-container', {
-          slidesPerView: 2,
-          spaceBetween: 30,
-          freeMode: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-      }else if (width >= 901 && width <= 1300){
-        var swiper = new Swiper('.swiper-container', {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          freeMode: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-      }else if (width >= 1301){
-        var swiper = new Swiper('.swiper-container', {
-          slidesPerView: 4,
-          spaceBetween: 30,
-          freeMode: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
           },
         });
       }

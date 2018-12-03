@@ -4,7 +4,7 @@
 		<button class="navbar-toggler p-1 border-1" type="button" data-toggle="menu">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand h1 pl-4" href="home.php">Painel Administrativo</a>
+		<a class="navbar-brand h1 pl-1" href="home.php">Painel Administrativo</a>
 		<a href="sair.php" class="p-2 border-0 text-white p-0">
 			<i>Sair</i> <i class="fas fa-sign-out-alt"></i>
 		</a>
