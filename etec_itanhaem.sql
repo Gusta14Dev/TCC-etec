@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 28-Nov-2018 às 17:11
+-- Data de Criação: 03-Dez-2018 às 11:38
 -- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
@@ -389,9 +389,7 @@ INSERT INTO `tb_aluno` (`cd_aluno`, `nm_aluno`, `nr_rm`, `nm_login`, `nm_senha`,
 (343, 'TATIANE KOSO JULIO', '16125', NULL, NULL, 9),
 (344, 'VICTOR HUGO DA COSTA FERNANDES', '16054', NULL, NULL, 9),
 (345, 'VITORIA APARECIDA PRADO ALMEIDA', '16131', NULL, NULL, 9),
-(346, 'YNGRID DE SOUZA TAKANO', '16106', NULL, NULL, 9),
-(347, 'Gabriel Ferrreira', '13565', 'gabito@hot.com', '1236', 1),
-(348, 'caue gayzao', '24242', '', 'minecraft', 3);
+(346, 'YNGRID DE SOUZA TAKANO', '16106', NULL, NULL, 9);
 
 -- --------------------------------------------------------
 
@@ -416,16 +414,13 @@ CREATE TABLE IF NOT EXISTS `tb_artigo` (
 
 INSERT INTO `tb_artigo` (`cd_artigo`, `nm_artigo`, `nm_foto`, `st_noticia`, `ds_conteudo`, `id_usuario`) VALUES
 (1, 'HistÃ³rico', 'foto-artigos/predio_etec.jpg', 0, ' <p>A ETEC de ItanhaÃ©m iniciou suas atividades em 01/08/2006, como Classe Descentralizada da ETEC â€œAdolpho Berezinâ€ de MongaguÃ¡, atravÃ©s de um convÃªnio do Governo do Estado de SÃ£o Paulo com a atual administraÃ§Ã£o da Prefeitura Municipal de ItanhaÃ©m.</p> O convÃªnio foi assinado em 2006 pelo ExcelentÃ­ssimo Governador Sr. Geraldo Alkimin e ExcelentÃ­ssimo Prefeito Sr. JosÃ© Carlos Forssell, esta parceria viabilizou o prÃ©dio da Unidade Escolar, que era ocupado por alunos da Rede Municipal de Ensino.   No inÃ­cio, compartilhamos o mesmo prÃ©dio com os alunos da Rede Municipal e tÃ­nhamos apenas dois cursos TÃ©cnicos em Recursos HÃ­dricos e Saneamento, ambos com 40 alunos, no perÃ­odo noturno.   Na ocasiÃ£o, esses dois cursos foram escolhidos pelo Prefeito da cidade, para suprir futuras necessidades de um Projeto de Saneamento BÃ¡sico em toda RegiÃ£o Metropolitana da Baixada Santista.   Em 2007 o entÃ£o Governador Eleito ExcelentÃ­ssimo Sr. JosÃ© Serra assinou seu primeiro decreto como Governador, criando a ETEC de ItanhaÃ©m como unidade prÃ³pria e independente, em 24/01/07, decreto nÂº 51.500. No segundo semestre de 2007, implantamos mais dois cursos TÃ©cnicos em AdministraÃ§Ã£o e Web Design ambos com quarenta alunos, o Ãºltimo no perÃ­odo vespertino. No final de 2007, nÃ£o compartilhÃ¡vamos o prÃ©dio da escola, nos possibilitando a ampliar nossos cursos.   Em 2008 a escola ganhou uma nova cara, uma nova identidade, iniciaram as aulas do Ensino MÃ©dio, com oitenta alunos no perÃ­odo diurno.   Assim, desde 2008 temos a escola em funcionamento manhÃ£, tarde e noite.   Em fevereiro de 2009 iniciamos mais um curso no perÃ­odo da tarde, TÃ©cnico em Secretariado, com quarenta alunos. Ganhamos uma Classe Descentralizada de PeruÃ­be com dois cursos TÃ©cnicos em Contabilidade e LogÃ­stica. Em 2010, tivemos inÃ­cio tambÃ©m do curso Modelagem de VestuÃ¡rio.     Em 2012, alguns cursos TÃ©cnicos foram para o perÃ­odo noturno, possibilitando que os cursos tÃ©cnicos de Secretariado e InformÃ¡tica para Internet, pudessem atender as pessoas que sÃ³ tem o perÃ­odo noturno para se atualizar profissionalmente.     TambÃ©m no ano de 2012, iniciaram o nosso Ensino MÃ©dio Integrado em AdministraÃ§Ã£o e InformÃ¡tica para Internet,  onde possibilitou que os Jovens da RegiÃ£o tivessem uma formaÃ§Ã£o mais completa, pois ao mesmo tempo que estÃ£o fazendo o Ensino MÃ©dio, tambÃ©m estÃ£o complementando com uma formaÃ§Ã£o tÃ©cnica profissionalizante.     Em 2013 iniciamos com o Curso TÃ©cnico em Meio Ambiente.     Em 2016 iniciamos com o ETIM - Ensino MÃ©dio Integrado com Meio Ambiente.', 1),
-(2, 'LocalizaÃ§Ã£o', 'foto-artigos/predio_etec.jpg', 0, 'A Etec de ItanhaÃ©m fica localizada na Av. JosÃ© Batista Campos, 1431 no Bairro Anchieta, na Cidade de ItanhaÃ©m. A Escola fica prÃ³ximo ao Aeroporto da Cidade.', 1),
-(3, 'ETIM - AdministraÃ§Ã£o', 'foto-artigos/predio_etec.jpg', 0, 'O Ensino MÃ©dio integrado da ETEC de ItanhaÃ©m oferece ao aluno todo conhecimento da base nacional comum do ensino mÃ©dio porÃ©m oferece tambÃ©m a EducaÃ§Ã£o Profissional, o que Ã© uma forma de fazer o ensino mÃ©dio (formaÃ§Ã£o bÃ¡sica) junto com a educaÃ§Ã£o profissional (formaÃ§Ã£o tÃ©cnica), um atalho paraos alunos, pois ao concluirem o ensino mÃ©dio,jÃ¡ terÃ£o uma formaÃ§Ã£o profissional tÃ©cnica.O TÃ©cnico em AdministraÃ§Ã£o adota postura Ã©tica na execuÃ§Ã£o da rotina administrativa, na elaboraÃ§Ã£o do planejamento da produÃ§Ã£o e materiais, recursos humanos, financeiros e mercadolÃ³gicos. Realiza atividades de controles e auxilia nos processos de direÃ§Ã£o utilizando ferramentas da informÃ¡tica bÃ¡sica. Fomenta ideias e prÃ¡ticas empreendedoras.  Mercado de Trabalho:  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor.', 1),
-(4, 'ETIM - InformÃ¡tica para Internet', 'foto-artigos/predio_etec.jpg', 0, 'O Ensino MÃ©dio integrado da ETEC de ItanhaÃ©m oferece ao aluno todo conhecimento da base nacional comum do ensino mÃ©dio porÃ©m oferece tambÃ©m a EducaÃ§Ã£o Profissional, o que Ã© uma forma de fazer o ensino mÃ©dio (formaÃ§Ã£o bÃ¡sica) junto com a educaÃ§Ã£o profissional (formaÃ§Ã£o tÃ©cnica), um atalho paraos alunos, pois ao concluirem o ensino mÃ©dio,jÃ¡ terÃ£o uma formaÃ§Ã£o profissional tÃ©cnica.  O TÃ©cnico em InformÃ¡tica para Internet desenvolve e realiza manutenÃ§Ãµes em Websites, portais na Internet e Intranet. Utiliza ferramentas de desenvolvimento de projetos para construir soluÃ§Ãµes que auxiliam o processo de criaÃ§Ã£o de interfaces e aplicativos empregados no comÃ©rcio e marketing eletrÃ´nicos.  Mercado de trabalho  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor.', 1),
-(5, 'ETIM - Meio Ambiente', 'foto-artigos/artigo.jpg', 0, 'O Ensino MÃ©dio integrado da ETEC de ItanhaÃ©m oferece ao aluno todo conhecimento da base nacional comum do ensino mÃ©dio porÃ©m oferece tambÃ©m a EducaÃ§Ã£o Profissional, o que Ã© uma forma de fazer o ensino mÃ©dio (formaÃ§Ã£o bÃ¡sica) junto com a educaÃ§Ã£o profissional (formaÃ§Ã£o tÃ©cnica), um atalho paraos alunos, pois ao concluirem o ensino mÃ©dio,jÃ¡ terÃ£o uma formaÃ§Ã£o profissional tÃ©cnica.  O TÃ©cnico em Meio Ambiente Ã© o profissional que coleta, armazena e interpreta informaÃ§Ãµes, dados e documentaÃ§Ãµes ambientais. Colabora na elaboraÃ§Ã£o de laudos, relatÃ³rios, estudos e no acompanhamento e execuÃ§Ã£o de sistemas de gestÃ£o ambiental. Atua na organizaÃ§Ã£o de programas de educaÃ§Ã£o ambiental, de conservaÃ§Ã£o e preservaÃ§Ã£o de recursos naturais, de reduÃ§Ã£o, reuso e reciclagem. Identifica as intervenÃ§Ãµes ambientais, analisa suas consequÃªncias e operacionaliza a execuÃ§Ã£o de aÃ§Ãµes para preservaÃ§Ã£o, conservaÃ§Ã£o, otimizaÃ§Ã£o, minimizaÃ§Ã£o e remediaÃ§Ã£o dos seus efeitos.   Mercado de trabalho  InstituiÃ§Ãµes pÃºblicas, terceiro setor, empresas prestadoras de serviÃ§os na Ã¡rea ambiental, laboratÃ³rios e centros de pesquisa, industrias, consultorias tÃ©cnico-ambientais.', 1),
-(6, 'InformÃ¡tica para Internet', 'foto-artigos/predio_etec.jpg', 0, 'O Ensino TÃ©cnico modular de InformÃ¡tica para Internet tem duraÃ§Ã£o de 3 semestres (3 mÃ³dulos).    O TÃ©cnico em InformÃ¡tica para Internet desenvolve e realiza manutenÃ§Ãµes em Websites, portais na Internet e Intranet. Utiliza ferramentas de desenvolvimento de projetos para construir soluÃ§Ãµes que auxiliam o processo de criaÃ§Ã£o de interfaces e aplicativos empregados no comÃ©rcio e marketing eletrÃ´nicos.  Mercado de Trabalho:  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor que demandem programaÃ§Ã£o de computadores para Internet.', 1),
-(7, 'AdministraÃ§Ã£o', 'foto-artigos/predio_etec.jpg', 0, 'O Ensino TÃ©cnico modular de AdministraÃ§Ã£o tem duraÃ§Ã£o de 3 semestres (3 mÃ³dulos).  O TÃ©cnico em AdministraÃ§Ã£o Ã© o profissional que adota postura Ã©tica na execuÃ§Ã£o da rotina administrativa, na elaboraÃ§Ã£o do planejamento da produÃ§Ã£o e materiais, recursos humanos, financeiros e mercadolÃ³gicos.  Realiza atividades de controles e auxilia nos processos de direÃ§Ã£o utilizando ferramentas da informÃ¡tica bÃ¡sica. Fomenta ideias e prÃ¡ticas empreendedoras.  Mercado de Trabalho:  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor.', 1),
-(8, 'Meio Ambiente', 'foto-artigos/predio_etec.jpg', 0, 'O Ensino TÃ©cnico modular de Meio Ambiente tem duraÃ§Ã£o de 3 semestres (3 mÃ³dulos).  O TÃ©cnico em Meio Ambiente Ã© o profissional que coleta, armazena e interpreta informaÃ§Ãµes, dados e documentaÃ§Ãµes ambientais. Colabora na elaboraÃ§Ã£o de laudos, relatÃ³rios, estudos e no acompanhamento e execuÃ§Ã£o de sistemas de gestÃ£o ambiental. Atua na organizaÃ§Ã£o de programas de educaÃ§Ã£o ambiental, de conservaÃ§Ã£o e preservaÃ§Ã£o de recursos naturais, de reduÃ§Ã£o, reuso e reciclagem. Identifica as intervenÃ§Ãµes ambientais, analisa suas consequÃªncias e operacionaliza a execuÃ§Ã£o de aÃ§Ãµes para preservaÃ§Ã£o, conservaÃ§Ã£o, otimizaÃ§Ã£o, minimizaÃ§Ã£o e remediaÃ§Ã£o dos seus efeitos.   Mercado de trabalho  InstituiÃ§Ãµes pÃºblicas, terceiro setor, empresas prestadoras de serviÃ§os na Ã¡rea ambiental, laboratÃ³rios e centros de pesquisa, industrias, consultorias tÃ©cnico-ambientais.', 1),
-(18, 'APM', 'download/apm.jpg', 0, '', NULL),
-(19, 'gustavo corta o cabelo', 'foto-artigos/', 1, 'ele fica careca', 1),
-(20, 'Adoglio Ã© corno ', 'foto-artigos/', 0, 'Foi oficialmente divulgado sobre a sexualidade do colega de classe eduardo adoglio pq ele Ã© corno aaaaaaaaaaaaaaaaaaaaaaaa', 1);
+(3, 'ETIM - AdministraÃ§Ã£o', 'foto-artigos/etim-mad.png', 0, 'O Ensino MÃ©dio integrado da ETEC de ItanhaÃ©m oferece ao aluno todo conhecimento da base nacional comum do ensino mÃ©dio porÃ©m oferece tambÃ©m a EducaÃ§Ã£o Profissional, o que Ã© uma forma de fazer o ensino mÃ©dio (formaÃ§Ã£o bÃ¡sica) junto com a educaÃ§Ã£o profissional (formaÃ§Ã£o tÃ©cnica), um atalho paraos alunos, pois ao concluirem o ensino mÃ©dio,jÃ¡ terÃ£o uma formaÃ§Ã£o profissional tÃ©cnica.O TÃ©cnico em AdministraÃ§Ã£o adota postura Ã©tica na execuÃ§Ã£o da rotina administrativa, na elaboraÃ§Ã£o do planejamento da produÃ§Ã£o e materiais, recursos humanos, financeiros e mercadolÃ³gicos. Realiza atividades de controles e auxilia nos processos de direÃ§Ã£o utilizando ferramentas da informÃ¡tica bÃ¡sica. Fomenta ideias e prÃ¡ticas empreendedoras.  Mercado de Trabalho:  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor.', 1),
+(4, 'ETIM - InformÃ¡tica para Internet', 'foto-artigos/etim-min.png', 0, 'O Ensino MÃ©dio integrado da ETEC de ItanhaÃ©m oferece ao aluno todo conhecimento da base nacional comum do ensino mÃ©dio porÃ©m oferece tambÃ©m a EducaÃ§Ã£o Profissional, o que Ã© uma forma de fazer o ensino mÃ©dio (formaÃ§Ã£o bÃ¡sica) junto com a educaÃ§Ã£o profissional (formaÃ§Ã£o tÃ©cnica), um atalho paraos alunos, pois ao concluirem o ensino mÃ©dio,jÃ¡ terÃ£o uma formaÃ§Ã£o profissional tÃ©cnica.  O TÃ©cnico em InformÃ¡tica para Internet desenvolve e realiza manutenÃ§Ãµes em Websites, portais na Internet e Intranet. Utiliza ferramentas de desenvolvimento de projetos para construir soluÃ§Ãµes que auxiliam o processo de criaÃ§Ã£o de interfaces e aplicativos empregados no comÃ©rcio e marketing eletrÃ´nicos.  Mercado de trabalho  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor.', 1),
+(5, 'ETIM - Meio Ambiente', 'foto-artigos/etim-mam.png', 0, 'O Ensino MÃ©dio integrado da ETEC de ItanhaÃ©m oferece ao aluno todo conhecimento da base nacional comum do ensino mÃ©dio porÃ©m oferece tambÃ©m a EducaÃ§Ã£o Profissional, o que Ã© uma forma de fazer o ensino mÃ©dio (formaÃ§Ã£o bÃ¡sica) junto com a educaÃ§Ã£o profissional (formaÃ§Ã£o tÃ©cnica), um atalho paraos alunos, pois ao concluirem o ensino mÃ©dio,jÃ¡ terÃ£o uma formaÃ§Ã£o profissional tÃ©cnica.  O TÃ©cnico em Meio Ambiente Ã© o profissional que coleta, armazena e interpreta informaÃ§Ãµes, dados e documentaÃ§Ãµes ambientais. Colabora na elaboraÃ§Ã£o de laudos, relatÃ³rios, estudos e no acompanhamento e execuÃ§Ã£o de sistemas de gestÃ£o ambiental. Atua na organizaÃ§Ã£o de programas de educaÃ§Ã£o ambiental, de conservaÃ§Ã£o e preservaÃ§Ã£o de recursos naturais, de reduÃ§Ã£o, reuso e reciclagem. Identifica as intervenÃ§Ãµes ambientais, analisa suas consequÃªncias e operacionaliza a execuÃ§Ã£o de aÃ§Ãµes para preservaÃ§Ã£o, conservaÃ§Ã£o, otimizaÃ§Ã£o, minimizaÃ§Ã£o e remediaÃ§Ã£o dos seus efeitos.   Mercado de trabalho  InstituiÃ§Ãµes pÃºblicas, terceiro setor, empresas prestadoras de serviÃ§os na Ã¡rea ambiental, laboratÃ³rios e centros de pesquisa, industrias, consultorias tÃ©cnico-ambientais.', 1),
+(6, 'InformÃ¡tica para Internet', 'foto-artigos/inf.png', 0, 'O Ensino TÃ©cnico modular de InformÃ¡tica para Internet tem duraÃ§Ã£o de 3 semestres (3 mÃ³dulos).    O TÃ©cnico em InformÃ¡tica para Internet desenvolve e realiza manutenÃ§Ãµes em Websites, portais na Internet e Intranet. Utiliza ferramentas de desenvolvimento de projetos para construir soluÃ§Ãµes que auxiliam o processo de criaÃ§Ã£o de interfaces e aplicativos empregados no comÃ©rcio e marketing eletrÃ´nicos.  Mercado de Trabalho:  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor que demandem programaÃ§Ã£o de computadores para Internet.', 1),
+(7, 'AdministraÃ§Ã£o', 'foto-artigos/adm.png', 0, 'O Ensino TÃ©cnico modular de AdministraÃ§Ã£o tem duraÃ§Ã£o de 3 semestres (3 mÃ³dulos).  O TÃ©cnico em AdministraÃ§Ã£o Ã© o profissional que adota postura Ã©tica na execuÃ§Ã£o da rotina administrativa, na elaboraÃ§Ã£o do planejamento da produÃ§Ã£o e materiais, recursos humanos, financeiros e mercadolÃ³gicos.  Realiza atividades de controles e auxilia nos processos de direÃ§Ã£o utilizando ferramentas da informÃ¡tica bÃ¡sica. Fomenta ideias e prÃ¡ticas empreendedoras.  Mercado de Trabalho:  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor.', 1),
+(8, 'Meio Ambiente', 'foto-artigos/amb.png', 0, 'O Ensino TÃ©cnico modular de Meio Ambiente tem duraÃ§Ã£o de 3 semestres (3 mÃ³dulos).  O TÃ©cnico em Meio Ambiente Ã© o profissional que coleta, armazena e interpreta informaÃ§Ãµes, dados e documentaÃ§Ãµes ambientais. Colabora na elaboraÃ§Ã£o de laudos, relatÃ³rios, estudos e no acompanhamento e execuÃ§Ã£o de sistemas de gestÃ£o ambiental. Atua na organizaÃ§Ã£o de programas de educaÃ§Ã£o ambiental, de conservaÃ§Ã£o e preservaÃ§Ã£o de recursos naturais, de reduÃ§Ã£o, reuso e reciclagem. Identifica as intervenÃ§Ãµes ambientais, analisa suas consequÃªncias e operacionaliza a execuÃ§Ã£o de aÃ§Ãµes para preservaÃ§Ã£o, conservaÃ§Ã£o, otimizaÃ§Ã£o, minimizaÃ§Ã£o e remediaÃ§Ã£o dos seus efeitos.   Mercado de trabalho  InstituiÃ§Ãµes pÃºblicas, terceiro setor, empresas prestadoras de serviÃ§os na Ã¡rea ambiental, laboratÃ³rios e centros de pesquisa, industrias, consultorias tÃ©cnico-ambientais.', 1),
+(18, 'APM', 'download/apm.jpg', 0, '', NULL);
 
 -- --------------------------------------------------------
 
@@ -455,9 +450,6 @@ CREATE TABLE IF NOT EXISTS `tb_calendario` (
 
 INSERT INTO `tb_calendario` (`cd_calendario`, `nm_tipo`, `ds_conteudo`, `nm_foto`, `nm_cor`, `dt_inicio`, `dt_fim`, `st_ativo`, `st_publico_privado`, `id_usuario`, `nm_evento`) VALUES
 (1, 'safrsfds', 'Apresentação dos trabalhos de conclusão de curso', 'imagens/eventos/artigo.jpg', '#dc3545', '2023-04-06 14:00:00', '2024-06-06 15:40:00', 1, 1, 1, 'Previa do TCC'),
-(6, '', 'Cuquinha farÃ¡ 20 anos', 'imagens/eventos/', '#6f42c1', '2033-12-12 14:58:00', '2033-12-12 15:00:00', 1, 2, 4, 'AnivesÃ¡rio'),
-(5, '', 'AvaliaÃ§Ã£o de MatemÃ¡tica', 'imagens/eventos/etec-itanhaem.jpg', '#007bff', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 2, 4, 'AvaliaÃ§Ã£o'),
-(7, '', 'AvaliaÃ§Ã£o de matemÃ¡tica dificÃ­lima', 'imagens/eventos/', '#007bff', '2018-11-28 14:00:00', '2018-11-28 14:50:00', 1, 2, 4, 'AvaliacÃ£o'),
 (8, '', 'Festa, Bebidas, Weeds e muito mais. TUDO isso aqui no ETEC FEST! Venha conferir. EndereÃ§o no site www.etecitanhaem.com', 'imagens/eventos/', '#28a745', '2018-12-01 22:00:00', '2018-12-02 01:00:00', 1, 1, 1, 'ETEC FEST');
 
 -- --------------------------------------------------------
@@ -498,8 +490,8 @@ INSERT INTO `tb_curso` (`cd_curso`, `nm_curso`, `sg_curso`) VALUES
 (3, 'Meio Ambiente Integrado ao Ensino MÃ©dio', 'Mam'),
 (4, 'InformÃ¡tica para Internet', 'Inf'),
 (5, 'AdministraÃ§Ã£o', 'Adm'),
-(6, 'Meio Ambiente', ''),
-(7, 'Ensino MÃ©dio', 'Amb');
+(6, 'Meio Ambiente', 'Amb'),
+(7, 'Ensino MÃ©dio', 'EM');
 
 -- --------------------------------------------------------
 
@@ -552,14 +544,22 @@ CREATE TABLE IF NOT EXISTS `tb_funcionario` (
   `id_usuario` int(11) NOT NULL,
   PRIMARY KEY (`cd_funcionario`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Extraindo dados da tabela `tb_funcionario`
 --
 
 INSERT INTO `tb_funcionario` (`cd_funcionario`, `nm_funcionario`, `nm_sobrenome`, `nm_foto`, `nm_cargo`, `ds_cargo`, `id_usuario`) VALUES
-(1, 'gdggd', 'dggsd', 'dgsgsgsgsg', 'sgsg', 'sgsg', 1);
+(2, 'Anali', 'Rodrigues', 'foto-funcionario/anali.jpg', 'Assistente Administrativo', ' Auxilia na DireÃ§Ã£o de ServiÃ§os e na Diretoria AcadÃªmica.', 1),
+(3, 'Lucymilia', 'PÃ¡jaro', 'foto-funcionario/lucymilia.jpg', 'Auxiliar Administrativo', 'Trabalha diretamente na Secretaria, atendendo alunos e funcionÃ¡rios, e apoiando no processo de documentaÃ§Ã£o necessÃ¡ria a administraÃ§Ã£o da ETEC.', 1),
+(4, 'Ederson', 'Teixeira', 'foto-funcionario/ed.jpg', 'Auxiliar Administrativo', 'Trabalha diretamente na Secretaria, atendendo alunos e funcionÃ¡rios, e apoiando no processo de documentaÃ§Ã£o necessÃ¡ria a administraÃ§Ã£o da ETEC.', 1),
+(5, 'Jairo', 'Malta Miranda', 'foto-funcionario/jairo.jpg', 'Auxiliar Administrativo', 'Trabalha diretamente na Secretaria, atendendo funcionÃ¡rios e professores da unidade.', 1),
+(6, 'Noemia', 'Tomoko', 'foto-funcionario/tomoko.jpg', 'Auxiliar Administrativo', 'Trabalha diretamente na Secretaria, atendendo alunos e funcionÃ¡rios, e apoiando no processo de documentaÃ§Ã£o necessÃ¡ria a administraÃ§Ã£o da ETEC.', 1),
+(7, 'DÃ©bora', 'Cravo', 'foto-funcionario/debora.jpg', 'Auxiliar Administrativo', 'Trabalha diretamente na Secretaria, atendendo alunos e funcionÃ¡rios, e apoiando no processo de documentaÃ§Ã£o necessÃ¡ria a administraÃ§Ã£o da ETEC.', 1),
+(8, 'AntÃ´nio', 'Felipe', 'foto-funcionario/felipe.jpg', 'Auxiliar Docente', 'ResponsÃ¡vel pelo CI - Centro de InformÃ¡tica da Etec.', 1),
+(9, 'Rodrigo', 'Arruda', 'foto-funcionario/rodrigo.jpg', 'Auxiliar Docente', 'ResponsÃ¡vel pelo CI - Centro de InformÃ¡tica da Etec. ', 1),
+(10, 'Fabiano', 'Groppo', 'foto-funcionario/fabiano.jpg', 'Auxiliar Docente', 'ResponsÃ¡vel pelos LaboratÃ³rios de QuÃ­mica e Biologia.', 1);
 
 -- --------------------------------------------------------
 
@@ -575,22 +575,26 @@ CREATE TABLE IF NOT EXISTS `tb_horario_coordenador` (
   `id_usuario` int(11) DEFAULT NULL,
   PRIMARY KEY (`cd_horario_coordenador`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=31 ;
 
 --
 -- Extraindo dados da tabela `tb_horario_coordenador`
 --
 
 INSERT INTO `tb_horario_coordenador` (`cd_horario_coordenador`, `hr_entrada`, `hr_saida`, `nm_dia_semana`, `id_usuario`) VALUES
-(4, '16:00:00', '21:00:00', 'TerÃ§a-feira', 1),
-(3, '16:00:00', '22:00:00', 'Segunda-feira', 1),
-(5, '09:00:00', '12:30:00', 'Quarta-feira', 1),
-(6, '13:30:00', '18:00:00', 'Quarta-feira', 1),
-(12, '14:30:00', '18:30:00', 'Sexta-feira', 1),
-(11, '14:00:00', '17:00:00', 'Quinta-feira', 1),
-(13, '20:30:00', '21:30:00', 'Sexta-feira', 1),
-(16, '16:01:00', '22:00:00', 'Segunda-feira', 1),
-(17, '12:00:00', '14:00:00', 'Quinta-feira', 3);
+(30, '20:30:00', '21:30:00', 'Sexta-feira', 9),
+(29, '14:30:00', '18:30:00', 'Sexta-feira', 9),
+(28, '08:00:00', '14:00:00', 'Quinta-feira', 9),
+(18, '16:00:00', '22:00:00', 'Segunda-feira', 8),
+(19, '16:00:00', '21:00:00', 'TerÃ§a-feira', 8),
+(20, '09:00:00', '12:30:00', 'Quarta-feira', 8),
+(21, '13:30:00', '18:00:00', 'Quarta-feira', 8),
+(22, '14:00:00', '17:00:00', 'Quinta-feira', 8),
+(23, '14:30:00', '18:30:00', 'Sexta-feira', 8),
+(24, '20:30:00', '21:30:00', 'Sexta-feira', 8),
+(25, '15:00:00', '21:00:00', 'Segunda-feira', 9),
+(26, '08:00:00', '14:00:00', 'TerÃ§a-feira', 9),
+(27, '13:30:00', '18:30:00', 'Quarta-feira', 9);
 
 -- --------------------------------------------------------
 
@@ -704,17 +708,16 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
   `id_tipo` int(11) NOT NULL,
   PRIMARY KEY (`cd_usuario`),
   KEY `id_tipo` (`id_tipo`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- Extraindo dados da tabela `tb_usuario`
 --
 
 INSERT INTO `tb_usuario` (`cd_usuario`, `nm_usuario`, `nm_sobrenome`, `nm_foto`, `nm_login`, `nm_senha`, `id_tipo`) VALUES
-(1, 'Gustavo', 'GuimarÃ£es Cervo', 'foto-coordenadores/mulher.jpg', 'gustavo.adm@gmail.com', '123', 1),
-(7, 'Adoglio', 'Corno', 'foto-coordenadores/', 'gayadoglio_corno@gmail.com', 'gaygay', 2),
-(3, 'Gustavo', 'Guimaraes', 'sflasf', 'gustavo.coord@gmail.com', '123', 2),
-(4, 'Gustavo', 'Guimarães', 'adada', 'gustavo.prof@gmail.com', '123', 3);
+(1, 'Gustavo', 'GuimarÃ£es Cervo', 'foto-coordenadores/elissangela.jpg', 'gustavo.adm@gmail.com', '123', 1),
+(9, 'Nalita', 'Gomes', 'foto-coordenadores/nalita.jpg', 'nalita.gomes@gmail.com', '123', 2),
+(8, 'ElissÃ¢ngela', 'Leite', 'foto-coordenadores/elissangela.jpg', 'elissangela.leite@gmail.com', '123', 2);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
