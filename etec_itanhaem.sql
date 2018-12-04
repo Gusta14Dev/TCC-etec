@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 03-Dez-2018 às 14:14
+-- Data de Criação: 04-Dez-2018 às 11:34
 -- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
@@ -415,7 +415,7 @@ CREATE TABLE IF NOT EXISTS `tb_artigo` (
 INSERT INTO `tb_artigo` (`cd_artigo`, `nm_artigo`, `nm_foto`, `st_noticia`, `ds_conteudo`, `id_usuario`) VALUES
 (1, 'HistÃ³rico', 'foto-artigos/predio_etec.jpg', 0, ' <p>A ETEC de ItanhaÃ©m iniciou suas atividades em 01/08/2006, como Classe Descentralizada da ETEC â€œAdolpho Berezinâ€ de MongaguÃ¡, atravÃ©s de um convÃªnio do Governo do Estado de SÃ£o Paulo com a atual administraÃ§Ã£o da Prefeitura Municipal de ItanhaÃ©m.</p> O convÃªnio foi assinado em 2006 pelo ExcelentÃ­ssimo Governador Sr. Geraldo Alkimin e ExcelentÃ­ssimo Prefeito Sr. JosÃ© Carlos Forssell, esta parceria viabilizou o prÃ©dio da Unidade Escolar, que era ocupado por alunos da Rede Municipal de Ensino.   No inÃ­cio, compartilhamos o mesmo prÃ©dio com os alunos da Rede Municipal e tÃ­nhamos apenas dois cursos TÃ©cnicos em Recursos HÃ­dricos e Saneamento, ambos com 40 alunos, no perÃ­odo noturno.   Na ocasiÃ£o, esses dois cursos foram escolhidos pelo Prefeito da cidade, para suprir futuras necessidades de um Projeto de Saneamento BÃ¡sico em toda RegiÃ£o Metropolitana da Baixada Santista.   Em 2007 o entÃ£o Governador Eleito ExcelentÃ­ssimo Sr. JosÃ© Serra assinou seu primeiro decreto como Governador, criando a ETEC de ItanhaÃ©m como unidade prÃ³pria e independente, em 24/01/07, decreto nÂº 51.500. No segundo semestre de 2007, implantamos mais dois cursos TÃ©cnicos em AdministraÃ§Ã£o e Web Design ambos com quarenta alunos, o Ãºltimo no perÃ­odo vespertino. No final de 2007, nÃ£o compartilhÃ¡vamos o prÃ©dio da escola, nos possibilitando a ampliar nossos cursos.   Em 2008 a escola ganhou uma nova cara, uma nova identidade, iniciaram as aulas do Ensino MÃ©dio, com oitenta alunos no perÃ­odo diurno.   Assim, desde 2008 temos a escola em funcionamento manhÃ£, tarde e noite.   Em fevereiro de 2009 iniciamos mais um curso no perÃ­odo da tarde, TÃ©cnico em Secretariado, com quarenta alunos. Ganhamos uma Classe Descentralizada de PeruÃ­be com dois cursos TÃ©cnicos em Contabilidade e LogÃ­stica. Em 2010, tivemos inÃ­cio tambÃ©m do curso Modelagem de VestuÃ¡rio.     Em 2012, alguns cursos TÃ©cnicos foram para o perÃ­odo noturno, possibilitando que os cursos tÃ©cnicos de Secretariado e InformÃ¡tica para Internet, pudessem atender as pessoas que sÃ³ tem o perÃ­odo noturno para se atualizar profissionalmente.     TambÃ©m no ano de 2012, iniciaram o nosso Ensino MÃ©dio Integrado em AdministraÃ§Ã£o e InformÃ¡tica para Internet,  onde possibilitou que os Jovens da RegiÃ£o tivessem uma formaÃ§Ã£o mais completa, pois ao mesmo tempo que estÃ£o fazendo o Ensino MÃ©dio, tambÃ©m estÃ£o complementando com uma formaÃ§Ã£o tÃ©cnica profissionalizante.     Em 2013 iniciamos com o Curso TÃ©cnico em Meio Ambiente.     Em 2016 iniciamos com o ETIM - Ensino MÃ©dio Integrado com Meio Ambiente.', 1),
 (3, 'ETIM - AdministraÃ§Ã£o', 'foto-artigos/etim-mad.png', 0, 'O Ensino MÃ©dio integrado da ETEC de ItanhaÃ©m oferece ao aluno todo conhecimento da base nacional comum do ensino mÃ©dio porÃ©m oferece tambÃ©m a EducaÃ§Ã£o Profissional, o que Ã© uma forma de fazer o ensino mÃ©dio (formaÃ§Ã£o bÃ¡sica) junto com a educaÃ§Ã£o profissional (formaÃ§Ã£o tÃ©cnica), um atalho paraos alunos, pois ao concluirem o ensino mÃ©dio,jÃ¡ terÃ£o uma formaÃ§Ã£o profissional tÃ©cnica.O TÃ©cnico em AdministraÃ§Ã£o adota postura Ã©tica na execuÃ§Ã£o da rotina administrativa, na elaboraÃ§Ã£o do planejamento da produÃ§Ã£o e materiais, recursos humanos, financeiros e mercadolÃ³gicos. Realiza atividades de controles e auxilia nos processos de direÃ§Ã£o utilizando ferramentas da informÃ¡tica bÃ¡sica. Fomenta ideias e prÃ¡ticas empreendedoras.  Mercado de Trabalho:  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor.', 1),
-(4, 'ETIM - InformÃ¡tica para Internet', 'foto-artigos/zika.png', 0, 'O Ensino MÃ©dio integrado da ETEC de ItanhaÃ©m oferece ao aluno todo conhecimento da base nacional comum do ensino mÃ©dio porÃ©m oferece tambÃ©m a EducaÃ§Ã£o Profissional, o que Ã© uma forma de fazer o ensino mÃ©dio (formaÃ§Ã£o bÃ¡sica) junto com a educaÃ§Ã£o profissional (formaÃ§Ã£o tÃ©cnica), um atalho paraos alunos, pois ao concluirem o ensino mÃ©dio,jÃ¡ terÃ£o uma formaÃ§Ã£o profissional tÃ©cnica.  O TÃ©cnico em InformÃ¡tica para Internet desenvolve e realiza manutenÃ§Ãµes em Websites, portais na Internet e Intranet. Utiliza ferramentas de desenvolvimento de projetos para construir soluÃ§Ãµes que auxiliam o processo de criaÃ§Ã£o de interfaces e aplicativos empregados no comÃ©rcio e marketing eletrÃ´nicos.  Mercado de trabalho  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor.', 1),
+(4, 'ETIM - InformÃ¡tica para Internet', 'foto-artigos/zika.png', 0, 'O Ensino MÃ©dio integrado da ETEC de ItanhaÃ©m oferece ao aluno todo conhecimento da base nacional comum do ensino mÃ©dio porÃ©m oferece tambÃ©m a EducaÃ§Ã£o Profissional, o que Ã© uma forma de fazer o ensino mÃ©dio (formaÃ§Ã£o bÃ¡sica) junto com a educaÃ§Ã£o profissional (formaÃ§Ã£o tÃ©cnica), um atalho para os alunos, pois ao concluirem o ensino mÃ©dio,jÃ¡ terÃ£o uma formaÃ§Ã£o profissional tÃ©cnica. O TÃ©cnico em InformÃ¡tica para Internet desenvolve e realiza manutenÃ§Ãµes em Websites, portais na Internet e Intranet. Utiliza ferramentas de desenvolvimento de projetos para construir soluÃ§Ãµes que auxiliam o processo de criaÃ§Ã£o de interfaces e aplicativos empregados no comÃ©rcio e marketing eletrÃ´nicos. Mercado de trabalho, InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor.', 1),
 (5, 'ETIM - Meio Ambiente', 'foto-artigos/etim-mam.png', 0, 'O Ensino MÃ©dio integrado da ETEC de ItanhaÃ©m oferece ao aluno todo conhecimento da base nacional comum do ensino mÃ©dio porÃ©m oferece tambÃ©m a EducaÃ§Ã£o Profissional, o que Ã© uma forma de fazer o ensino mÃ©dio (formaÃ§Ã£o bÃ¡sica) junto com a educaÃ§Ã£o profissional (formaÃ§Ã£o tÃ©cnica), um atalho paraos alunos, pois ao concluirem o ensino mÃ©dio,jÃ¡ terÃ£o uma formaÃ§Ã£o profissional tÃ©cnica.  O TÃ©cnico em Meio Ambiente Ã© o profissional que coleta, armazena e interpreta informaÃ§Ãµes, dados e documentaÃ§Ãµes ambientais. Colabora na elaboraÃ§Ã£o de laudos, relatÃ³rios, estudos e no acompanhamento e execuÃ§Ã£o de sistemas de gestÃ£o ambiental. Atua na organizaÃ§Ã£o de programas de educaÃ§Ã£o ambiental, de conservaÃ§Ã£o e preservaÃ§Ã£o de recursos naturais, de reduÃ§Ã£o, reuso e reciclagem. Identifica as intervenÃ§Ãµes ambientais, analisa suas consequÃªncias e operacionaliza a execuÃ§Ã£o de aÃ§Ãµes para preservaÃ§Ã£o, conservaÃ§Ã£o, otimizaÃ§Ã£o, minimizaÃ§Ã£o e remediaÃ§Ã£o dos seus efeitos.   Mercado de trabalho  InstituiÃ§Ãµes pÃºblicas, terceiro setor, empresas prestadoras de serviÃ§os na Ã¡rea ambiental, laboratÃ³rios e centros de pesquisa, industrias, consultorias tÃ©cnico-ambientais.', 1),
 (6, 'InformÃ¡tica para Internet', 'foto-artigos/inf.png', 0, 'O Ensino TÃ©cnico modular de InformÃ¡tica para Internet tem duraÃ§Ã£o de 3 semestres (3 mÃ³dulos).    O TÃ©cnico em InformÃ¡tica para Internet desenvolve e realiza manutenÃ§Ãµes em Websites, portais na Internet e Intranet. Utiliza ferramentas de desenvolvimento de projetos para construir soluÃ§Ãµes que auxiliam o processo de criaÃ§Ã£o de interfaces e aplicativos empregados no comÃ©rcio e marketing eletrÃ´nicos.  Mercado de Trabalho:  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor que demandem programaÃ§Ã£o de computadores para Internet.', 1),
 (7, 'AdministraÃ§Ã£o', 'foto-artigos/adm.png', 0, 'O Ensino TÃ©cnico modular de AdministraÃ§Ã£o tem duraÃ§Ã£o de 3 semestres (3 mÃ³dulos).  O TÃ©cnico em AdministraÃ§Ã£o Ã© o profissional que adota postura Ã©tica na execuÃ§Ã£o da rotina administrativa, na elaboraÃ§Ã£o do planejamento da produÃ§Ã£o e materiais, recursos humanos, financeiros e mercadolÃ³gicos.  Realiza atividades de controles e auxilia nos processos de direÃ§Ã£o utilizando ferramentas da informÃ¡tica bÃ¡sica. Fomenta ideias e prÃ¡ticas empreendedoras.  Mercado de Trabalho:  InstituiÃ§Ãµes pÃºblicas, privadas e terceiro setor.', 1),
@@ -442,15 +442,15 @@ CREATE TABLE IF NOT EXISTS `tb_calendario` (
   `nm_evento` varchar(220) DEFAULT NULL,
   PRIMARY KEY (`cd_calendario`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- Extraindo dados da tabela `tb_calendario`
 --
 
 INSERT INTO `tb_calendario` (`cd_calendario`, `nm_tipo`, `ds_conteudo`, `nm_foto`, `nm_cor`, `dt_inicio`, `dt_fim`, `st_ativo`, `st_publico_privado`, `id_usuario`, `nm_evento`) VALUES
-(1, 'safrsfds', 'Apresentação dos trabalhos de conclusão de curso', 'imagens/eventos/artigo.jpg', '#dc3545', '2023-04-06 14:00:00', '2024-06-06 15:40:00', 1, 1, 1, 'Previa do TCC'),
-(8, '', 'Festa, Bebidas, Weeds e muito mais. TUDO isso aqui no ETEC FEST! Venha conferir. EndereÃ§o no site www.etecitanhaem.com', 'imagens/eventos/', '#28a745', '2018-12-01 22:00:00', '2018-12-02 01:00:00', 1, 1, 1, 'ETEC FEST');
+(9, '', 'Ã‰ o show do careca Ã“', 'imagens/eventos/zika.png', '#dc3545', '2018-12-21 10:00:00', '2018-12-21 11:00:00', 1, 2, 1, 'Show do Careca'),
+(8, '', 'Festa, Bebidas e muito mais. Tudo isso aqui no ETEC FEST! Venha conferir. EndereÃ§o: Av.JosÃ© Batista Campos, 1431 - Anchieta - ItanhaÃ©m/SP - Tel (13)3426-4926', 'imagens/eventos/', '#dc3545', '2018-12-01 22:00:00', '2018-12-02 01:00:00', 1, 1, 1, 'ETEC FEST');
 
 -- --------------------------------------------------------
 
@@ -753,27 +753,27 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
 
 INSERT INTO `tb_usuario` (`cd_usuario`, `nm_usuario`, `nm_sobrenome`, `nm_foto`, `ds_descricao`, `nm_login`, `nm_senha`, `id_tipo`) VALUES
 (1, 'Gustavo', 'GuimarÃ£es Cervo', 'foto-coordenadores/elissangela.jpg', 'Administrador do site', 'gustavo.adm@gmail.com', '123', 1),
-(9, 'Nalita', 'Gomes', 'foto-coordenadores/nalita.jpg', 'Orientadora Educacional', 'nalita.gomes@gmail.com', '123', 2),
-(8, 'ElissÃ¢ngela', 'Leite', 'foto-coordenadores/elissangela.jpg', 'Coordenadora PedagÃ³gica', 'elissangela.leite@gmail.com', '123', 2),
-(10, 'Thiago', 'Pellegrini', 'foto-coordenadores/thiago.jpg', 'Coordenador do Ensino MÃ©dio Integrado', 'thiago.pellegrini@gmail.com', '123', 2),
-(11, 'Jussimar', 'Leal', 'foto-coordenadores/jussimar.jpg', 'Coordenador do Curso TÃ©cnico de InformÃ¡tica para Internet', 'jussimar.leal@gmail.com', '123', 2),
-(12, 'Regina', 'CÃ©lia Luz', 'foto-coordenadores/regina.jpg', 'Coordenadora do Curso TÃ©cnico de AdministraÃ§Ã£o', 'regina.celia@gmail.com', '123', 2),
-(13, 'Tadeu', 'Dantas', 'foto-coordenadores/tadeu.jpg', ' Coordenador do Curso TÃ©cnico de Meio Ambiente', 'tadeu.dantas@gmail.com', '123', 2),
-(14, 'Michelle', 'Barbosa', 'foto-coordenadores/michelle.jpg', 'Coordenadora do Projeto: LaboratÃ³rio PedagÃ³gico', 'michelle.barbosa@gmail.com', '123', 2),
-(15, 'Roseli', 'Zizka', 'foto-coordenadores/roseli.jpg', 'ResponsÃ¡vel pela Biblioteca', 'roseli.zizka@gmail.com', '123', 2),
-(16, 'Arlete', 'AtaÃ­de', 'foto-coordenadores/arlete.jpg', 'ResponsÃ¡vel pela Biblioteca', 'arlete.ataide@gmail.com', '123', 2),
+(9, 'Nalita', 'Gomes', 'foto-coordenadores/nalita.jpg', 'Orientadora Educacional', 'nalita.coordenador@gmail.com', '123', 2),
+(8, 'ElissÃ¢ngela', 'Leite', 'foto-coordenadores/elissangela.jpg', 'Coordenadora PedagÃ³gica', 'elissangela.coordenador@gmail.com', '123', 2),
+(10, 'Thiago', 'Pellegrini', 'foto-coordenadores/thiago.jpg', 'Coordenador do Ensino MÃ©dio Integrado', 'thiago.coordenador@gmail.com', '123', 2),
+(11, 'Jussimar', 'Leal', 'foto-coordenadores/jussimar.jpg', 'Coordenador do Curso TÃ©cnico de InformÃ¡tica para Internet', 'jussimar.coordenador@gmail.com', '123', 2),
+(12, 'Regina', 'CÃ©lia Luz', 'foto-coordenadores/regina.jpg', 'Coordenadora do Curso TÃ©cnico de AdministraÃ§Ã£o', 'regina.coordenador@gmail.com', '123', 2),
+(13, 'Tadeu', 'Dantas', 'foto-coordenadores/tadeu.jpg', ' Coordenador do Curso TÃ©cnico de Meio Ambiente', 'tadeu.coordenador@gmail.com', '123', 2),
+(14, 'Michelle', 'Barbosa', 'foto-coordenadores/michelle.jpg', 'Coordenadora do Projeto: LaboratÃ³rio PedagÃ³gico', 'michelle.coordenador@gmail.com', '123', 2),
+(15, 'Roseli', 'Zizka', 'foto-coordenadores/roseli.jpg', 'ResponsÃ¡vel pela Biblioteca', 'roseli.coordenador@gmail.com', '123', 2),
+(16, 'Arlete', 'AtaÃ­de', 'foto-coordenadores/arlete.jpg', 'ResponsÃ¡vel pela Biblioteca', 'arlete.coordenador@gmail.com', '123', 2),
 (18, 'Alex', 'Marcelo dos Santos', 'foto-professor/', 'Professor do Curso de InformÃ¡tica para Internet', 'alex.marcelo@gmail.com', '123', 3),
 (19, 'Alex', 'Paulo de AraÃºjo', 'foto-professor/', 'Professor do Curso de Meio Ambiente', 'alex.paulo@gmail.com', '123', 3),
 (20, 'Alexsandro', 'Morais dos Santos', 'foto-professor/', 'Professor do Curso de Meio Ambiente', 'alexsandro.morais@gmail.com', '123', 3),
 (21, 'Amauri', 'Rodrigues de Souza', 'foto-professor/', 'Professor de MatemÃ¡tica no Ensino MÃ©dio do curso TÃ©cnico em Meio Ambiente', 'amauri.rodrigues@gmail.com', '123', 3),
 (22, 'AndrÃ©', 'Luiz Ferraz', 'foto-professor/', 'Professor do Curso de InformÃ¡tica para Internet', 'andre.luiz@gmail.com', '123', 3),
-(23, 'Arlete', 'AtaÃ­de', 'foto-professor/', 'Professora de LÃ­ngua Portuguesa e InglÃªs TÃ©cnico nos Cursos TÃ©cnicos', 'arlete.ataide@gmail.com', '123', 3),
+(23, 'Arlete', 'AtaÃ­de', 'foto-professor/', 'Professora de LÃ­ngua Portuguesa e InglÃªs TÃ©cnico nos Cursos TÃ©cnicos', 'arlete.professor@gmail.com', '123', 3),
 (24, 'ClÃ¡udio', 'Lopes Ferrini Garcia', 'foto-professor/', 'Professor de InformÃ¡tica para Internet', 'claudio.ferrini@gmail.com', '123', 3),
 (25, 'DiÃ³genes', 'Leandro Pereira', 'foto-professor/', 'Professor do Curso de InformÃ¡tica para Internet', 'diogenes.pereira@gmail.com', '123', 3),
 (26, 'Eduardo', 'Francisco Pereira de Souza', 'foto-professor/', 'Professor do Curso TÃ©cnico em AdministraÃ§Ã£o', 'eduardo.francisco@gmail.com', '123', 3),
 (27, 'Eliamar', 'Gutierres Augusto', 'foto-professor/', 'Professora do Curso TÃ©cnico em AdministraÃ§Ã£o', 'eliamar.augusto@gmail.com', '123', 3),
 (28, 'Elisangela', 'Xavier Pereira dos Santos', 'foto-professor/', 'Professor do Curso de InformÃ¡tica para Internet', 'elisangela.xavier@gmail.com', '123', 3),
-(29, 'ElissÃ¢ngela', 'Leite', 'foto-professor/', 'Professora de Artes e Coordenadora PedagÃ³gica', 'elissangela.leite@gmail.com', '123', 3),
+(29, 'ElissÃ¢ngela', 'Leite', 'foto-professor/', 'Professora de Artes e Coordenadora PedagÃ³gica', 'elissangela.professor@gmail.com', '123', 3),
 (30, 'Fulvio', 'Fusaro Caratin', 'foto-professor/', 'Professor do Ensino MÃ©dio', 'fulvio.fusaro@gmail.com', '123', 3),
 (31, 'JoÃ£o', 'Bosco Gianotti', 'foto-professor/', 'Professor de Biologia do Ensino MÃ©dio e do curso TÃ©cnico em Meio Ambiente', 'joao.bosco@gmail.com', '123', 3),
 (32, 'JoÃ£o', 'GonÃ§alves Macedo', 'foto-professor/', 'Professor de HistÃ³ria do Ensino MÃ©dio', 'joao.macedo@gmail.com', '123', 3),
@@ -781,24 +781,24 @@ INSERT INTO `tb_usuario` (`cd_usuario`, `nm_usuario`, `nm_sobrenome`, `nm_foto`,
 (34, 'JosÃ©', 'Adriano de Barros', 'foto-professor/', 'Professor de QuÃ­mica do Ensino MÃ©dio e do curso TÃ©cnico em Meio Ambiente', 'jose.adriano@gmail.com', '123', 3),
 (35, 'JosÃ©', 'Wellington Costa Silva', 'foto-professor/', 'Professor do Curso de InformÃ¡tica para Internet', 'jose.wellington@gmail.com', '123', 3),
 (36, 'JÃºlio', 'CÃ©sar Menezes Borges', 'foto-professor/', 'Professor de Biologia do Ensino MÃ©dio e do curso TÃ©cnico em Meio Ambiente', 'julio.borges@gmail.com', '123', 3),
-(37, 'Jussimar', 'Leal', 'foto-professor/', 'Professor do Curso de InformÃ¡tica para Internet', 'jussimar.leal@gmail.com', '123', 3),
+(37, 'Jussimar', 'Leal', 'foto-professor/', 'Professor do Curso de InformÃ¡tica para Internet', 'jussimar.professor@gmail.com', '123', 3),
 (38, 'Karina', 'Verdum Galhardo', 'foto-professor/', 'Professora do Ensino MÃ©dio', 'karina.verdum@gmail.com', '123', 3),
 (39, 'Lucas', 'de Souza Machado Costa', 'foto-professor/', 'Professor de Biologia do Ensino MÃ©dio e do Curso TÃ©cnico em Meio Ambiente', 'lucas.costa@gmail.com', '123', 3),
 (40, 'Luiz', 'Fernando Mosolino de Oliveira', 'foto-professor/', 'Professor de FÃ­sica e MatemÃ¡tica do Ensino MÃ©dio', 'luiz.mosolino@gmail.com', '123', 3),
 (41, 'Marcelo', 'Gazzo', 'foto-professor/', 'Professor do Curso TÃ©cnico em Meio Ambiente', 'marcelo.gazzo@gmail.com', '123', 3),
 (42, 'Marcelo', 'HipÃ³lito de Moura', 'foto-professor/', 'Professor do Curso de AdministraÃ§Ã£o', 'marcelo.moura@gmail.com', '123', 3),
-(43, 'Michelle', 'Barbosa AraÃºjo', 'foto-professor/', 'Professora do Curso de InformÃ¡tica para Internet', 'michelle.barbosa@gmail.com', '123', 3),
+(43, 'Michelle', 'Barbosa', 'foto-professor/', 'Professora do Curso de InformÃ¡tica para Internet', 'michelle.coordenador@gmail.com', '123', 3),
 (44, 'Moema', 'Setubal de Souza', 'foto-professor/', 'Professora de AdministraÃ§Ã£o', 'moema.setubal@gmail.com', '123', 3),
 (45, 'Murillo', 'da Silva Nascimento', 'foto-professor/', 'Professor de MatemÃ¡tica', 'murillo.nascimento@gmail.com', '123', 3),
-(46, 'Nalita', 'Gomes', 'foto-professor/', 'Professora de Ã‰tica e Sociologia do Ensino MÃ©dio', 'nalita.gomes@gmail.com', '123', 3),
+(46, 'Nalita', 'Gomes', 'foto-professor/', 'Professora de Ã‰tica e Sociologia do Ensino MÃ©dio', 'nalita.coordenador@gmail.com', '123', 3),
 (47, 'Nivaldo', 'Fernandes', 'foto-professor/', 'Professor de Artes do Ensino MÃ©dio', 'nivaldo.fernandes@gmail.com', '123', 3),
 (48, 'Oswaldo', 'Luiz Bertoli', 'foto-professor/', 'Professor do Curso de InformÃ¡tica para Internet', 'oswaldo.bertoli@gmail.com', '123', 3),
-(49, 'Regina', 'CÃ©lia Vieira de Morais', 'foto-professor/', 'Professor do Curso de AdministraÃ§Ã£o', 'regina.morais@gmail.com', '123', 3),
+(49, 'Regina', 'CÃ©lia Luz', 'foto-professor/', 'Professor do Curso de AdministraÃ§Ã£o', 'regina.professor@gmail.com', '123', 3),
 (50, 'Rodolfo', 'AraÃºjo', 'foto-professor/', 'Professor do Curso de InformÃ¡tica para Internet', 'rodolfo.araujo@gmail.com', '123', 3),
 (51, 'Rodrigo', 'Ferraz', 'foto-professor/', 'Professora de Geografia do Ensino MÃ©dio e do curso TÃ©cnico Meio Ambiente', 'rodrigo.ferraz@gmail.com', '123', 3),
-(52, 'Roseli', 'Zizka', 'foto-professor/', 'Professora de QuÃ­mica do Ensino MÃ©dio e do curso TÃ©cnico Meio Ambiente', 'roseli.zizka@gmail.com', '123', 3),
-(53, 'Tadeu', 'Dantas de Souza', 'foto-professor/', 'Professor de Biologia do Ensino MÃ©dio e do curso TÃ©cnico Meio Ambiente', 'tadeu.souza@gmail.com', '123', 3),
-(54, 'Thiago', 'Pellegrini', 'foto-professor/', 'Professor de Biologia do Ensino MÃ©dio e do curso TÃ©cnico Meio Ambiente', 'thiago.pellegrini@gmail.com', '123', 3),
+(52, 'Roseli', 'Zizka', 'foto-professor/', 'Professora de QuÃ­mica do Ensino MÃ©dio e do curso TÃ©cnico Meio Ambiente', 'roseli.professor@gmail.com', '123', 3),
+(53, 'Tadeu', 'Dantas', 'foto-professor/', 'Professor de Biologia do Ensino MÃ©dio e do curso TÃ©cnico Meio Ambiente', 'tadeu.professor@gmail.com', '123', 3),
+(54, 'Thiago', 'Pellegrini', 'foto-professor/', 'Professor de Biologia do Ensino MÃ©dio e do curso TÃ©cnico Meio Ambiente', 'thiago.professor@gmail.com', '123', 3),
 (55, 'Valdemar', 'Cardoso', 'foto-professor/', 'Professor de FÃ­sica do Ensino MÃ©dio', 'valdemar.cardoso@gmail.com', '123', 3),
 (56, 'Viviane', 'Barbosa Rasga Aires', 'foto-professor/', 'Professor de LÃ­ngua Portuguesa do Ensino MÃ©dio', 'viviane.rasga@gmail.com', '123', 3),
 (57, 'Willians', 'Souza de Oliveira', 'foto-professor/', 'Professor de EducaÃ§Ã£o FÃ­sica do Ensino MÃ©dio', 'willians.souza@gmail.com', '123', 3);

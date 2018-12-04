@@ -97,7 +97,7 @@ include_once("includes/conexao.php");
             </a>
           </ul>
         </li>
-        <a class="menu-link" href="#">
+        <a class="menu-link" href="visualizar_eventos.php">
          <li class="menu-item">
            <span>Eventos</span>
          </li>
@@ -234,7 +234,7 @@ include_once("includes/conexao.php");
           </ul>
          </li>
         </a>
-        <a class="menu-link" href="#">
+        <a class="menu-link" href="corpo_docente.php">
          <li class="menu-item">
            <span>Corpo docente</span>
          </li>
