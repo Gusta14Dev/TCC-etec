@@ -25,33 +25,70 @@
   <div class="container-fluid" id="curso">
     <div class="row">
       <!-- Imagem do curso de informática -->
-      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-0 p-sm-5">
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-0 p-sm-4">
         <div class="image-curso">
           <img src="imagens/pc.svg" alt="Curso de informática para internet" class="img-fluid">
         </div> 
         <!-- Informações do curso de informática para internet -->
-        <h4 class="text-center">DESENVOLVIMENTO DE SISTEMAS</h4>
-        <p class="text-justify">O curso de informática para internet esta disponibilizado no periodo noturno com duração de 1 ano e 6 meses e integrado ao ensino médio (Etim) com duração de 3 anos.</p>
+        <h4 class="text-center">Informática para Internet (ETIM)</h4>
+        <p class="text-justify">O Ensino Médio integrado da ETEC de Itanhaém oferece ao aluno todo conhecimento da base nacional comum do ensino médio porém oferece também a Educação Profissional, o que é uma forma de fazer o ensino médio (formação básica) junto com a educação profissional (formação técnica), um atalho paraos alunos, pois ao concluirem o ensino médio,já terão uma formação profissional técnica. O Técnico em Informática para Internet desenvolve e realiza manutenções em Websites...</p>
+        <div class="mx-auto w-25"><a href="visualizar.php?view=0&itens=4" class="btn btn-success justify-content-center">Saiba mais</a></div>
       </div>
 
       <!-- Imagem do curso de Administração -->
-      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-0 p-sm-5">
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-0 p-sm-4">
         <div class="image-curso">
           <img src="imagens/caixa.svg" alt="Curso de administração" class="img-fluid">
         </div>
         <!-- Informações do curso de administração -->
-        <h4 class="text-center">ADMINISTRAÇÃO</h4>
-        <p class="text-justify">O curso de informática para internet esta disponibilizado no periodo noturno com duração de 2 anos e integrado ao ensino médio (Etim) com duração de 3 anos.</p>
+        <h4 class="text-center">Administração (ETIM)</h4>
+        <p class="text-justify">O Ensino Médio integrado da ETEC de Itanhaém oferece ao aluno todo conhecimento da base nacional comum do ensino médio porém oferece também a Educação Profissional, o que é uma forma de fazer o ensino médio (formação básica) junto com a educação profissional (formação técnica), um atalho paraos alunos, pois ao concluirem o ensino médio,já terão uma formação profissional técnica.O Técnico em Administração adota postura ética na execução da rotina administrativa...</p>
+        <div class="mx-auto w-25"><a href="visualizar.php?view=0&itens=3" class="btn btn-success justify-content-center">Saiba mais</a></div>
       </div>
 
       <!-- Imagem do curso de Meio ambiente -->
-      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-0 p-sm-5">
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-0 p-sm-4">
         <div class="image-curso">
           <img src="imagens/planta.svg" alt="Curso de meio ambiente" class="img-fluid">
         </div>
         <!-- Informações do curso de meio ambiente -->
-        <h4 class="text-center">MEIO AMBIENTE</h4>
-        <p class="text-justify">O curso de informática para internet esta disponibilizado no periodo noturno com duração de 2 anos e integrado ao ensino médio (Etim) com duração de 3 anos.</p>
+        <h4 class="text-center mt-1">Meio Ambiente (ETIM)</h4>
+        <p class="text-justify">O Ensino Médio integrado da ETEC de Itanhaém oferece ao aluno todo conhecimento da base nacional comum do ensino médio porém oferece também a Educação Profissional, o que é uma forma de fazer o ensino médio (formação básica) junto com a educação profissional (formação técnica), um atalho paraos alunos, pois ao concluirem o ensino médio,já terão uma formação profissional técnica. O Técnico em Meio Ambiente é o profissional que coleta, armazena e interpreta informações...</p>
+        <div class="mx-auto w-25"><a href="visualizar.php?view=0&itens=5" class="btn btn-success">Saiba mais</a></div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Imagem do curso de informática -->
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-0 p-sm-4">
+        <div class="image-curso">
+          <img src="imagens/pc.svg" alt="Curso de informática para internet" class="img-fluid">
+        </div> 
+        <!-- Informações do curso de informática para internet -->
+        <h4 class="text-center">Desenvolvimento de Sistemas</h4>
+        <p class="text-justify">O Ensino Técnico modular de Informática para Internet tem duração de 3 semestres (3 módulos). O Técnico em Informática para Internet desenvolve e realiza manutenções em Websites, portais na Internet e Intranet. Utiliza ferramentas de desenvolvimento de projetos para construir soluções que auxiliam o processo de criação de interfaces e aplicativos empregados no comércio e marketing eletrônicos. ...</p>
+        <div class="mx-auto w-25"><a href="visualizar.php?view=0&itens=6" class="btn btn-success justify-content-center">Saiba mais</a></div>
+      </div>
+
+      <!-- Imagem do curso de Administração -->
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-0 p-sm-4">
+        <div class="image-curso">
+          <img src="imagens/caixa.svg" alt="Curso de administração" class="img-fluid">
+        </div>
+        <!-- Informações do curso de administração -->
+        <h4 class="text-center">Administração</h4>
+        <p class="text-justify">O Ensino Técnico modular de Administração tem duração de 3 semestres (3 módulos). O Técnico em Administração é o profissional que adota postura ética na execução da rotina administrativa, na elaboração do planejamento da produção e materiais, recursos humanos, financeiros e mercadológicos. Realiza atividades de controles e auxilia nos processos de direção utilizando ferramentas da informática básica...</p>
+        <div class="mx-auto w-25"><a href="visualizar.php?view=0&itens=7" class="btn btn-success justify-content-center">Saiba mais</a></div>
+      </div>
+
+      <!-- Imagem do curso de Meio ambiente -->
+      <div class="col-sm-4 mx-auto mt-sm-0 mt-1 p-0 p-sm-4">
+        <div class="image-curso">
+          <img src="imagens/planta.svg" alt="Curso de meio ambiente" class="img-fluid">
+        </div>
+        <!-- Informações do curso de meio ambiente -->
+        <h4 class="text-center mt-1">Meio Ambiente</h4>
+        <p class="text-justify">O Ensino Técnico modular de Meio Ambiente tem duração de 3 semestres (3 módulos). O Técnico em Meio Ambiente é o profissional que coleta, armazena e interpreta informações, dados e documentações ambientais. Colabora na elaboração de laudos, relatórios, estudos e no acompanhamento e execução de sistemas de gestão ambiental. Atua na organização de programas de educação ambiental...</p>
+        <div class="mx-auto w-25"><a href="visualizar.php?view=0&itens=5" class="btn btn-success justify-content-center">Saiba mais</a></div>
       </div>
     </div>
       

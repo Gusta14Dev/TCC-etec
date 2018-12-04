@@ -74,27 +74,5 @@
   <script src="js/swiper.min.js"></script>
   <script src="js/menu-index.js"></script>
 
- <footer class="footer mt-5">
-    <div class="nav-header">
-    </div>
-    <div class="nav-body">
-      <div class="form-row mx-auto align-items-center text-center text-light">
-        <div class="col-4 mx-auto mt-sm-0 mt-1 p-0">
-          <p></p>
-          <p>Email</p>
-          <p>email.da@escola.com</p>
-        </div>
-        <div class="col-4 mx-auto mt-sm-0 mt-1">
-          <p></p>
-          <p>Telefone</p>
-          <p>(13)34707070</p>
-        </div>
-      </div>
-    </div>
-    <div class="nav-footer">
-      <span class="text-muted">Todos os direitos reservados &copy; para Brunno Lukas, Caio Henrique, Gabriel Ferreira, Gustavo Guimarães, Harison Costa e Pedro Rocha.</span>
-    </div>
-  </footer>
-
   </body>
 </html>
