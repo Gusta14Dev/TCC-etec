@@ -196,7 +196,7 @@
       overflow: hidden;
     }
     /*Efeito dropdawn*/
-    li:hover ul{
+    .menu-item:hover ul{
       display: block;
     }
     /*Css dos textos que ficam dentro dos itens do menu*/

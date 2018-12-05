@@ -9,6 +9,7 @@ $(function() {
 	}else{
 		var itens = 4;
 	}
+	alert(itens);
 	$("#carrossel"). jCarouselLite({
 	    btnPrev: '.prev', 
 	    btnNext: '.next',
