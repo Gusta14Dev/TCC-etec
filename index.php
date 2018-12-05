@@ -97,7 +97,7 @@
 
   <div class="container-fluid" id="noticia">
       <div class="container-fluid content-title container-titulo">
-        <h2 class="text-center titulo">ULTIMAS NOTÍCIAS</h2>
+        <h2 class="text-center titulo">ÚLTIMAS NOTÍCIAS</h2>
       </div>
       <div id="content">
 		<div id="carrossel">
@@ -125,7 +125,6 @@
 		</nav>
 	  </div>
     </div>
-  </div>
 
   <div class="container-fluid" id="info">
     <div class="container-info">
