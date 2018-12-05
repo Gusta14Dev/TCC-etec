@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Etec de Itanhaém</title>
   <!-- CSS -->
+  <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="css/bootstrap.min.css" >
   <link rel="stylesheet" href="css/fontawesome-all.css" >
-  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/info.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/index.css">
@@ -99,17 +99,31 @@
       <div class="container-fluid content-title container-titulo">
         <h2 class="text-center titulo">ULTIMAS NOTÍCIAS</h2>
       </div>
-      <!-- Swiper Carrossel -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url(imagens/Alunos_Etec.jpg);"></div>
-          <div class="swiper-slide" style="background-image: url(imagens/caixa.png);"></div>
-        </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+      <div id="content">
+		<div id="carrossel">
+			<ul>
+				<li>
+					<img src="imagens/teste.jpg" class="image-fluid" alt="Nome da Imagem" title="Nome da Imagem"/>
+				</li>
+				<li>
+					<img src="imagens/teste.jpg" class="image-fluid" alt="Nome da Imagem" title="Nome da Imagem"/>
+				</li>
+				<li>
+					<img src="imagens/teste.jpg" class="image-fluid" alt="Nome da Imagem" title="Nome da Imagem"/>
+				</li>
+				<li>
+					<img src="imagens/teste.jpg" class="image-fluid" alt="Nome da Imagem" title="Nome da Imagem"/>
+				</li>
+				<li>
+					<img src="imagens/teste.jpg" class="image-fluid" alt="Nome da Imagem" title="Nome da Imagem"/>
+				</li>
+			</ul>
+		</div>
+		<nav id="menu-carrossel">
+			<a href="#" class="prev" title="Anterior"><i class="fas fa-arrow-circle-left"></i></a>
+			<a href="#" class="next" title="Próximo"><i class="fas fa-arrow-circle-right"></i></a>
+		</nav>
+	  </div>
     </div>
   </div>
 
@@ -169,24 +183,8 @@
   <!-- JavaScript -->
   <script src="js/jquery.min.js" ></script>
   <script src="js/bootstrap.min.js" ></script>
-  <script src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/jcarousellite.js"></script>
+  <script src="js/carousel.js"></script>
   <script src="js/menu-index.js"></script>
-
-  <script>
-    $(document).ready(function(){
-      var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          dynamicBullets: true,
-        },
-      });
-    });
-  </script>
 </body>
 </html>

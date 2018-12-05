@@ -1,0 +1,59 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none ;
+    outline: 0;
+    font-family: 'Arial','Sans-Serif';
+}
+
+#content {
+	position: relative;
+	height: 250px;
+}
+
+#carrossel {
+	max-width: 765px;
+	overflow: hidden;
+	height: 250px;
+	margin: 0 auto;
+	padding:0;
+}
+
+#carrossel ul li {
+	width: 250px;
+	height: 250px;
+	float: left;
+	margin: 0 5px;
+	background: blue;
+}
+
+#menu-carrossel {
+	position: absolute;
+	clear: both;
+	width: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 3;
+}
+.image-fluid{
+	height: 100%;
+}
+.prev, .next{
+	position: absolute;
+	color: green;
+	font-size: 2em;
+	z-index: 10;
+}
+.prev{
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.next{
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
