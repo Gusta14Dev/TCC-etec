@@ -95,7 +95,7 @@
     </div>
   </div>
 
-  <div class="container-fluid bg-third" id="noticia">
+  <div class="container-fluid" id="noticia">
       <div class="container-fluid content-title container-titulo">
         <h2 class="text-center titulo">ULTIMAS NOTÍCIAS</h2>
       </div>
@@ -113,7 +113,7 @@
     </div>
   </div>
 
-  <div class="container-fluid mb-5" id="info">
+  <div class="container-fluid" id="info">
     <div class="container-info">
         <div class="box">
           <div class="thumb">
