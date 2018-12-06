@@ -20,7 +20,9 @@
     include_once("includes/menu.php");
   ?>
   <div id="fundo"></div>
-  <button class="btn btn-success" id="fale">Fale conosco <i class="fas fa-question-circle"></i></button>
+
+  <button class="btn btn-success" id="fale" data-toggle="modal" data-target="#abrir-modal">Fale conosco <i class="fas fa-question-circle"></i></button>
+
   <div class="container-fluid content-title">
     <h2 class="text-center titulo">OS MELHORES CURSOS DA REGIÃO</h2>
   </div>
@@ -180,6 +182,93 @@
         </div>
       </div>
   </div>
+
+  <!--Modal Fale Conosco -->
+  <div class="modal fade" id="abrir-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalLabel">Fale Conosco</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+      <form method="post">
+       <label for="tipo"><b>Tipo de usuário:</b></label>            
+              <div class="form-label-group mt-1 p-0 ">
+                <select name="tipo" class="col-12 form-group custom-select">
+                  <option value="Pai/Mãe de Aluno da Etec de Itanhaém" required autofocus>Pai/Mãe de Aluno da Etec de Itanhaém</option>
+                  <option value="Professor/Funcionário da Etec de Itanhaém" required autofocus>Professor/Funcionário da Etec de Itanhaém</option>
+                  <option value="Outros" required autofocus>Outros</option>
+                </select>
+              </div>
+            
+            <label for="nome"><b>Nome:</b></label>
+            <div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control" name="nome" placeholder="Nome" required>
+              </div>
+            </div>
+
+            <label for="snome"><b>Sobrenome:</b></label>
+            <div class="row">
+              <div class="col-12">
+                <input type="text" class="form-control" name="snome" placeholder="Sobrenome" required>
+              </div>
+            </div>
+
+            <label for="email"><b>Email:</b></label>
+            <div class="row">
+              <div class="col-12">
+                <input type="email" class="form-control" name="email" placeholder="Exemplo@email.com" required>
+              </div>
+            </div>
+
+            <label for="duvida"><b>Dúvida:</b></label>
+                      <div class="form-row">
+                        <div class="col-sm-12">
+                          <textarea rows="5" cols="50" class="form-control" name="conteudo" placeholder="Dúvidas" required></textarea>
+                        </div>
+                      </div>
+
+            <div class="row">
+              <div class="col-12 mx-auto pt-2 text-center">
+                <button type="submit" name="butao" class="btn btn-success">Enviar</button>
+                <button type="button" class="btn btn-danger " data-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>';
+
+<?php
+  if (isset($_POST['butao'])) {
+
+$tipo = $_POST['tipo'];
+$nome = $_POST['nome'];
+$snome = $_POST['snome'];
+$email = $_POST['email'];
+$conteudo = $_POST['conteudo'];     
+  $insert="INSERT INTO `tb_fale_conosco`(`nm_publico`, `nm_sobrenome`, `nm_email`, `nm_tipo`, `ds_conteudo`, `id_usuario`) VALUES ('$nome','$snome','$email','$tipo','$conteudo',1)";
+  if ($mysqli->query($insert)) {
+?>
+
+  <script type="text/javascript">
+    alert('Dúvida enviada com sucesso!');
+    document.location="index.php";
+    </script>
+
+<?php
+}else{
+  ?>
+  <script type="text/javascript">
+    alert('Erro ao enviar sua dúvida!');
+    </script>
+<?php
+}}
+    ?>
+
 
   <!-- JavaScript -->
   <script src="js/jquery.min.js" ></script>
