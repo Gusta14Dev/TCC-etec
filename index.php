@@ -181,6 +181,7 @@
 
   <!-- JavaScript -->
   <script src="js/jquery.min.js" ></script>
+  <script src="js/jquery-1.7.min.js" ></script>
   <script src="js/bootstrap.min.js" ></script>
   <script type="text/javascript" src="js/jcarousellite.js"></script>
   <script src="js/carousel.js"></script>
