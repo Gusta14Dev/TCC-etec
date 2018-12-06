@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Etec de Itanhaém</title>
   <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="css/bootstrap.min.css" >
   <link rel="stylesheet" href="css/fontawesome-all.css" >
@@ -19,6 +20,7 @@
     include_once("includes/menu.php");
   ?>
   <div id="fundo"></div>
+  <button class="btn btn-success" id="fale">Fale conosco <i class="fas fa-question-circle"></i></button>
   <div class="container-fluid content-title">
     <h2 class="text-center titulo">OS MELHORES CURSOS DA REGIÃO</h2>
   </div>

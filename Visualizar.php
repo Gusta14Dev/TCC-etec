@@ -11,7 +11,7 @@
 <html lang="pt-br">
  <head>
   <meta charset="utf-8">
-
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css" >
   <link rel="stylesheet" href="css/fontawesome-all.css" >
   <link rel="stylesheet" href="css/swiper.min.css">
@@ -21,6 +21,8 @@
   <link rel="shortcut icon" href="imagens/icone_etec.png">
 
     <style>
+    body{
+    }
       @media (min-width: 990px) {
         #foto_artigo {
           width: 40%;
