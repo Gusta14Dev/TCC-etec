@@ -102,10 +102,10 @@ include_once("includes/conexao.php");
            <span>Eventos</span>
          </li>
         </a>
-        <a class="menu-link" href="#">
-         <li class="menu-item">
+        <a class="menu-link" href="#" >
+         <li class="menu-item" data-dropdawn-toggle="menu-dropdown2">
            <span>Cursos</span>
-           <ul class="menu-dropdown-body bg-dark" id="menu-dropdown1" >
+           <ul class="menu-dropdown-body bg-dark" id="menu-dropdown2" >
            <?php
                 $select2="SELECT * FROM `tb_artigo` WHERE `nm_artigo` = 'ETIM - Administração' ";
                   if ($con=$mysqli->query($select2)) {
