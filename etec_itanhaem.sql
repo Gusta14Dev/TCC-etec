@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 05-Dez-2018 às 11:34
--- Versão do servidor: 5.6.13
+-- Data de Criação: 06-Dez-2018 às 00:55
+-- Versão do servidor: 5.5.20
 -- versão do PHP: 5.4.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -49,7 +49,7 @@ INSERT INTO `tb_aluno` (`cd_aluno`, `nm_aluno`, `nr_rm`, `nm_login`, `nm_senha`,
 (3, 'CAIO HENRIQUE DE OLIVEIRA SEVERO', '16079', 'caioh_severo@hotmail.com', NULL, 3),
 (4, 'CAIO LUIZ PIRAMIDES OLIVEIRA', '16148', NULL, NULL, 3),
 (5, 'CAROLINE ALMEIDA LINS DO CARMO', '16088', NULL, NULL, 3),
-(6, 'CAUÃŠ MARTINS DO NASCIMENTO', '16029', 'ynevisk@bol.com', NULL, 3),
+(6, 'CAUÃŠ MARTINS DO NASCIMENTO', '16029', 'ynevisk@bol.com', '123', 3),
 (7, 'DANIEL DE OLIVEIRA SOARES', '16214', NULL, NULL, 3),
 (8, 'DANILO CANUTO PEREIRA', '16009', NULL, NULL, 3),
 (9, 'DIEGO PEREIRA GONZALEZ NATALO', '16016', NULL, NULL, 3),
@@ -523,10 +523,11 @@ CREATE TABLE IF NOT EXISTS `tb_fale_conosco` (
   `nm_sobrenome` varchar(220) NOT NULL,
   `nm_email` varchar(220) NOT NULL,
   `nm_tipo` varchar(220) NOT NULL,
+  `ds_conteudo` varchar(200) NOT NULL,
   `id_usuario` int(11) NOT NULL,
   PRIMARY KEY (`cd_fale_conosco`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 -- --------------------------------------------------------
 
