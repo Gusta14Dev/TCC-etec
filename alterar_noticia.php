@@ -53,7 +53,8 @@ $itens = $_GET['itens'];
                         <label for="noticia"><b>Notícia:</b></label>
                         <div class="form-row">
                           <div class="col-12">
-                            <input type="text" class="form-control" name="noticia" value="'.$obj->st_noticia.'" required autofocus>
+                          <button type="submit" name="botion" class="btn btn-primary">Sim</button>
+                          <button type="submit" name="botion" class="btn btn-danger">Não</button>
                           </div>
                         </div>
                       <label for="conteudo"><b>Conteúdo:</b></label>
@@ -93,9 +94,7 @@ $itens = $_GET['itens'];
       ?>
       <script type="text/javascript">
         alert('Erro ao alterar!');
-        <?php
-        print '<script>window.location.href = "noticia.php"</script>';
-        ?>
+       
       </script>
       <?php
         }}
@@ -113,7 +112,7 @@ $itens = $_GET['itens'];
     <script>
 
         function goBack() {
-        window.history.back();
+       window.history.back();
       }
 
  </script> 
