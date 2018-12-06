@@ -14,67 +14,71 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" >
    	<link rel="stylesheet" href="css/fontawesome-all.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/info.css">
-    <link href="css/layout_form.css" rel="stylesheet">
-
-  
+    <link rel="stylesheet" href="css/layout_form.css">
 	</head>
 <body>
-<?php
+  <?php
     include_once("includes/menu.php");
   ?>
-  
+           
   <div id="container-form">
     	<form method="post">
-	      <div class="jumbotron mx-sm-auto">
-	        <div class="form-group mt-5 ml-5">
-	          <label for="tipo">Tipo de usuário:</label>            
-           		<div class="form-label-group mt-1 p-0">
+	      <div class="fale-conosco mx-auto">
+	        <div class="form-group mt-5 ml-5 mr-5">
+	         <div class="mx-auto pt-3 pb-3">
+            <div class="form-group ml-2 mr-2">
+              <h1>Fale Conosco</h1>
+            </div>
+          </div>
+             <label for="tipo"><b>Tipo de usuário:</b></label>            
+           		<div class="form-label-group mt-1 p-0 ">
                 <select name="tipo" class="col-12 form-group custom-select">
                   <option value="Pai/Mãe de Aluno da Etec de Itanhaém" required autofocus>Pai/Mãe de Aluno da Etec de Itanhaém</option>
                   <option value="Professor/Funcionário da Etec de Itanhaém" required autofocus>Professor/Funcionário da Etec de Itanhaém</option>
                   <option value="Outros" required autofocus>Outros</option>
                 </select>
               </div>
-            </div>
+            
 	          <label for="nome"><b>Nome:</b></label>
 	          <div class="row">
-	            <div class="col-11">
-	              <input type="text" class="form-control" name="nome" required>
+	            <div class="col-12">
+	              <input type="text" class="form-control" name="nome" placeholder="Nome" required>
 	            </div>
 	          </div>
 
 	          <label for="snome"><b>Sobrenome:</b></label>
 	          <div class="row">
-	            <div class="col-11">
-	              <input type="text" class="form-control" name="snome" required>
+	            <div class="col-12">
+	              <input type="text" class="form-control" name="snome" placeholder="Sobrenome" required>
 	            </div>
 	          </div>
 
 	          <label for="email"><b>Email:</b></label>
 	          <div class="row">
-	            <div class="col-11">
-	              <input type="email" class="form-control" name="email" required>
+	            <div class="col-12">
+	              <input type="email" class="form-control" name="email" placeholder="Exemplo@email.com" required>
 	            </div>
 	          </div>
 
 	          <label for="duvida"><b>Dúvida:</b></label>
                       <div class="form-row">
                         <div class="col-sm-12">
-                          <textarea rows="10" cols="50" class="form-control" name="conteudo" required></textarea>
+                          <textarea rows="10" cols="50" class="form-control" name="conteudo" placeholder="Dúvidas" required></textarea>
                         </div>
                       </div>
 
 	        	<div class="row">
 	          	<div class="col-12 mx-auto pt-2 text-center">
-	            	<button type="submit" name="butao" class="btn btn-info">Cadastrar</button>
+	            	<button type="submit" name="butao" class="btn btn-info">Enviar</button>
 	          	</div>
 	        	</div>
 	      	</div>
 	      </div>
 			</form>
 		</div>
+  </div>
+</div>
 <?php
 	if (isset($_POST['butao'])) {
 
@@ -101,6 +105,8 @@ $conteudo = $_POST['conteudo'];
 <?php
 }}
 		?>
+</div>
+
 
     <!-- JavaScript -->
     <script src="js/jquery.min.js" ></script>
