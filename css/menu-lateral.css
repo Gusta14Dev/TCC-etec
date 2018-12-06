@@ -2,7 +2,6 @@ html {
   position: relative;
   min-height: 100%;
 }
-.fixed{width: 100%;}
 body {
   overflow-x: hidden;
   overflow-y: auto;

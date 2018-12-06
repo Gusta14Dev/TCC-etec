@@ -7,6 +7,7 @@ include_once("includes/conexao.php");
 	<title>Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 	<link rel="shortcut icon" href="imagens/logo-vetorizado.svg" >
 	<link rel="stylesheet" href="css/bootstrap.min.css" >
 	<link rel="stylesheet" href="css/fontawesome-all.css">
@@ -20,6 +21,7 @@ include_once("includes/conexao.php");
 		html,
 		body {
 		  height: 100%;
+		  font-family: 'Abel', 'Sans-serif';
 		}
 		
 		body {
@@ -168,17 +170,16 @@ include_once("includes/conexao.php");
 			box-shadow: 0px 0px 20px #0F340F;
 		}
 		#alert{
-	    position: absolute;
-	    width: 50%;
-	    z-index: 2000;
-	    top: -10%;
-	    left: 50%;
-	    right: 50%;
-	    opacity: 0;
-	    transform: translate(-50%, 0);
-	    animation-name: alert;
-	    animation-duration: 4s;
-	  }
+		    position: absolute;
+		    width: 50%;
+		    z-index: 2000;
+		    top: -10%;
+		    left: 50%;
+		    opacity: 0;
+		    transform: translate(-50%, 0);
+		    animation-name: alert;
+		    animation-duration: 4s;
+	  	}
 		#voltar{
 			position:absolute;
 			top:5px;
@@ -260,6 +261,7 @@ include_once("includes/conexao.php");
 		
 		<div class="container-desk">
 			<div class="container-login">
+				<a href="index.php" class="btn btn-success" id="voltar"><i class="fas fa-arrow-left"></i></a>
 				<form method="post">
 					<p class="h5 text-secondary">Olá visitante,</p>
 					<p class="font-weight-bold h3">Bem vindo ao site da Etec!</p>
@@ -280,7 +282,7 @@ include_once("includes/conexao.php");
 					<img src="imagens/logo da etec - branco.png" class="img-fluid">
 				</div>
 				<p class="font-weight-bold h3 text-white text-center mt-5">Etec de Itanhaém</p>
-				<p class="h6 text-light">Trabalhando o presente, preparando o futuro!</p>
+				<p class="h6 text-light text-center">Trabalhando o presente, preparando o futuro!</p>
 			</div>
 		</div>
 		

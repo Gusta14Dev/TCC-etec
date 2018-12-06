@@ -26,17 +26,16 @@
 		}
 
 		#alert{
-            position: fixed;
-            width: 50%;
-            z-index: 100000;
-            top: -10%;
-            left: 50%;
-            right: 50%;
-            opacity: 0;
-            transform: translate(-50%, 0);
-            animation-name: alert;
-            animation-duration: 4s;
-        }
+		    position: absolute;
+		    width: 90%;
+		    z-index: 2000;
+		    top: -10%;
+		    left: 5%;
+		    right: 5%;
+		    opacity: 0;
+		    animation-name: alert;
+		    animation-duration: 4s;
+		}
 
 		@media only screen and (min-width: 600px) {
     		.container-user{
@@ -46,15 +45,15 @@
 				width: 25%;
 			}
 			#alert{
-	            width: 90%;
-	            left: 5%;
-	            right: 5%;
+	            width: 50%;
+	            left: 25%;
+		    	right: 25%;
 	        }
 		}
         @keyframes alert {
-            0%{top: -10%;}
-            10%{opacity: 1;}
-            50%{top: 5%;}
-            90%{top: -10%;}
-            100%{opacity: 1;}
-        }
+		    0%{top: -10%;}
+		    10%{opacity: 1;}
+		    50%{top: 5%;}
+		    90%{top: -10%;}
+		    100%{opacity: 1;}
+		}
