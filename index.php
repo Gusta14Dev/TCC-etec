@@ -202,18 +202,16 @@
                 </select>
               </div>
             
-            <label for="nome"><b>Nome:</b></label>
             <div class="row">
-              <div class="col-12">
+              <div class="col-6">
+              <label for="nome"><b>Nome:</b></label>
                 <input type="text" class="form-control" name="nome" placeholder="Nome" required>
               </div>
-            </div>
-
-            <label for="snome"><b>Sobrenome:</b></label>
-            <div class="row">
-              <div class="col-12">
+            
+            <div class="col-6">
+              <label for="snome"><b>Sobrenome:</b></label>
                 <input type="text" class="form-control" name="snome" placeholder="Sobrenome" required>
-              </div>
+            </div>
             </div>
 
             <label for="email"><b>Email:</b></label>
