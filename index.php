@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Etec de Itanhaém</title>
   <!-- CSS -->
+  <link rel="stylesheet" href="css/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="css/bootstrap.min.css" >
@@ -12,6 +13,7 @@
   <link rel="stylesheet" href="css/info.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/index.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
   <!--Icone do site-->
   <link rel="shortcut icon" href="imagens/icone_etec.png">
 </head>
@@ -183,6 +185,10 @@
       </div>
   </div>
 
+  <?php
+    include_once("includes/footer.php");
+  ?>
+
   <!--Modal Fale Conosco -->
   <div class="modal fade" id="abrir-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
   <div class="modal-dialog" role="document">
@@ -238,7 +244,7 @@
       </div>
     </div>
   </div>
-</div>';
+</div>
 
 <?php
   if (isset($_POST['butao'])) {
