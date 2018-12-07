@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 06-Dez-2018 às 00:55
--- Versão do servidor: 5.5.20
+-- Data de Criação: 07-Dez-2018 às 11:44
+-- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -527,7 +527,14 @@ CREATE TABLE IF NOT EXISTS `tb_fale_conosco` (
   `id_usuario` int(11) NOT NULL,
   PRIMARY KEY (`cd_fale_conosco`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+--
+-- Extraindo dados da tabela `tb_fale_conosco`
+--
+
+INSERT INTO `tb_fale_conosco` (`cd_fale_conosco`, `nm_publico`, `nm_sobrenome`, `nm_email`, `nm_tipo`, `ds_conteudo`, `id_usuario`) VALUES
+(3, 'Gustavo', 'Cervo', 'gusta14@gmail.com', 'Outros', 'o harisu ta ai?', 1);
 
 -- --------------------------------------------------------
 
@@ -576,7 +583,7 @@ CREATE TABLE IF NOT EXISTS `tb_horario_coordenador` (
   `id_usuario` int(11) DEFAULT NULL,
   PRIMARY KEY (`cd_horario_coordenador`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=67 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=108 ;
 
 --
 -- Extraindo dados da tabela `tb_horario_coordenador`
@@ -631,7 +638,48 @@ INSERT INTO `tb_horario_coordenador` (`cd_horario_coordenador`, `hr_entrada`, `h
 (63, '09:30:00', '12:30:00', 'Quinta-feira', 16),
 (64, '09:30:00', '12:30:00', 'Sexta-feira', 16),
 (65, '18:00:00', '19:00:00', 'Sexta-feira', 16),
-(66, '20:30:00', '21:30:00', 'Sexta-feira', 16);
+(66, '20:30:00', '21:30:00', 'Sexta-feira', 16),
+(67, '03:24:00', '04:23:00', 'Quinta-feira', 60),
+(68, '10:00:00', '13:00:00', 'Segunda-feira', 64),
+(69, '08:30:00', '13:00:00', 'TerÃ§a-feira', 64),
+(70, '12:00:00', '17:00:00', 'Quarta-feira', 64),
+(71, '13:30:00', '18:00:00', 'Quinta-feira', 64),
+(72, '13:00:00', '18:00:00', 'Sexta-feira', 64),
+(73, '14:00:00', '19:00:00', 'Segunda-feira', 64),
+(74, '14:00:00', '17:30:00', 'TerÃ§a-feira', 64),
+(75, '18:00:00', '21:00:00', 'Quarta-feira', 64),
+(76, '19:00:00', '22:30:00', 'Quinta-feira', 64),
+(77, '19:00:00', '22:30:00', 'Sexta-feira', 64),
+(78, '08:00:00', '12:00:00', 'Segunda-feira', 65),
+(79, '08:00:00', '12:00:00', 'TerÃ§a-feira', 65),
+(80, '13:00:00', '18:00:00', 'Quarta-feira', 65),
+(81, '08:00:00', '12:00:00', 'Quinta-feira', 65),
+(82, '14:00:00', '19:00:00', 'Sexta-feira', 65),
+(83, '13:00:00', '17:00:00', 'Segunda-feira', 65),
+(84, '13:00:00', '17:00:00', 'TerÃ§a-feira', 65),
+(85, '19:00:00', '22:00:00', 'Quarta-feira', 65),
+(86, '13:00:00', '17:00:00', 'Quinta-feira', 65),
+(87, '20:00:00', '23:00:00', 'Sexta-feira', 65),
+(88, '14:00:00', '18:00:00', 'Segunda-feira', 66),
+(89, '14:00:00', '19:00:00', 'TerÃ§a-feira', 66),
+(90, '14:00:00', '18:00:00', 'Quarta-feira', 66),
+(91, '13:30:00', '18:00:00', 'Quinta-feira', 66),
+(92, '13:00:00', '18:00:00', 'Sexta-feira', 66),
+(93, '19:00:00', '23:00:00', 'Segunda-feira', 66),
+(94, '20:00:00', '23:00:00', 'TerÃ§a-feira', 66),
+(95, '19:00:00', '23:00:00', 'Quarta-feira', 66),
+(96, '19:00:00', '22:30:00', 'Quinta-feira', 66),
+(97, '19:00:00', '22:00:00', 'Sexta-feira', 66),
+(98, '14:00:00', '19:00:00', 'Segunda-feira', 67),
+(99, '12:00:00', '17:00:00', 'TerÃ§a-feira', 67),
+(100, '08:00:00', '11:00:00', 'Quarta-feira', 67),
+(101, '14:00:00', '19:00:00', 'Quinta-feira', 67),
+(102, '14:00:00', '19:00:00', 'Sexta-feira', 67),
+(103, '20:00:00', '23:00:00', 'Segunda-feira', 67),
+(104, '18:00:00', '21:00:00', 'TerÃ§a-feira', 67),
+(105, '12:00:00', '17:00:00', 'Quarta-feira', 67),
+(106, '20:00:00', '23:00:00', 'Quinta-feira', 67),
+(107, '20:00:00', '23:00:00', 'Sexta-feira', 67);
 
 -- --------------------------------------------------------
 
@@ -686,7 +734,7 @@ CREATE TABLE IF NOT EXISTS `tb_tipo` (
   `cd_tipo` int(11) NOT NULL AUTO_INCREMENT,
   `nm_tipo` varchar(220) NOT NULL,
   PRIMARY KEY (`cd_tipo`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Extraindo dados da tabela `tb_tipo`
@@ -695,7 +743,8 @@ CREATE TABLE IF NOT EXISTS `tb_tipo` (
 INSERT INTO `tb_tipo` (`cd_tipo`, `nm_tipo`) VALUES
 (1, 'adm'),
 (2, 'Coordenador'),
-(3, 'Professor');
+(3, 'Professor'),
+(4, 'Diretor');
 
 -- --------------------------------------------------------
 
@@ -746,7 +795,7 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
   `id_tipo` int(11) NOT NULL,
   PRIMARY KEY (`cd_usuario`),
   KEY `id_tipo` (`id_tipo`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=60 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=68 ;
 
 --
 -- Extraindo dados da tabela `tb_usuario`
@@ -802,7 +851,11 @@ INSERT INTO `tb_usuario` (`cd_usuario`, `nm_usuario`, `nm_sobrenome`, `nm_foto`,
 (54, 'Thiago', 'Pellegrini', 'foto-professor/thiago.jpg', 'Professor de Biologia do Ensino MÃ©dio e do curso TÃ©cnico Meio Ambiente', 'thiago.professor@gmail.com', '123', 3),
 (55, 'Valdemar', 'Cardoso', 'foto-professor/valdemar.jpg', 'Professor de FÃ­sica do Ensino MÃ©dio', 'valdemar.cardoso@gmail.com', '123', 3),
 (56, 'Viviane', 'Barbosa Rasga Aires', 'foto-professor/viviane.jpg', 'Professor de LÃ­ngua Portuguesa do Ensino MÃ©dio', 'viviane.rasga@gmail.com', '123', 3),
-(57, 'Willians', 'Souza de Oliveira', 'foto-professor/willians.jpg', 'Professor de EducaÃ§Ã£o FÃ­sica do Ensino MÃ©dio', 'willians.souza@gmail.com', '123', 3);
+(57, 'Willians', 'Souza de Oliveira', 'foto-professor/willians.jpg', 'Professor de EducaÃ§Ã£o FÃ­sica do Ensino MÃ©dio', 'willians.souza@gmail.com', '123', 3),
+(65, 'Milena', 'Biazzus da Silva Ribeiro', 'foto-diretores/milena.jpg', 'Diretora AcadÃªmica', 'milena.ribeiro@gmail.com', '123', 4),
+(64, 'SÃ´nia', 'Maria Tridento', 'foto-diretores/sonia.jpg', 'Diretora da Etec de ItanhaÃ©m', 'sonia.tridento@gmail.com', '123', 4),
+(66, 'Jeniffer', 'SimÃµes Peixoto Koki', 'foto-diretores/jeniffer.jpg', 'Diretora de ServiÃ§os', 'jeniffer.koki@gmail.com', '123', 4),
+(67, 'Haraldo', 'Marques', 'foto-diretores/haraldo.jpg', 'Assistente TÃ©cnico Administrativo (ATA)', 'haraldo.marques@gmail.com', '123', 4);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
