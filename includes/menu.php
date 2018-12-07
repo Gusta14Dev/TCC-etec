@@ -239,12 +239,12 @@ include_once("includes/conexao.php");
            <span>Corpo docente</span>
          </li>
       </a>
-      <a class="menu-link" href="#">
+      <a class="menu-link" href="coordenacao.php">
        <li class="menu-item">
          <span>Coordenação</span>
        </li>
       </a>
-      <a class="menu-link" href="#">
+      <a class="menu-link" href="direcao.php">
        <li class="menu-item">
          <span>Direção</span>
        </li>

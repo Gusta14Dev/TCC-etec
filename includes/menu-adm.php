@@ -48,6 +48,9 @@
 				<a class="menu-link ml-4" href="coordenadores.php"><i class="fas fa-user-tie fa-lg mr-3"></i>Coordenadores</a>
 			</li>
 			<li class="menu-item">
+				<a class="menu-link ml-4" href="diretores.php"><i class="fas fa-user-tie fa-lg mr-3"></i>Diretores</a>
+			</li>
+			<li class="menu-item">
 				<a class="menu-link ml-4" href="professores.php"><i class="fas fa-chalkboard-teacher fa-lg mr-3"></i>Professores</a>
 			</li>
 			<li class="menu-item">

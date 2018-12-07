@@ -1,6 +1,6 @@
 <?php
   include_once("includes/conexao.php");
-  $professor= "SELECT * FROM `tb_usuario` WHERE id_tipo = 3 ";
+  $professor= "SELECT * FROM `tb_usuario` WHERE id_tipo = 3 ORDER BY `nm_usuario` ASC";
   if($docente = $mysqli->query($professor)){
   }else {
     echo "Não foi!!!!";
