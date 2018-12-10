@@ -48,9 +48,8 @@
 		<div class="row justify-content-around">
 			<div class="col-md-3 col-12 mt-2 ml-auto pr-0">
 				<button class="btn btn-success" id="cadastro" data-toggle="modal" data-target="#cadastro-modal">Cadastrar Funcionários <i class="fas fa-plus fa-sm"></i></button>
-					
-		</div>
-	</div>
+			</div>
+	    </div>
 		<div id="list" class="row" style="margin-top:5px;">
 			<div class="table-responsive col-md-12">
 				<table class="table table-striped" cellspacing="0" cellpadding="0">

@@ -13,7 +13,7 @@ body {
 }
 
 ::-webkit-scrollbar-track-piece {
-  background-color: #ffffff;
+  background-color: transparent;
   -webkit-border-radius: 3px;
 }
 
@@ -214,7 +214,7 @@ body {
 
 .menu-lateral.nav-item.nav-link{color:#343a40;}
 
-.fixed { position: fixed;}
+.static{ position: static;}
 
 .menu-item{
 	width:100%;

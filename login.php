@@ -21,7 +21,15 @@ include_once("includes/conexao.php");
 		html,
 		body {
 		  height: 100%;
-		  font-family: 'Abel', 'Sans-serif';
+		  width:100%
+		  overflow-x: none;
+		}
+		p, h1{
+			font-family: 'Abel', 'Sans-serif';
+		}
+		
+		h1{
+			font-weight: bold;
 		}
 		
 		body {
@@ -122,10 +130,11 @@ include_once("includes/conexao.php");
 		}
 		.fundo{
 			position: fixed;
+			width:100%;
+			height:100%;
 			top: 0;
 			right: 0;
 			left: 0;
-			bottom: 0;
 			background-color: green;
 		}
 		.fundo::after{

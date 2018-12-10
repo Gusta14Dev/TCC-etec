@@ -4,12 +4,12 @@ $(function () {
   $('[data-toggle="menu"]').on('click', function () {
     $('.menu-lateral').toggleClass('open');
     $('.fechar-menu-lateral').toggleClass('open')
-    $('body').toggleClass('fixed');
+    $('body').toggleClass('static');
   });
   $('.fechar-menu-lateral').on('click', function () {
     $('.menu-lateral').toggleClass('open');
     $('.fechar-menu-lateral').toggleClass('open');
-    $('body').toggleClass('fixed');
+    $('body').toggleClass('static');
   });
   $('#menu-dropdown1').hide();
   $('[data-dropdawn-toggle="menu-dropdown1"]').on('click', function () {
