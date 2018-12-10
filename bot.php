@@ -10,43 +10,51 @@
     <style>
         body{
             background-color: #007bff;
+            
         }
         .container-config{
             position: relative;
-            width: 110px;
-            height: 110px;
+            width: 138px;
+            height: 138px;
         }
         .container-edit{
-            position: relative;
+        	position: absolute;
             width: 50px;
-            height: 60px;
-            right: 0;
-            bottom: 50px;
-            background-color: #e5bb00;
+            height: 70px;
+            right: 10px;
+            bottom: 68px;
+            opacity:0;
+            transition: opacity 1s;
+        }
+        .container-remove{
+        	position: absolute;
+            width: 68px;
+            height: 70px;
+            right: 70px;
+            bottom: 10px;
+            opacity:0;
+            transition: opacity 1s;
         }
         .edit{
-            position: absolute;
             width: 50px;
             height: 50px;
-            right: 0;
-            bottom: 60px;
             border: none;
             border-radius: 100%;
             color:#fff;
             font-size: 1em;
             background-color: #e5bb00;
+            outline:none;
         }
         .remove{
-            position: absolute;
+        	margin:0 9px;
             width: 50px;
             height: 50px;
-            right: 60;
-            bottom: 0;
             border: none;
             border-radius: 100%;
             color:#fff;
             font-size: 1em;
             background-color: #b70000;
+            outline:none;
         }
         .config{
             position: absolute;
@@ -59,6 +67,13 @@
             color:#fff;
             font-size: 1em;
             background-color: #000000;
+            outline:none;
+        }
+        .open-edit{
+        	opacity:1;
+        }
+        .open-remove{
+        	opacity:1;
         }
 	</style>
   </head>
@@ -66,7 +81,7 @@
     <div class="container-config">
         <div class="container-edit">
             <div class="text">Editar</div>
-            <button class="edit" ><i class="fas fa-pen"></i></button>
+            <a href=""><button class="edit" ><i class="fas fa-pen"></i></button></a>
         </div>
         <div class="container-remove">
             <div class="text">Remover</div>

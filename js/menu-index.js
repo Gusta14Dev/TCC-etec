@@ -3,24 +3,24 @@ $(function () {
 
   $(window).scroll(function () {
     if ($(this).scrollTop() >= 40) {
-     $(".menu").addClass('fixed-top');
+     $(".menu").addClass("fixed-top");
      $('.offcanvas-collapse').css("top","56px");
      $('.fechar-menu-lateral').css("top","56px");
      $('.menu-dropdown-body').css("top","56px");
     } else {
-     $(".menu").removeClass('fixed-top');
+     $(".menu").removeClass("fixed-top");
      $('.offcanvas-collapse').css("top","96px");
      $('.fechar-menu-lateral').css("top","96px");
      $('.menu-dropdown-body').css("top","96px");
     }
   });
   $('[data-toggle="menu"]').on('click', function () {
-    $('body').toggleClass('fixed');
+    $('body').toggleClass('static');
     $('.offcanvas-collapse').toggleClass('open');
     $('.fechar-menu-lateral').toggleClass('open');
   });
   $('.fechar-menu-lateral').on('click', function () {
-    $('body').removeClass('fixed');
+    $('body').removeClass('static');
     $('.offcanvas-collapse').toggleClass('open');
     $('.fechar-menu-lateral').toggleClass('open');
   });

@@ -16,6 +16,13 @@
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
   <!--Icone do site-->
   <link rel="shortcut icon" href="imagens/icone_etec.png">
+  
+  <style>
+  	.fixed-top{
+  		position:fixed;
+  		top:0;
+  	}
+  </style>
 </head>
 <body>
   <?php
@@ -276,10 +283,10 @@ $conteudo = $_POST['conteudo'];
 
   <!-- JavaScript -->
   <script src="js/jquery.min.js" ></script>
-  <script src="js/jquery-1.7.min.js" ></script>
   <script src="js/bootstrap.min.js" ></script>
-  <script type="text/javascript" src="js/jcarousellite.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/menu-index.js"></script>
+  <script src="js/jquery-1.7.min.js" ></script>
+  <script type="text/javascript" src="js/jcarousellite.js"></script>
 </body>
 </html>
