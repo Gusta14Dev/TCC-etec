@@ -29,9 +29,8 @@ include_once("includes/texto.php");
 			?>
 			<div class="jumbotron mx-auto">
 			<div class="col-md-3 mt-2">
-				<a href="cadastrar_artigo.php" class="btn btn-success h2">Novo Artigo</a>
-			</div>
-			<hr/>
+			<button class="btn btn-success" id="cadastro" data-toggle="modal" data-target="#cadastro-modal">Cadastrar Artigos <i class="fas fa-plus fa-sm"></i></button>
+
 			<div class="table-responsive">
 				<table class="table table-striped" cellspacing="0" cellpadding="0">
 					<thead>
@@ -70,7 +69,7 @@ include_once("includes/texto.php");
 			</div>
 		</div>
 	</div>
-
+</div>
 <?php
     $selectmodal="SELECT * FROM `tb_artigo`";
     if ($con=$mysqli->query($selectmodal)) {
@@ -97,6 +96,73 @@ echo $obj->cd_artigo . '" tabindex="-1" role="dialog" aria-labelledby="modalLabe
 </div>';
         }
     }
+    ?>
+
+
+<!-- Modal para cadastrar artigos -->
+
+    <div class="modal fade" id="cadastro-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalLabel">Cadastrar Artigo</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <form method="post">
+        <div class="container-fluid">
+              <label for="artigo"><b>Título do Artigo:</b></label>
+              <div class="row">
+                <div class="col-12">
+                  <input type="text" class="form-control" name="nome" required autofocus>
+                </div>
+              </div>
+              <label for="link"><b>Link da Foto do Artigo:</b></label>
+              <div class="form-row">
+                <div class="col-12">
+                  <input type="text" class="form-control" name="foto" value="foto-artigos/" required>
+                </div>
+              </div>
+              <label for="conteudo"><b>Conteúdo:</b></label>
+                      <div class="form-row">
+                        <div class="col-sm-12">
+                          <textarea rows="5" cols="50" class="form-control" name="conteudo" required></textarea>
+                        </div>
+                      </div>
+              <div class="row">
+              <div class="col-12 mx-auto pt-2 text-center">
+                <button type="submit" name="butao" class="btn btn-success">Enviar</button>
+                <button type="button" class="btn btn-danger " data-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+            </div>
+          </div>
+        
+      </form>
+<!-- Php para cadastrar artigos-->
+       <?php
+      if (isset($_POST['butao'])) {
+          $nome = $_POST['nome'];
+          $foto = $_POST['foto'];
+          $conteudo = $_POST['conteudo'];
+          $usuario = $_SESSION['cd_usuario'];
+          $select="INSERT INTO `tb_artigo`(`nm_artigo`, `nm_foto`, `st_noticia`, `ds_conteudo`, `id_usuario`) VALUES ('$nome','$foto','0','$conteudo','$usuario')";
+            if ($mysqli->query($select)) {
+    ?>
+    <script type="text/javascript">
+      alert('Cadastrado com sucesso!');
+      document.location="artigos.php";
+    </script>
+    <?php
+      }else{
+        ?>
+    <script type="text/javascript">
+      alert('Erro ao cadastrar!');
+      document.location="artigos.php";
+    </script>
+    <?php
+        
+      }}
     ?>
 
 <style type="text/css">

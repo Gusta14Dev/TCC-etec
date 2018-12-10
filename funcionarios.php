@@ -44,10 +44,11 @@
 			?>
 
 
-	<div class="container-fluid jumbotron corverdinha mx-sm-auto">
+	<div class="container-fluid jumbotron mx-sm-auto">
 		<div class="row justify-content-around">
 			<div class="col-md-3 col-12 mt-2 ml-auto pr-0">
-					<a href="cadastrar_funcionario.php" class="btn btn-success form-control my-2 my-sm-0" style="padding:2px; margin-bottom:5px;"><i>Cadastrar Funcionário</i> <i class="fas fa-plus fa-sm"></i></a>
+				<button class="btn btn-success" id="cadastro" data-toggle="modal" data-target="#cadastro-modal">Cadastrar Funcionários <i class="fas fa-plus fa-sm"></i></button>
+					
 		</div>
 	</div>
 		<div id="list" class="row" style="margin-top:5px;">
@@ -72,7 +73,7 @@
 				echo "<td>".$obj->nm_funcionario." ".$obj->nm_sobrenome."</td>";
 				echo "<td>".$obj->nm_cargo."</td>";
 				echo '<td> <a href="funcionario.php?view=0&itens='.$obj->cd_funcionario.'" TYPE="BUTTON" NAME="submit" class="btn btn-success btn-xs botao" >Visualizar</a>';
-				echo ' <a href="alterar_funcionario.php?edit=0&itens='.$obj->cd_funcionario.'" TYPE="BUTTON" NAME="submit" class="btn btn-warning btn-xs botao">Editar</a>';
+				echo '<a href="alterar_funcionario.php?view=0&itens='.$obj->cd_funcionario.'" TYPE="BUTTON" NAME="submit" class="btn btn-warning btn-xs botao" >Editar</a>';;
 				echo ' <a class="btn btn-danger btn-xs botao" style="color:white;" data-toggle="modal" data-target="#delete-modal';
 				echo $obj->cd_funcionario.'">Excluir</a>';
 				echo '</td>
@@ -100,6 +101,7 @@
 	</body>
 
 </html>
+<!-- Modal para excluir funcionários -->
 <?php
     $selectmodal="SELECT * FROM `tb_funcionario`";
     if ($con=$mysqli->query($selectmodal)) {
@@ -127,3 +129,84 @@ echo $obj->cd_funcionario . '" tabindex="-1" role="dialog" aria-labelledby="moda
         }
     }
     ?>
+
+     <!-- Modal para cadastrar funcionário -->
+
+    <div class="modal fade" id="cadastro-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalLabel">Cadastrar Funcionários</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <form method="post">
+        <div class="row">
+		          <div class="col-6">
+		            <label for="nome"><b>Nome:</b></label>
+		            <input type="text" class="form-control" name="nome" required autofocus>
+		          </div>
+		          <div class="col-6">
+		            <label for="snome"><b>Sobrenome:</b></label>
+		            <input type="text" class="form-control" name="sobrenome" required>
+		          </div>
+		        </div>
+		        <div class="row">
+		          <div class="col-12">
+		            <label for="foto"><b>Foto:</b></label>
+		            <input type="text" class="form-control" name="foto" value="foto-funcionario/" required>
+		          </div>
+		        </div>
+		        <div class="row">
+		          <div class="col-12">
+		            <label for="cargo"><b>Cargo:</b></label>
+		            <input type="text" class="form-control" name="cargo" required>
+		          </div>
+		        </div>
+		        <label for="conteudo"><b>Descrição do Cargo:</b></label>
+                <div class="form-row">
+                  <div class="col-sm-12">
+                    <textarea rows="5" cols="50" class="form-control" name="descr_cargo" required></textarea>
+                  </div>
+                </div>
+		        <div class="row">
+              <div class="col-12 mx-auto pt-2 text-center">
+                <button type="submit" name="butao" class="btn btn-success">Enviar</button>
+                <button type="button" class="btn btn-danger " data-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+		      </div>
+		    </div>
+		  </form>
+
+		  <!-- Php para cadastrar funcionário -->
+		   <?php
+	  	if (isset($_POST['butao'])) {
+		    
+	$nome = $_POST['nome'];
+	$sobrenome = $_POST['sobrenome'];
+
+	$foto = $_POST['foto'];
+
+	$cargo = $_POST['cargo'];
+	$descr_cargo = $_POST['descr_cargo'];
+
+	$usuario = $_SESSION['cd_usuario'];
+
+	$insert="INSERT INTO `tb_funcionario`(`nm_funcionario`, `nm_sobrenome`, `nm_foto`, `nm_cargo`, `ds_cargo`, `id_usuario`) VALUES ('$nome','$sobrenome','$foto','$cargo','$descr_cargo', '$usuario')";
+	      		if ($mysqli->query($insert)) {
+	  ?>
+	  <script type="text/javascript">
+	    alert('Cadastrado com sucesso!');
+	    document.location="funcionarios.php";
+	  </script>
+	  <?php
+	    }else{
+	  ?>
+	  <script type="text/javascript">
+	    alert('Erro ao Cadastrar!');
+	    document.location="funcionarios.php";
+	  </script>
+	  <?php
+	    }}
+  	?>
