@@ -31,9 +31,7 @@
       include_once ("includes/menu-adm.php");
         ?>
     <div id="container-form">
-      <?php
-        include_once ("includes/fundo.html");
-      ?>
+      
 
 
   <div class="container-fluid jumbotron corverdinha mx-sm-auto">
