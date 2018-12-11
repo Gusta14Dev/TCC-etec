@@ -18,25 +18,49 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="imagens/icone_etec.png">
     <style>
-      .nm_prof{
+      #nm_prof{
         position: relative;
-        width: 100%;
-        height: 20px;
+        width: 75%;
+        height: auto;
         color: #008000;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
       }
 
-      .img_prof{
+      #img_prof{
         position: relative;
+        width: 25%;
+        height: auto;
+        float: left;
       }
 
-      .foto_prof{
-        width: 100px;
-        height: 120px;
-      }
-
-      .ds_prof{ 
+      #foto_prof{
+        position: relative;
         width: 100%;
-        height: 20px;
+        height: 180px;
+        margin-left: 0;
+      }
+
+      #ds_prof{
+        position: relative; 
+        width: 75%;
+        height: auto;
+        float: right;
+      }
+
+      #prof_row{
+        position: relative;
+        width: 80%;
+        height: auto;
+        background-color: white;
+        border: 1px solid #008000;
+        border-radius: 1em;
+        padding: 1em;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        overflow: hidden;
+        margin-left: 10%;
       }
     </style>
   </head>
@@ -45,21 +69,19 @@
     include_once ("includes/menu.php");
   ?>
     <div class="container-fluid">
-        <?php
-          while($obj = $docente->fetch_object()){
-            echo  '<div class="row prof_row">
-                    <div class="col-12">  
-                      <div class="nm_prof">'.
-                        $obj->nm_usuario .' '.$obj->nm_sobrenome.
-                      '</div>
-                      <div class="img_prof"><img  class="foto_prof" src="'.$obj->nm_foto.'"/></div>
-                      <div class="ds_prof">'.
-                        $obj->ds_descricao;
-                      '</div>
-                    </div>
-                  </div>';   
-          }
-        ?>
+      <?php
+        while($obj = $docente->fetch_object()){
+          echo  '<div id="prof_row"> 
+                  <div id="nm_prof">'.
+                    $obj->nm_usuario .' '.$obj->nm_sobrenome.
+                  '</div>
+                  <div id="img_prof"><img id="foto_prof" src="'.$obj->nm_foto.'"/></div>
+                  <div id="ds_prof">'.
+                    $obj->ds_descricao.
+                  '</div>
+                </div>';   
+        }
+      ?>
     </div>
   
   <!-- JavaScript -->

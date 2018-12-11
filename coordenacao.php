@@ -13,31 +13,56 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css" >
   <link rel="stylesheet" href="css/fontawesome-all.css" >
-  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/info.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="shortcut icon" href="imagens/icone_etec.png">
 
     <style>
-      @media (min-width: 990px) {
-        #foto_prof {
-          width: 10%;
-          height: auto;
-          float:left;
-          position:relative;
-        }
+      #nm_prof{
+        position: relative;
+        width: 80%;
+        height: auto;
+        color: #008000;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
       }
 
-      #foto_prof {
-          width: 20%;
-          height: auto;
-          position:center;
-        }
-        .textao{
-          position: absolute;
-          margin-left: 1px;
-        }
+      #img_prof{
+        position: relative;
+        width: 20%;
+        height: auto;
+        float: left;
+      }
+
+      #foto_prof{
+        position: relative;
+        width: 100%;
+        height: 180px;
+        margin-left: 0;
+      }
+
+      #ds_prof{
+        position: relative; 
+        width: 80%;
+        height: auto;
+        float: right;
+      }
+
+      #prof_row{
+        position: relative;
+        width: 80%;
+        height: auto;
+        background-color: white;
+        border: 1px solid #008000;
+        border-radius: 1em;
+        padding: 1em;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        overflow: hidden;
+        margin-left: 10%;
+      }
     </style>
      <title>Coordenação</title>
   </head>
@@ -46,31 +71,28 @@
 
   <?php
     include_once ("includes/menu.php");
-    while($obj = $docente->fetch_object()){
+    
 
       ?>
-      <div class="container">
-          <div class="mt-5"> 
-
-            <?php
-
-    echo '<div class="col"> 
-
-    <div class="row textao"> <div class="mx-auto pt-3 pb-5 text-center" style="color: #008000">'. $obj->nm_usuario .' '.$obj->nm_sobrenome.'</div></div>
-    <img id="foto_prof" class="img-fluid mt-5" src="'.$obj->nm_foto.'"></div></div></div> 
-    <div class="row mt-2 mt-sm-0 mx-auto pt-3 pb-5">'; echo $obj->ds_descricao;'</div>
-
-    </div>';
-    
-  }
-  ?>
-</div>
-</div>
+      <div class="container-fluid">
+        <?php
+          while($obj = $docente->fetch_object()){
+            echo  '<div id="prof_row"> 
+                    <div id="nm_prof">'.
+                      $obj->nm_usuario .' '.$obj->nm_sobrenome.
+                    '</div>
+                    <div id="img_prof"><img id="foto_prof" src="'.$obj->nm_foto.'"/></div>
+                    <div id="ds_prof">'.
+                      $obj->ds_descricao.
+                    '</div>
+                  </div>';  
+          }
+        ?>
+      </div>
 
     <!-- JavaScript -->
   <script src="js/jquery.min.js" ></script>
   <script src="js/bootstrap.min.js" ></script>
-  <script src="js/swiper.min.js"></script>
   <script src="js/menu-index.js"></script>
 
 
