@@ -1,6 +1,6 @@
 <header>
 	<!-- Fixed navbar -->
-	<nav class="navbar fixed-top navbar-dark bg-black p-0">
+	<nav class="navbar navbar-dark bg-black p-0">
 		<button class="navbar-toggler p-1 border-1" type="button" data-toggle="menu">
 			<span class="navbar-toggler-icon"></span>
 		</button>
