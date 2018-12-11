@@ -17,53 +17,52 @@
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="shortcut icon" href="imagens/icone_etec.png">
+  <style>
+    #nm_prof{
+      position: relative;
+      width: 75%;
+      height: auto;
+      color: #000;
+      float: right;
+      font-size: 30px;
+      font-weight: bold;
+    }
 
-    <style>
-      #nm_prof{
-        position: relative;
-        width: 80%;
-        height: auto;
-        color: #008000;
-        float: right;
-        font-size: 30px;
-        font-weight: bold;
-      }
+    #img_prof{
+      position: relative;
+      width: 20%;
+      height: auto;
+      float: left;
+    }
 
-      #img_prof{
-        position: relative;
-        width: 20%;
-        height: auto;
-        float: left;
-      }
+    #foto_prof{
+      position: relative;
+      width: 100%;
+      height: 180px;
+      margin-left: 0;
+    }
 
-      #foto_prof{
-        position: relative;
-        width: 100%;
-        height: 180px;
-        margin-left: 0;
-      }
+    #ds_prof{
+      position: relative; 
+      width: 75%;
+      height: auto;
+      float: right;
+    }
 
-      #ds_prof{
-        position: relative; 
-        width: 80%;
-        height: auto;
-        float: right;
-      }
-
-      #prof_row{
-        position: relative;
-        width: 80%;
-        height: auto;
-        background-color: white;
-        border: 1px solid #008000;
-        border-radius: 1em;
-        padding: 1em;
-        margin-top: 5em;
-        margin-bottom: 5em;
-        overflow: hidden;
-        margin-left: 10%;
-      }
-    </style>
+    #prof_row{
+      position: relative;
+      width: 80%;
+      height: auto;
+      background-color: white;
+      border-left: 0.5em solid #008000;
+      padding: 1em;
+      padding-left: 0;
+      margin-top: 2em;
+      margin-bottom: 5em;
+      overflow: hidden;
+      margin-left: 10%; 
+    }
+  </style>
      <title>Coordenação</title>
   </head>
   <body>
@@ -71,10 +70,11 @@
 
   <?php
     include_once ("includes/menu.php");
-    
-
-      ?>
+  ?>
       <div class="container-fluid">
+        <div class="container-fluid content-title">
+          <h2 class="text-center titulo">COORDENAÇÃO</h2>
+        </div>
         <?php
           while($obj = $docente->fetch_object()){
             echo  '<div id="prof_row"> 

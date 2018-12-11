@@ -11,6 +11,7 @@
   <head>
     <title>Corpo Docente</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/fontawesome-all.css" >
     <link rel="stylesheet" href="css/info.css">
@@ -22,7 +23,7 @@
         position: relative;
         width: 75%;
         height: auto;
-        color: #008000;
+        color: #000;
         float: right;
         font-size: 30px;
         font-weight: bold;
@@ -54,13 +55,13 @@
         width: 80%;
         height: auto;
         background-color: white;
-        border: 1px solid #008000;
-        border-radius: 1em;
+        border-left: 0.5em solid #008000;
         padding: 1em;
-        margin-top: 5em;
+        padding-left: 0;
+        margin-top: 2em;
         margin-bottom: 5em;
         overflow: hidden;
-        margin-left: 10%;
+        margin-left: 10%; 
       }
     </style>
   </head>
@@ -69,6 +70,9 @@
     include_once ("includes/menu.php");
   ?>
     <div class="container-fluid">
+      <div class="container-fluid content-title">
+        <h2 class="text-center titulo">CORPO DOCENTE</h2>
+      </div>
       <?php
         while($obj = $docente->fetch_object()){
           echo  '<div id="prof_row"> 
