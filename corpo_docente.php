@@ -38,10 +38,6 @@
         width: 100%;
         height: 20px;
       }
-
-      .prof_row:hover{
-        background-color: #CCC;
-      }
     </style>
   </head>
   <body>
