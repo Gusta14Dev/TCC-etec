@@ -254,7 +254,7 @@ include_once("includes/conexao.php");
          <span>Secretaria</span>
        </li>
       </a>
-      <a class="menu-link" href="#">
+      <a class="menu-link" href="tcc.php">
         <li class="menu-item">
         <span>TCC</span>
         </li>
