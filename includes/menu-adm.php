@@ -56,6 +56,9 @@
 			<li class="menu-item">
 				<a class="menu-link ml-4" href="turma.php"><i class="fas fa-chalkboard fa-lg mr-3"></i>Turmas</a>
 			</li>
+			<li class="menu-item">
+				<a class="menu-link ml-4" href="cursos.php"><i class="fas fa-graduation-cap fa-lg mr-3"></i>Cursos</a>
+			</li>
 		</ul>
 	</div>
 </header>
