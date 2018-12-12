@@ -137,6 +137,7 @@
 	  </div>
     </div>
 
+    <hr id="separate"></hr>
   <div class="container-fluid" id="info">
     <div class="container-info">
         <div class="box">
@@ -165,7 +166,7 @@
         </div>
         <div class="box">
           <div class="thumb">
-            <img src="imagens/">
+            <img src="imagens/infraestrutura.png">
           </div>
           <div class="detalhes">
             <div class="content">
@@ -177,7 +178,7 @@
         </div>
         <div class="box">
           <div class="thumb">
-            <img src="imagens/">
+            <img src="imagens/secretaria.png">
           </div>
           <div class="detalhes">
             <div class="content">

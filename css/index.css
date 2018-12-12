@@ -11,9 +11,9 @@ html, body {
   background-color:#343a40;
 }
 #noticia{
-  height: 400px;
+  height: 450px;
   padding: 0;
-  background-color: #ccc;
+  margin-top: 2em;
 }
 #noticia-title{
   width:90%;
@@ -23,6 +23,7 @@ html, body {
   width:85%;
   height:auto;
   z-index:-1;
+  margin-bottom: 70px;
 }
 .image-curso{
   width:100%;
@@ -60,10 +61,16 @@ html, body {
   background-color: #004000;
   color: white;
   border-bottom:2px solid #004000;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 .mx-auto{
   margin: 0 auto;
+}
+
+#separate{
+  position: relative;
+  width: 90%;
+  background-color: #000;
 }
 /*Media query para trablets*/
 @media (max-width: 991.9px) {

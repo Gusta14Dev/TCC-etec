@@ -14,11 +14,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/fontawesome-all.css" >
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link rel="stylesheet" href="css/info.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="imagens/icone_etec.png">
     <style>
+      html, body {
+        position: relative;
+        height: 100%;
+        font-family: 'Abel', sans-serif;
+      }
+
       #nm_prof{
         position: relative;
         width: 75%;
@@ -64,6 +71,14 @@
         margin-left: 10%; 
       }
 
+      .conteudo-titulo{
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin-top: 2em;
+        border-bottom: 2px solid #008000;
+      }
+
       @media (min-width: 320px) and (max-width: 576px){
         #prof_row{
           width: 250px;
@@ -88,7 +103,7 @@
           height: 100px;
         }
 
-        .content-title{
+        .conteudo-titulo{
           height: auto;
         }
       }
@@ -117,7 +132,7 @@
           height: 150px;
         }
 
-        .content-title{
+        .conteudo-titulo{
           height: auto;
         }
       }
@@ -146,7 +161,7 @@
           height: 180px;
         }
 
-        .content-title{
+        .conteudo-titulo{
           height: auto;
         }
       }
@@ -157,7 +172,7 @@
     include_once ("includes/menu.php");
   ?>
     <div class="container-fluid">
-      <div class="container-fluid content-title">
+      <div class="container-fluid conteudo-titulo">
         <h2 class="text-center">CORPO DOCENTE</h2>
       </div>
       <?php
