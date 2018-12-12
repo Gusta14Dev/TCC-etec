@@ -39,7 +39,7 @@
       #foto_prof{
         position: relative;
         width: 100%;
-        height: 180px;
+        height: 230px;
         margin-left: 0;
       }
 
@@ -63,6 +63,93 @@
         overflow: hidden;
         margin-left: 10%; 
       }
+
+      @media (min-width: 320px) and (max-width: 576px){
+        #prof_row{
+          width: 250px;
+          height: 120px;
+        }
+
+        #nm_prof{
+          width: 120px;
+          font-size: 15px;
+        }
+
+        #ds_prof{ 
+          width: 120px;
+          font-size: 12px;
+        }
+
+        #img_prof{
+          width: 80px;
+        }
+
+        #foto_prof{
+          height: 100px;
+        }
+
+        .content-title{
+          height: auto;
+        }
+      }
+
+      @media (min-width: 577px) and (max-width: 768px){
+        #prof_row{
+          width: 450px;
+          height: 180px;
+        }
+
+        #nm_prof{
+          width: 290px;
+          font-size: 15px;
+        }
+
+        #ds_prof{ 
+          width: 290px;
+          font-size: 12px;
+        }
+
+        #img_prof{
+          width: 130px;
+        }
+
+        #foto_prof{
+          height: 150px;
+        }
+
+        .content-title{
+          height: auto;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 1192px){
+        #prof_row{
+          width: 600px;
+          height: 200px;
+        }
+
+        #nm_prof{
+          width: 430px;
+          font-size: 30px;
+        }
+
+        #ds_prof{ 
+          width: 430px;
+          font-size: 12px;
+        }
+
+        #img_prof{
+          width: 140px;
+        }
+
+        #foto_prof{
+          height: 180px;
+        }
+
+        .content-title{
+          height: auto;
+        }
+      }
     </style>
   </head>
   <body>
@@ -71,7 +158,7 @@
   ?>
     <div class="container-fluid">
       <div class="container-fluid content-title">
-        <h2 class="text-center titulo">CORPO DOCENTE</h2>
+        <h2 class="text-center">CORPO DOCENTE</h2>
       </div>
       <?php
         while($obj = $docente->fetch_object()){

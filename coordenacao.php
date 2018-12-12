@@ -19,49 +19,136 @@
   <link rel="shortcut icon" href="imagens/icone_etec.png">
   <style>
     #nm_prof{
-      position: relative;
-      width: 75%;
-      height: auto;
-      color: #000;
-      float: right;
-      font-size: 30px;
-      font-weight: bold;
-    }
+        position: relative;
+        width: 75%;
+        height: auto;
+        color: #000;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+      }
 
-    #img_prof{
-      position: relative;
-      width: 20%;
-      height: auto;
-      float: left;
-    }
+      #img_prof{
+        position: relative;
+        width: 25%;
+        height: auto;
+        float: left;
+      }
 
-    #foto_prof{
-      position: relative;
-      width: 100%;
-      height: 180px;
-      margin-left: 0;
-    }
+      #foto_prof{
+        position: relative;
+        width: 100%;
+        height: 230px;
+        margin-left: 0;
+      }
 
-    #ds_prof{
-      position: relative; 
-      width: 75%;
-      height: auto;
-      float: right;
-    }
+      #ds_prof{
+        position: relative; 
+        width: 75%;
+        height: auto;
+        float: right;
+      }
 
-    #prof_row{
-      position: relative;
-      width: 80%;
-      height: auto;
-      background-color: white;
-      border-left: 0.5em solid #008000;
-      padding: 1em;
-      padding-left: 0;
-      margin-top: 2em;
-      margin-bottom: 5em;
-      overflow: hidden;
-      margin-left: 10%; 
-    }
+      #prof_row{
+        position: relative;
+        width: 80%;
+        height: auto;
+        background-color: white;
+        border-left: 0.5em solid #008000;
+        padding: 1em;
+        padding-left: 0;
+        margin-top: 2em;
+        margin-bottom: 5em;
+        overflow: hidden;
+        margin-left: 10%; 
+      }
+
+      @media (min-width: 320px) and (max-width: 576px){
+        #prof_row{
+          width: 250px;
+          height: 120px;
+        }
+
+        #nm_prof{
+          width: 120px;
+          font-size: 15px;
+        }
+
+        #ds_prof{ 
+          width: 120px;
+          font-size: 12px;
+        }
+
+        #img_prof{
+          width: 80px;
+        }
+
+        #foto_prof{
+          height: 100px;
+        }
+
+        .content-title{
+          height: auto;
+        }
+      }
+
+      @media (min-width: 577px) and (max-width: 768px){
+        #prof_row{
+          width: 450px;
+          height: 180px;
+        }
+
+        #nm_prof{
+          width: 290px;
+          font-size: 15px;
+        }
+
+        #ds_prof{ 
+          width: 290px;
+          font-size: 12px;
+        }
+
+        #img_prof{
+          width: 130px;
+        }
+
+        #foto_prof{
+          height: 150px;
+        }
+
+        .content-title{
+          height: auto;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 1192px){
+        #prof_row{
+          width: 600px;
+          height: 200px;
+        }
+
+        #nm_prof{
+          width: 430px;
+          font-size: 30px;
+        }
+
+        #ds_prof{ 
+          width: 430px;
+          font-size: 12px;
+        }
+
+        #img_prof{
+          width: 140px;
+        }
+
+        #foto_prof{
+          height: 180px;
+        }
+
+        .content-title{
+          height: auto;
+        }
+      }
   </style>
      <title>Coordenação</title>
   </head>
