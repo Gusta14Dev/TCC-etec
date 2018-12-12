@@ -15,7 +15,7 @@
 	<!-- Menu Lateral e Tabela CSS -->
 	<link href="css/menu-lateral.css" rel="stylesheet">
 	<link href="css/layout_form.css" rel="stylesheet">
-<title>Página dos Professores</title>
+<title>Professores</title>
 
 </head>
 
@@ -40,15 +40,13 @@
 			include_once ("includes/menu-adm.php");
       	?>
 		<div id="container-form">
-			<?php
-				include_once ("includes/fundo.html");
-			?>
+			
 
 
 	<div class="container-fluid jumbotron corverdinha mx-sm-auto">
 		<div class="row justify-content-around">
 			<div class="col-md-3 col-12 mt-2 ml-auto pr-0">
-					<a href="cadastrar_professor.php" class="btn btn-success form-control my-2 my-sm-0" style="padding:2px; margin-bottom:5px;"><i>Cadastrar Professor</i> <i class="fas fa-plus fa-sm"></i></a>
+					<button class="btn btn-success" id="cadastro" data-toggle="modal" data-target="#cadastro-modal">Cadastrar Professores <i class="fas fa-plus fa-sm"></i></button>
 			</div>
 		</div>
 		<div id="list" class="row" style="margin-top:5px;">
@@ -125,3 +123,103 @@ echo $obj->cd_usuario . '" tabindex="-1" role="dialog" aria-labelledby="modalLab
         }
     }
     ?>
+
+<!-- Modal para cadastrar professores -->
+
+    <div class="modal fade" id="cadastro-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalLabel">Cadastrar Professores</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <form method="post">
+        <div class="container-fluid">
+              <div class="row">
+		          <div class="col-6">
+		            <label for="nome"><b>Nome:</b></label>
+		            <input type="text" class="form-control" name="nome" required autofocus>
+		          </div>
+		          <div class="col-6">
+		            <label for="snome"><b>Sobrenome:</b></label>
+		            <input type="text" class="form-control" name="sobrenome" required>
+		          </div>
+		        </div>
+		        <div class="row">
+		          <div class="col-12">
+		            <label for="foto"><b>Foto:</b></label>
+		            <input type="text" class="form-control" name="foto" value="foto-coordenadores/" required>
+		          </div>
+		        </div>
+		         <div class="row">
+		          <div class="col-12">
+		            <label for="cargo"><b>Cargo:</b></label>
+		            <input type="text" class="form-control" name="cargo" required>
+		          </div>
+		        </div>
+		        <div class="row">
+		          <div class="col-12">
+		            <label for="login"><b>Login:</b></label>
+		            <input type="email" class="form-control" name="login" required>
+		          </div>
+		        </div>
+		        <label for="senha"><b>Senha:</b></label>
+		        <div class="form-row">
+		          <div class="col-12">
+		            <input type="password" class="form-control" id="senha" name="senha" required>
+		          </div>
+		        </div>
+		        <label for="csenha"><b>Confirmar Senha:</b></label>
+		        <div class="form-row">
+		          <div class="col-12">
+		            <input type="password" class="form-control" id="csenha" name="csenha" required>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+              <div class="row">
+              <div class="col-12 mx-auto pt-2 text-center">
+                <button type="submit" name="butao" class="btn btn-success mb-2">Enviar</button>
+                <button type="button" class="btn btn-danger mb-2" data-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+            </div>
+          </div>
+        
+      </form>
+<!-- PHP para cadastrar professores-->
+       <?php
+	  	if (isset($_POST['butao'])) {
+		    $senha = $_POST['senha'];
+		    $csenha = $_POST['csenha'];
+	    	if ($senha == $csenha) {
+		      $nome = $_POST['nome'];
+		      $sobrenome = $_POST['sobrenome'];
+	       	$foto = $_POST['foto'];
+	       	$cargo = $_POST['cargo'];
+		      $login = $_POST['login'];
+	      	$insert="INSERT INTO `tb_usuario`(`nm_usuario`, `nm_sobrenome`, `nm_foto`, `ds_descricao`, `nm_login`, `nm_senha`, `id_tipo`) VALUES ('$nome','$sobrenome','$foto', '$cargo', '$login','$senha', 3)";
+	      		if ($mysqli->query($insert)) {
+	  ?>
+	  <script type="text/javascript">
+	    alert('Cadastrado com sucesso!');
+	    document.location="professores.php";
+	  </script>
+	  <?php
+	    }else{
+	  ?>
+	  <script type="text/javascript">
+	    alert('Erro ao Cadastrar!');
+	    document.location="professores.php";
+	  </script>
+	  <?php
+	    }}else{
+	  ?>
+	  <script type="text/javascript">
+	    alert('As Senhas Não Condizem!');
+	    document.location="professores.php";
+	  </script>
+	  <?php
+	   	}}
+  	?>
