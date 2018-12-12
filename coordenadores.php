@@ -1,6 +1,6 @@
 <?php
 	include_once("includes/conexao.php");
-	include_once("includes/texto.php");
+	$select="SELECT * FROM `tb_usuario` WHERE `id_tipo` = 2 ORDER BY  `cd_usuario` ASC";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -8,13 +8,11 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	    <link rel="shortcut icon" href="imagens/icone_etec.png" >
-		<!-- Bootstrap e FontAwsome CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css" >
-	<link href="css/fontawesome-all.css" rel="stylesheet">
-
-	<!-- Menu Lateral e Tabela CSS -->
-	<link href="css/menu-lateral.css" rel="stylesheet">
-	<link href="css/layout_form.css" rel="stylesheet">
+		<!-- CSS -->
+  	  <link rel="stylesheet" href="css/bootstrap.min.css">
+    	<link href="css/menu-lateral.css" rel="stylesheet">
+   	 <link href="css/fontawesome-all.css" rel="stylesheet">
+   	 <link href="css/botao.css" rel="stylesheet">
 <title>Coordenadores</title>
 
 </head>
@@ -45,93 +43,124 @@
 			?>
 
 
-	<div class="container-fluid jumbotron corverdinha mx-sm-auto">
-		<div class="row justify-content-around">
-			<div class="col-md-3 col-12 mt-2 ml-auto pr-0">
-					<button class="btn btn-success" id="cadastro" data-toggle="modal" data-target="#cadastro-modal">Cadastrar Coordenadores <i class="fas fa-plus fa-sm"></i></button>
+	<div class="container-table">
+		<div class="form-row">
+			<div class="col-2 col-sm-4 p-3" >
+				<button class="btn btn-success btn-circle" data-toggle="modal" data-target="#cadastro-modal" >&#43;</button>
 			</div>
-
-			<div class="col-md-3 col-12 mt-2 mx-md-auto pr-0">
-				<button class="btn btn-success" id="cadastro2" data-toggle="modal" data-target="#cadastro2-modal">Cadastrar Horários <i class="far fa-clock"></i></button>
+			<div class="col-6 col-sm-4 p-3">
+				<h1 class="text-left">Coordenadores</h1>
 			</div>
+			<div class="col-4 col-sm-4" ></div>
 		</div>
-		<div id="list" class="row" style="margin-top:5px;">
-			<div class="table-responsive col-md-12">
-				<table class="table table-striped" cellspacing="0" cellpadding="0">
-					<thead>
-						<tr>
-							<th>CD</th>
-							<th>Coordenador</th>
-							<th class="actions">Ações</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-	<!--Mostrar conteúdo da tabela-->
-<?php
-	$select="SELECT * FROM `tb_usuario` WHERE `id_tipo` = 2 ORDER BY  `cd_usuario` ASC ";
-		if ($con=$mysqli->query($select)) {
-		while ($obj= $con->fetch_object()) {
-			echo "<td>".$obj->cd_usuario."</td>";
-			echo "<td>".$obj->nm_usuario." ".$obj->nm_sobrenome."</td>";
-			echo '<td> <a href="coordenador.php?view=0&itens='.$obj->cd_usuario.'" TYPE="BUTTON" NAME="submit" class="btn btn-success btn-xs botao" >Visualizar</a>';
-			echo ' <a class="btn btn-warning btn-xs botao" style="color:black;" id="alterar" data-toggle="modal" data-target="#alterar-modal';
-			echo $obj->cd_usuario.'">Editar</a>';
-			echo ' <a href="alterar_horario.php?edit=0&itens='.$obj->cd_usuario.'" TYPE="BUTTON" NAME="submit" class="btn btn-warning btn-xs botao">Editar Horário</a>';
-			echo ' <a class="btn btn-danger btn-xs botao" style="color:white;" data-toggle="modal" data-target="#delete-modal';
-			echo $obj->cd_usuario.'">Excluir</a>';
-			echo '</td></tr>';
-		}
-		}else{
-			echo "Não há nenhum item cadastrado!";
-		}
-?>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>	
+		<table class="table table-striped">
+		  <thead class="bg-success">
+		    <tr class="text-white">
+		      <th scope="col">CD</th>
+		      <th scope="col">Coordenador</th>
+		      <th id="col-acao" scope="col">Ação</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+			<?php
+				$id = 0;
+				if ($con=$mysqli->query($select)) {
+					while ($obj= $con->fetch_object()) {
+						$id++;
+			?>
+					    <tr>
+					      <th scope="row"><?php echo $obj->cd_usuario; ?></th>
+					      <td><?php echo $obj->nm_usuario. " ". $obj->nm_sobrenome; ?></td>
+					      <td class="acao" >
+						        <div <?php echo 'data-edit="'.$id.'"'; ?> class="container-edit">
+						            <div class="text">Editar</div>
+						            <button class="edit" data-toggle="modal" <?php echo 'data-target="#edit-modal'.$obj->cd_usuario.'"'; ?> ><i class="fas fa-pen"></i></button>
+						        </div>
+						        <div <?php echo 'data-remove="'.$id.'"'; ?> class="container-remove">
+						            <div class="text">Remover</div>
+						            <button class="remove" data-toggle="modal" <?php echo 'data-target="#delete-modal'.$obj->cd_usuario.'"'; ?> ><i class="fas fa-trash-alt"></i></button>
+						        </div>
+								<div <?php echo 'data-vision="'.$id.'"'; ?> class="container-vision">
+						            <div class="text">Visualizar</div>
+						            <button class="vision" data-toggle="modal" <?php echo 'data-target="#visu-modal'.$obj->cd_usuario.'"'; ?> ><i class="fas fa-eye"></i></button>
+						        </div>
+						        <button <?php echo 'id="'.$id.'"'; ?> class="config fechado"><i class="fas fa-cogs"></i></button>
+						  </td>
+					    </tr>
+			<?php
+					}
+				}else{
+			?>
+				<tr>
+			      <td>-</td>
+			      <td>Não a itens cadastrados</td>
+			      <td>-</td>
+			      <td>-</td>
+			    </tr>
+			<?php
+				}
+			?>
+		  </tbody>
+		</table>
 	</div>
-</div>
 
 <!-- JavaScript -->
 <script src="js/jquery.min.js" ></script>
 <script src="js/popper.min.js" ></script>
 <script src="js/bootstrap.min.js" ></script>
 <script src="js/footer-navbar-segundamento.js"></script>
+<script src="js/botao.js"></script>
+	<script>
+		function previewImagem(a){
+			var arquivo = 'input[id=arquivo'+a+']';
+			var img = 'img[id=foto-img'+a+']';
+			
+			var imagem = document.querySelector(arquivo).files[0];
+			var preview = document.querySelector(img);
+				
+			var reader = new FileReader();
+				
+			reader.onloadend = function () {
+				preview.src = reader.result;
+			}
+				
+			if(imagem){
+				reader.readAsDataURL(imagem);
+			}else{
+				preview.src = "";
+			}
+		}
+	</script>
 
 </body>
 </html>
 
-<!-- Modal para Excluir Coordenadores -->
+<!-- Modal para excluir funcionários -->
 <?php
-    $selectmodal="SELECT * FROM `tb_usuario`";
-    if ($con=$mysqli->query($selectmodal)) {
-    while ($obj= $con->fetch_object()) {
-
-echo '<div class="modal fade" id="delete-modal';
-echo $obj->cd_usuario . '" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h4 class="modal-title" id="modalLabel">Excluir Coordenador</h4>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
-		      </div>
-		      <div class="modal-body">
-		        Deseja realmente excluir este coordenador '.$obj->nm_usuario.'?
-		      </div>
-		      <div class="modal-footer">
-		        <a href="excluir_coordenador.php?cd=';
-		        echo $obj->cd_usuario . '" class="btn btn-danger">Excluir</a>
-		    	<button type="button" class="btn btn-default " data-dismiss="modal">Cancelar</button>
-		      </div>
-		    </div>
-  		</div>
-  	</div>';
+    if ($con=$mysqli->query($select)) {
+    	while ($obj= $con->fetch_object()) {
+?>
+		  <div class="modal fade" <?php echo 'id="delete-modal' . $obj->cd_usuario . '"'; ?> tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h4 class="modal-title" id="modalLabel">Excluir Coordenador</h4>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+			      </div>
+			      <div class="modal-body">
+			        Deseja realmente excluir <?php echo $obj->nm_usuario . " " . $obj->nm_sobrenome; ?> ?
+			      </div>
+			      <div class="modal-footer">
+			        <a <?php echo 'href="excluir_funcionario.php?cd='. $obj->cd_usuario . '"'; ?> class="btn btn-danger">Excluir</a>
+			    	<button type="button" class="btn btn-default " data-dismiss="modal">Cancelar</button>
+			      </div>
+			    </div>
+	  		</div>
+	  	</div>
+<?php
         }
     }
-    ?>
-
+?>
 <!-- Modal para cadastrar coordenadores -->
 
     <div class="modal fade" id="cadastro-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
