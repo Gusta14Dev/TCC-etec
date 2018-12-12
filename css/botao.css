@@ -1,3 +1,10 @@
+#arquivo{
+	display:none;
+}
+.foto-img{
+	width:170px;
+	height:100px;
+}
 .container-table{
 	width:99%;
 	max-width:920px;
