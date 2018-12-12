@@ -104,9 +104,7 @@
         <div class="mx-auto w-25"><a href="visualizar.php?view=0&itens=5" class="btn btn-success justify-content-center">Saiba mais</a></div>
       </div>
     </div>
-      
     </div>
-  </div>
 
   <div class="container-fluid" id="noticia">
       <div class="container-fluid content-title container-titulo">
