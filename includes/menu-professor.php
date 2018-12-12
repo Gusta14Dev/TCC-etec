@@ -30,7 +30,7 @@
 				<a class="menu-link ml-4" href="avaliacoes.php"><i class="fas fa-chalkboard-teacher fa-lg mr-3"></i>Avaliações</a>
 			</li>
 			<li class="menu-item" data-dropdawn-toggle="menu-dropdown1">
-				<a class="menu-link ml-4 " href="visualizar_evento_aluno_professor.php"><i class="far fa-calendar-alt fa-lg mr-3"></i>Eventos</i> </a>
+				<a class="menu-link ml-4 " href="#"><i class="far fa-calendar-alt fa-lg mr-3"></i>Eventos</i> </a>
 			</li>
 		</ul>
 	</div>
