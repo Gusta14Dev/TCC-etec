@@ -46,7 +46,7 @@ if(!isset($_SESSION['nm_usuario'])){
         unset($_SESSION['inicio']);
       }
     ?>
-  <body style="margin-top: 48px;">
+  <body>
     <!--Layout do Fundo-->
     <div id="container-form">
     </div>
