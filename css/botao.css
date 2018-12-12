@@ -1,9 +1,8 @@
-#arquivo{
+.arquivo{
 	display:none;
 }
 .foto-img{
-	width:170px;
-	height:100px;
+	width:100%;
 }
 .container-table{
 	width:99%;
