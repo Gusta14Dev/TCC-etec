@@ -52,7 +52,7 @@
 
       #prof_row{
         position: relative;
-        width: 80%;
+        width: 900px;
         height: auto;
         background-color: white;
         border-left: 0.5em solid #008000;

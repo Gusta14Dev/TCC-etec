@@ -14,21 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/fontawesome-all.css" >
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link rel="stylesheet" href="css/info.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="imagens/icone_etec.png">
     <style>
-      #nm_prof{
-        position: relative;
-        width: 75%;
-        height: auto;
-        color: #000;
-        float: right;
-        font-size: 30px;
-        font-weight: bold;
-      }
-
       #img_prof{
         position: relative;
         width: 100%;
@@ -39,7 +30,7 @@
       #foto_prof{
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 230px;
         margin-left: 0;
       }
 
@@ -56,6 +47,72 @@
         overflow: hidden;
         margin-left: 10%; 
       }
+
+      .conteudo-titulo{
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin-top: 2em;
+        border-bottom: 2px solid #008000;
+      }
+
+      @media (min-width: 320px) and (max-width: 576px){  
+        #prof_row{
+          width: 300px;
+          height: 120px;
+          margin-left: 0;
+        }
+
+        #img_prof{
+          width: 100%;
+        }
+
+        #foto_prof{
+          height: 100px;
+        }
+
+        .conteudo-titulo{
+          height: auto;
+        }
+      }
+
+      @media (min-width: 577px) and (max-width: 768px){
+        #prof_row{
+          width: 450px;
+          height: 180px;
+        }
+
+        #img_prof{
+          width: 100%;
+        }
+
+        #foto_prof{
+          height: 150px;
+        }
+
+        .conteudo-titulo{
+          height: auto;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 1192px){
+        #prof_row{
+          width: 600px;
+          height: 200px;
+        }
+
+        #img_prof{
+          width: 100%;
+        }
+
+        #foto_prof{
+          height: 180px;
+        }
+
+        .conteudo-titulo{
+          height: auto;
+        }
+      }
     </style>
   </head>
   <body>
@@ -63,7 +120,7 @@
     include_once ("includes/menu.php");
   ?>
     <div class="container-fluid">
-      <div class="container-fluid content-title">
+      <div class="container-fluid conteudo-titulo">
         <h2 class="text-center titulo">Arquivos para TCC</h2>
       </div>
           <div id="prof_row"> 
