@@ -249,7 +249,7 @@ include_once("includes/conexao.php");
          <span>Direção</span>
        </li>
       </a>
-      <a class="menu-link" href="#">
+      <a class="menu-link" href="secretaria.php">
        <li class="menu-item">
          <span>Secretaria</span>
        </li>
