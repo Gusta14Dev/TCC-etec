@@ -104,9 +104,7 @@
         <div class="mx-auto w-25"><a href="visualizar.php?view=0&itens=5" class="btn btn-success justify-content-center">Saiba mais</a></div>
       </div>
     </div>
-      
     </div>
-  </div>
 
   <div class="container-fluid" id="noticia">
       <div class="container-fluid content-title container-titulo">
@@ -139,6 +137,7 @@
 	  </div>
     </div>
 
+    <hr id="separate"></hr>
   <div class="container-fluid" id="info">
     <div class="container-info">
         <div class="box">
@@ -167,7 +166,7 @@
         </div>
         <div class="box">
           <div class="thumb">
-            <img src="imagens/">
+            <img src="imagens/infraestrutura.png">
           </div>
           <div class="detalhes">
             <div class="content">
@@ -179,7 +178,7 @@
         </div>
         <div class="box">
           <div class="thumb">
-            <img src="imagens/">
+            <img src="imagens/secretaria.png">
           </div>
           <div class="detalhes">
             <div class="content">

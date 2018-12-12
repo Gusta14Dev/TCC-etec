@@ -1,11 +1,10 @@
-<?php?>
 <header>
 	<!-- Fixed navbar -->
-	<nav class="navbar fixed-top navbar-dark bg-black p-0">
+	<nav class="navbar navbar-dark bg-black p-0">
 		<button class="navbar-toggler p-1 border-1" type="button" data-toggle="menu">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand h1 p-4" href="home.php">Painel do Professor</a>
+		<a class="navbar-brand h1 pl-1" href="home.php">Painel Administrativo</a>
 		<a href="sair.php" class="p-2 border-0 text-white p-0">
 			<i>Sair</i> <i class="fas fa-sign-out-alt"></i>
 		</a>
@@ -27,22 +26,11 @@
 			<li class="menu-item">
 				<a class="menu-link ml-4" href="home.php"><i class="fas fa-home fa-lg mr-3"></i>Home</a>
 			</li>
-			<li class="menu-item" data-dropdawn-toggle="menu-dropdown3">
-				<a class="menu-link ml-4 " href="avaliacoes.php"><i class="far fa-calendar-alt fa-lg mr-3"></i>Avaliações</a>
+			<li class="menu-item">
+				<a class="menu-link ml-4" href="avaliacoes.php"><i class="fas fa-chalkboard-teacher fa-lg mr-3"></i>Avaliações</a>
 			</li>
 			<li class="menu-item" data-dropdawn-toggle="menu-dropdown1">
-				<a class="menu-link ml-4 " href="#"><i class="far fa-calendar-alt fa-lg mr-3"></i>Eventos<i class="fas fa-caret-down ml-2" id="seta1"></i> </a>
-			</li>
-			<ul class="menu-dropdown-body bg-dark" id="menu-dropdown1" >
-				<li class="menu-dropdown-item">
-					<a class="menu-dropdown-link" href="#"><i class="fas fa-caret-right ml-5 mr-2"></i>Eventos públicos</a>
-				</li>
-				<li class="menu-dropdown-item">
-					<a class="menu-dropdown-link" href="#"><i class="fas fa-caret-right ml-5 mr-2"></i>Eventos privados</a>
-				</li>
-			</ul>
-			<li class="menu-item">
-				<a class="menu-link ml-4" href="#"><i class="fas fa-chalkboard fa-lg mr-3"></i>Turmas</a>
+				<a class="menu-link ml-4 " href="visualizar_evento_aluno_professor.php"><i class="far fa-calendar-alt fa-lg mr-3"></i>Eventos</i> </a>
 			</li>
 		</ul>
 	</div>

@@ -55,28 +55,26 @@
 	            </thead>
 	            <tbody>
 								<tr>
-	   							<?php 
-	  								$select="SELECT * FROM `tb_calendario` WHERE 1 ORDER BY cd_calendario ASC";
-	    							if ($con=$mysqli->query($select)) {
-	    								while ($obj= $con->fetch_object()) {
-										    echo  "<td>".$obj->cd_calendario."</td>";
-										    echo "<td>".$obj->nm_tipo."</td>";
-									     	echo "<td>".$obj->ds_conteudo."</td>";
-									    	echo "<td>".$obj->dt_inicio."</td>";
-	     									echo '<td class="actions">';
-												echo '<a href="avaliacao.php?view=0&itens='.$obj->cd_calendario.'" TYPE="BUTTON" NAME="submit" class="btn btn-success btn-xs botao" >Visualizar</a>';
-												echo ' <a href="alterar_avaliacao.php?edit=0&itens='.$obj->cd_calendario.'" TYPE="BUTTON" NAME="submit" class="btn btn-warning btn-xs botao">Editar</a>';
-												echo ' <a class="btn btn-danger btn-xs botao" style="color:white;" data-toggle="modal" data-target="#delete-modal';
-												echo $obj->cd_calendario.'">Excluir</a>';
-												echo '</td>';
-												echo '</tr>';
-	    								}
-	    							}else{
-	    								echo "Não há nenhum item cadastrado!";
-	    							}
-
-									
-	    						?>
+<?php 
+	$select="SELECT * FROM `tb_calendario` WHERE `st_publico_privado` = 2 ORDER BY cd_calendario ASC";
+	    if ($con=$mysqli->query($select)) {
+	    while ($obj= $con->fetch_object()) {
+			echo  "<td>".$obj->cd_calendario."</td>";
+			echo "<td>".$obj->nm_tipo."</td>";
+			echo "<td>".$obj->ds_conteudo."</td>";
+			echo "<td>".$obj->dt_inicio."</td>";
+	     	echo '<td class="actions">';
+			echo '<a href="avaliacao.php?view=0&itens='.$obj->cd_calendario.'" TYPE="BUTTON" NAME="submit" class="btn btn-success btn-xs botao" >Visualizar</a>';
+			echo ' <a href="alterar_avaliacao.php?edit=0&itens='.$obj->cd_calendario.'" TYPE="BUTTON" NAME="submit" class="btn btn-warning btn-xs botao">Editar</a>';
+			echo ' <a class="btn btn-danger btn-xs botao" style="color:white;" data-toggle="modal" data-target="#delete-modal';
+			echo $obj->cd_calendario.'">Excluir</a>';
+			echo '</td>';
+			echo '</tr>';
+	    }
+	    }else{
+	    	echo "Não há nenhum item cadastrado!";
+	    }
+?>
 								</tr>
 							</tbody>
 						</table>
