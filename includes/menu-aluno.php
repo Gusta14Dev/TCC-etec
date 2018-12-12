@@ -27,38 +27,7 @@
 				<a class="menu-link ml-4" href="home.php"><i class="fas fa-home fa-lg mr-3"></i>Home</a>
 			</li>
 			<li class="menu-item" data-dropdawn-toggle="menu-dropdown1">
-				<a class="menu-link ml-4 " href="#"><i class="far fa-calendar-alt fa-lg mr-3"></i>Eventos<i class="fas fa-caret-down ml-2" id="seta1"></i> </a>
-			</li>
-			<ul class="menu-dropdown-body bg-dark" id="menu-dropdown1" >
-				<li class="menu-dropdown-item">
-					<a class="menu-dropdown-link" href="evento-publico.php"><i class="fas fa-caret-right ml-5 mr-2"></i>Eventos públicos</a>
-				</li>
-				<li class="menu-dropdown-item">
-					<a class="menu-dropdown-link" href="evento-privado.php"><i class="fas fa-caret-right ml-5 mr-2"></i>Eventos privados</a>
-				</li>
-			</ul>
-			<li class="menu-item" data-dropdawn-toggle="menu-dropdown2">
-				<a class="menu-link ml-4" href="#"><i class="far fa-newspaper fa-lg mr-3"></i>Artigos<i class="fas fa-caret-down ml-2" id="seta2"></i></a>
-			</li>
-			<ul class="menu-dropdown-body bg-dark" id="menu-dropdown2" >
-				<li class="menu-dropdown-item">
-					<a class="menu-dropdown-link" href="noticia.php"><i class="fas fa-caret-right ml-5 mr-2"></i>Notícias</a>
-				</li>
-				<li class="menu-dropdown-item">
-					<a class="menu-dropdown-link" href="artigos.php"><i class="fas fa-caret-right ml-5 mr-2"></i>Artigos</a>
-				</li>
-			</ul>
-			<li class="menu-item">
-				<a class="menu-link ml-4" href="funcionarios.php"><i class="fas fa-user fa-lg mr-3"></i>Funcionários</a>
-			</li>
-			<li class="menu-item">
-				<a class="menu-link ml-4" href="coordenadores.php"><i class="fas fa-user-tie fa-lg mr-3"></i>Coordenadores</a>
-			</li>
-			<li class="menu-item">
-				<a class="menu-link ml-4" href="professores.php"><i class="fas fa-chalkboard-teacher fa-lg mr-3"></i>Professores</a>
-			</li>
-			<li class="menu-item">
-				<a class="menu-link ml-4" href="turma.php"><i class="fas fa-chalkboard fa-lg mr-3"></i>Turmas</a>
+				<a class="menu-link ml-4 " href="visualizar_evento_aluno.php"><i class="far fa-calendar-alt fa-lg mr-3"></i>Eventos</i> </a>
 			</li>
 		</ul>
 	</div>
