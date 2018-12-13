@@ -9,38 +9,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	    <link rel="shortcut icon" href="imagens/icone_etec.png" >
 		<!-- CSS -->
-  	  <link rel="stylesheet" href="css/bootstrap.min.css">
+  	  	<link rel="stylesheet" href="css/bootstrap.min.css">
     	<link href="css/menu-lateral.css" rel="stylesheet">
-   	 <link href="css/fontawesome-all.css" rel="stylesheet">
-   	 <link href="css/botao.css" rel="stylesheet">
+   	 	<link href="css/fontawesome-all.css" rel="stylesheet">
+   	 	<link href="css/botao.css" rel="stylesheet">
 <title>Coordenadores</title>
 
 </head>
 
-<style>
-
-@media (min-width: 576px){
-	.botao{
-		width: 70%;
-	}
-}
-
-.botao{
-		width: 24%;
-	}
-
-	      
-
-</style>
 <body>
 
 	<?php
 			include_once ("includes/menu-adm.php");
       	?>
 		<div id="container-form">
-			<?php
-				include_once ("includes/fundo.html");
-			?>
 
 
 	<div class="container-table">
@@ -151,7 +133,7 @@
 			        Deseja realmente excluir <?php echo $obj->nm_usuario . " " . $obj->nm_sobrenome; ?> ?
 			      </div>
 			      <div class="modal-footer">
-			        <a <?php echo 'href="excluir_funcionario.php?cd='. $obj->cd_usuario . '"'; ?> class="btn btn-danger">Excluir</a>
+			        <a <?php echo 'href="excluir_coordenador.php?cd='. $obj->cd_usuario . '"'; ?> class="btn btn-danger">Excluir</a>
 			    	<button type="button" class="btn btn-default " data-dismiss="modal">Cancelar</button>
 			      </div>
 			    </div>
@@ -161,9 +143,8 @@
         }
     }
 ?>
-<!-- Modal para cadastrar coordenadores -->
-
-    <div class="modal fade" id="cadastro-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+<!-- Modal para cadastrar funcionário -->
+<div class="modal fade" id="cadastro-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -171,31 +152,34 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
-        <form method="post">
-        <div class="container-fluid">
-              <div class="row">
-		          <div class="col-6">
-		            <label for="nome"><b>Nome:</b></label>
-		            <input type="text" class="form-control" name="nome" required autofocus>
-		          </div>
-		          <div class="col-6">
-		            <label for="snome"><b>Sobrenome:</b></label>
-		            <input type="text" class="form-control" name="sobrenome" required>
-		          </div>
-		        </div>
-		        <div class="row">
-		          <div class="col-12">
-		            <label for="foto"><b>Foto:</b></label>
-		            <input type="text" class="form-control" name="foto" value="foto-coordenadores/" required>
-		          </div>
-		        </div>
-		         <div class="row">
-		          <div class="col-12">
-		            <label for="cargo"><b>Cargo:</b></label>
-		            <input type="text" class="form-control" name="cargo" required>
-		          </div>
-		        </div>
-		        <div class="row">
+        <form method="post" action="funcoes-coord.php" enctype="multipart/form-data">
+        	<div class="row">
+        		<div class="col-6 col-sm-4">
+		        	<label for="foto"><b>Foto:</b></label>
+					<div class="mb-3" class="foto-img" ><img src="imagens/avatar.jpg" id="foto-img0" class="img-fluid" ></div>
+				    <input type="file" name="arquivo" id="arquivo0" class="arquivo" onchange="previewImagem(0)" required>
+					<label class="btn btn-success" for="arquivo0"> Selecione uma foto</label>
+				</div>
+				<div class="col-6 col-sm-8">
+					<div class="row">
+				    	<div class="col-12 col-sm-6">
+				            <label for="nome"><b>Nome:</b></label>
+				            <input type="text" class="form-control" name="nome" required autofocus>
+				        </div>
+				        <div class="col-12 col-sm-6">
+				            <label for="snome"><b>Sobrenome:</b></label>
+				            <input type="text" class="form-control" name="sobrenome" required>
+				        </div>
+				    </div>
+					<div class="row">
+						<div class="col-12">
+					     	<label for="cargo"><b>Cargo:</b></label>
+					    	 <input type="text" class="form-control" name="cargo" required>
+						</div>
+					</div>
+				</div>
+			</div>
+               <div class="row">
 		          <div class="col-12">
 		            <label for="login"><b>Login:</b></label>
 		            <input type="email" class="form-control" name="login" required>
@@ -213,18 +197,82 @@
 		            <input type="password" class="form-control" id="csenha" name="csenha" required>
 		          </div>
 		        </div>
-		      </div>
-		    </div>
-              <div class="row">
-              <div class="col-12 mx-auto pt-2 text-center">
-                <button type="submit" name="butao" class="btn btn-success mb-2">Enviar</button>
-                <button type="button" class="btn btn-danger mb-2" data-dismiss="modal">Cancelar</button>
-              </div>
-            </div>
-            </div>
-          </div>
-        
-      </form>
+		        <div class="row">
+                    <div class="col-12 mx-auto pt-2 text-center">
+                         <button type="submit" name="cadastrar" class="btn btn-success">Enviar</button>
+                         <button type="button" class="btn btn-danger " data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+      </div>
+	</div>
+  </div>
+</div>
+<!-- Modal para cadastrar funcionário -->
+<div class="modal fade" id="cadastro-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalLabel">Cadastrar Funcionários</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="funcoes-func.php" enctype="multipart/form-data">
+        	<div class="row">
+        		<div class="col-6 col-sm-4">
+		        	<label for="foto"><b>Foto:</b></label>
+					<div class="mb-3" class="foto-img" ><img src="imagens/avatar.jpg" id="foto-img0" class="img-fluid" ></div>
+				    <input type="file" name="arquivo" id="arquivo0" class="arquivo" onchange="previewImagem(0)" required>
+					<label class="btn btn-success" for="arquivo0"> Selecione uma foto</label>
+				</div>
+				<div class="col-6 col-sm-8">
+					<div class="row">
+				    	<div class="col-12 col-sm-6">
+				            <label for="nome"><b>Nome:</b></label>
+				            <input type="text" class="form-control" name="nome" required autofocus>
+				        </div>
+				        <div class="col-12 col-sm-6">
+				            <label for="snome"><b>Sobrenome:</b></label>
+				            <input type="text" class="form-control" name="sobrenome" required>
+				        </div>
+				    </div>
+					<div class="row">
+						<div class="col-12">
+					     	<label for="cargo"><b>Cargo:</b></label>
+					    	 <input type="text" class="form-control" name="cargo" required>
+						</div>
+					</div>
+				</div>
+			</div>
+               <div class="row">
+   		          <div class="col-12">
+   		            <label for="login"><b>Login:</b></label>
+   		            <input type="email" class="form-control" name="login" required>
+   		          </div>
+   		        </div>
+   		        <label for="senha"><b>Senha:</b></label>
+   		        <div class="form-row">
+   		          <div class="col-12">
+   		            <input type="password" class="form-control" id="senha" name="senha" required>
+   		          </div>
+   		        </div>
+   		        <label for="csenha"><b>Confirmar Senha:</b></label>
+   		        <div class="form-row">
+   		          <div class="col-12">
+   		            <input type="password" class="form-control" id="csenha" name="csenha" required>
+   		          </div>
+   		        </div>
+		        <div class="row">
+                    <div class="col-12 mx-auto pt-2 text-center">
+                         <button type="submit" name="cadastrar" class="btn btn-success">Enviar</button>
+                         <button type="button" class="btn btn-danger " data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+      </div>
+	</div>
+  </div>
+</div>
       
    <!-- php cadastrar coordenadores -->
     <?php
@@ -236,7 +284,7 @@
 		      $sobrenome = $_POST['sobrenome'];
 	       	$foto = $_POST['foto'];
 	       	$cargo = $_POST['cargo'];
-		      $login = $_POST['login'];
+		    $login = $_POST['login'];
 	      	$insert="INSERT INTO `tb_usuario`(`nm_usuario`, `nm_sobrenome`, `nm_foto`, `ds_descricao`, `nm_login`, `nm_senha`, `id_tipo`) VALUES ('$nome','$sobrenome','$foto', '$cargo', '$login','$senha', 2)";
 	      		if ($mysqli->query($insert)) {
 	  ?>

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/info.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="shortcut icon" href="imagens/icone_etec.png">
     <style>
       #img_prof{
@@ -147,6 +148,9 @@
           </div>
           </a>
     </div>
+    <?php
+    include_once("includes/footer.php");
+  ?>
   
   <!-- JavaScript -->
   <script src="js/jquery.min.js" ></script>

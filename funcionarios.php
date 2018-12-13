@@ -6,7 +6,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
-  <title>Layout form</title>
+  <title>Funcionarios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
   <!-- CSS -->
@@ -14,7 +14,6 @@
   <link href="css/menu-lateral.css" rel="stylesheet">
   <link href="css/fontawesome-all.css" rel="stylesheet">
   <link href="css/botao.css" rel="stylesheet">
-  <link href="css/fundo.css" rel="stylesheet">
 
 	<style>
 		

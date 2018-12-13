@@ -21,13 +21,13 @@
 
     ::-webkit-scrollbar-thumb:vertical {
       height: 3px;
-      background-color: #666;
+      background-color: #000;
       -webkit-border-radius: 2px;
     }
 
     ::-webkit-scrollbar-thumb:horizontal {
       width: 3px;
-      background-color: #666;
+      background-color: #000;
       -webkit-border-radius: 3px;
     }
     /*Css do footer*/
@@ -95,15 +95,33 @@
 
     /*Aqui começa o menu lateral do index */
 
-    /* A cor do menu */
-    .bg-green{
-      background-color: #004000;
-    }
     /* Resetando o css de todas as linhas*/
     ul{
       list-style: none;
     }
-    /* CSS de cada item do menu */
+    /* CSS de cada item do menu e do menu */
+    .navbar-menu{
+      position: absolute;
+      width: 100%;
+    }
+
+    .menu-option{
+      position: relative;
+      float: right;
+    }
+
+    #logar{
+      display: none;
+    }
+
+    .container-login{
+      border-left: solid 1px white;
+    }
+
+    .container-login:hover{
+      background-color: green;
+    }
+
     .menu-item{
       display: inline-block;
       margin: 0;
@@ -111,7 +129,7 @@
       height:auto;
       width: auto;
       cursor: pointer;
-      color:#f8f9fa !important;
+      color: white !important;
     }
     /* Classe para a pagina que estiber ativa */
     .active{
@@ -145,6 +163,7 @@
     }
     /*Css do Nome da instituição no menu*/
     .navbar-brand{
+      color: white;
       font-size: 1.4em;
       padding: 0.7rem;
     }
@@ -191,7 +210,7 @@
     /*Corpo do itens que vão ser dropdawn*/
     .menu-dropdown-body{
       position: absolute;
-      top:96px;
+      top:56px;
       display: none;
       min-width: 200px;
       padding: 0;
@@ -288,9 +307,6 @@
         visibility: visible;
       }
       /*Parte da div com endereço e redes sociais*/
-      #logar{
-        display: none;
-      }
       #redes-sociais{
         width: 22%;      
       }

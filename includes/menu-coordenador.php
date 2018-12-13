@@ -1,6 +1,6 @@
 <header>
 	<!-- Fixed navbar -->
-	<nav class="navbar fixed-top navbar-dark bg-black p-0">
+	<nav class="navbar navbar-dark bg-black p-0">
 		<button class="navbar-toggler p-1 border-1" type="button" data-toggle="menu">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -27,16 +27,8 @@
 				<a class="menu-link ml-4" href="home.php"><i class="fas fa-home fa-lg mr-3"></i>Home</a>
 			</li>
 			<li class="menu-item" data-dropdawn-toggle="menu-dropdown1">
-				<a class="menu-link ml-4 " href="#"><i class="far fa-calendar-alt fa-lg mr-3"></i>Eventos<i class="fas fa-caret-down ml-2" id="seta1"></i> </a>
+				<a class="menu-link ml-4 " href="gerenciar_evento.php"><i class="far fa-calendar-alt fa-lg mr-3"></i>Eventos </a>
 			</li>
-			<ul class="menu-dropdown-body bg-dark" id="menu-dropdown1" >
-				<li class="menu-dropdown-item">
-					<a class="menu-dropdown-link" href="#"><i class="fas fa-caret-right ml-5 mr-2"></i>Eventos públicos</a>
-				</li>
-				<li class="menu-dropdown-item">
-					<a class="menu-dropdown-link" href="#"><i class="fas fa-caret-right ml-5 mr-2"></i>Eventos privados</a>
-				</li>
-			</ul>
 			<li class="menu-item">
 				<a class="menu-link ml-4" href="#"><i class="fas fa-chalkboard fa-lg mr-3"></i>Turmas</a>
 			</li>

@@ -13,6 +13,7 @@ $resultado_events = $mysqli->query($result_events);
 		<link rel="stylesheet" href="../css/fontawesome-all.css" >
 		<link href='../css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
     	<link rel="stylesheet" href="../css/fullcalendar.min.css" >
+    	<link rel="stylesheet" href="../css/menu-lateral.css" >
 
 		<title>Etec de Itanhaém</title>
 
@@ -70,6 +71,9 @@ $resultado_events = $mysqli->query($result_events);
 		</style>
 	</head>
 	<body class="bg-light">
+		<?php
+			include_once ("../includes/menu-adm.php");
+      	?>
 
   	<div id="calendario" class="mt-3">
 	<a href="cadastrar-eventos.html" class="btn btn-success">Adicionar Evento</a> 
@@ -134,6 +138,7 @@ $resultado_events = $mysqli->query($result_events);
 		<script src="../js/moment.min.js"></script>
 		<script src="../js/fullcalendar.min.js"></script>
 		<script src="../js/pt-br.js"></script>
+		<script src="../js/footer-navbar-segundamento.js"></script>
 
 		<script type="text/javascript">
 		

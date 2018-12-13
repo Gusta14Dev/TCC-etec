@@ -1,6 +1,7 @@
 <?php
 include_once("includes/conexao.php");
 include_once("includes/texto.php");
+$select="SELECT * FROM `tb_artigo` WHERE `st_noticia` = 0 "; 
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -11,65 +12,85 @@ include_once("includes/texto.php");
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Página dos Artigos</title>
-	<!-- Bootstrap e FontAwsome CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css" >
-	<link href="css/fontawesome-all.css" rel="stylesheet">
-
-	<!-- Menu Lateral e Tabela CSS -->
-	<link href="css/menu-lateral.css" rel="stylesheet">
-	<link href="css/layout_form.css" rel="stylesheet">
+	<!-- CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link href="css/menu-lateral.css" rel="stylesheet">
+      <link href="css/fontawesome-all.css" rel="stylesheet">
+      <link href="css/botao.css" rel="stylesheet">
 </head>
 	<body>
 		<?php
 			include_once ("includes/menu-adm.php");
       	?>
-		<div id="container-form">
-			<?php
-				include_once ("includes/fundo.html");
-			?>
-			<div class="jumbotron mx-auto">
-			<div class="col-md-3 mt-2">
-			<button class="btn btn-success" id="cadastro" data-toggle="modal" data-target="#cadastro-modal">Cadastrar Artigos <i class="fas fa-plus fa-sm"></i></button>
+		<div class="container-table">
+    <div class="form-row">
+      <div class="col-2 col-sm-4 p-3" >
+        <button class="btn btn-success btn-circle" data-toggle="modal" data-target="#cadastro-modal" >&#43;</button>
+      </div>
+      <div class="col-6 col-sm-4 p-3">
+        <h1 class="text-center">Artigo</h1>
+      </div>
+      <div class="col-4 col-sm-4" ></div>
+    </div>
+    <table class="table table-striped">
+      <thead class="bg-success">
+        <tr class="text-white">
+          <th scope="col">CD</th>
+          <th scope="col">Artigo</th>
+          <th scope="col">Descrição</th>
+          <th id="col-acao" scope="col">Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+      <?php
+        $id = 0;
+        if ($con=$mysqli->query($select)) {
+          while ($obj= $con->fetch_object()) {
+            $id++;
+      ?>
+              <tr>
+                <th scope="row"><?php echo $obj->cd_artigo; ?></th>
+                <td ><?php echo $obj->nm_artigo; ?></td>
+                <td><?php echo limita_caracteres($obj->ds_conteudo, 140, false); ?></td>
+                <td class="acao" >
+                    <div <?php echo 'data-edit="'.$id.'"'; ?> class="container-edit">
+                        <div class="text">Editar</div>
+                        <button class="edit" data-toggle="modal" <?php echo 'data-target="#edit-modal'.$obj->cd_artigo.'"'; ?> ><i class="fas fa-pen"></i></button>
+                    </div>
+                    <div <?php echo 'data-remove="'.$id.'"'; ?> class="container-remove">
+                        <div class="text">Remover</div>
+                        <button class="remove" data-toggle="modal" <?php echo 'data-target="#delete-modal'.$obj->cd_artigo.'"'; ?> ><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                <div <?php echo 'data-vision="'.$id.'"'; ?> class="container-vision">
+                        <div class="text">Visualizar</div>
+                        <button class="vision" data-toggle="modal" <?php echo 'data-target="#visu-modal'.$obj->cd_artigo.'"'; ?> ><i class="fas fa-eye"></i></button>
+                    </div>
+                    <button <?php echo 'id="'.$id.'"'; ?> class="config fechado"><i class="fas fa-cogs"></i></button>
+              </td>
+              </tr>
+      <?php
+          }
+        }else{
+      ?>
+        <tr>
+            <td>-</td>
+            <td>Não a itens cadastrados</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+      <?php
+        }
+      ?>
+      </tbody>
+    </table>
+  </div>
 
-			<div class="table-responsive">
-				<table class="table table-striped" cellspacing="0" cellpadding="0">
-					<thead>
-						<tr>
-							<th>CD</th>
-							<th>Artigo</th>
-							<th>Descrição</th>
-							<th class="actions">Ações</th>
-						</tr>
-					</thead>
-					<tbody>
-<?php
-							
-	$select="SELECT * FROM `tb_artigo` WHERE `st_noticia` = 0 "; 
-		if ($con=$mysqli->query($select)) {
-			while ($obj= $con->fetch_object()) {
-				echo "<tr>";
-				echo "<td>".$obj->cd_artigo."</td>";
-				echo "<td>".$obj->nm_artigo."</td>";
-				echo "<td>". limita_caracteres($obj->ds_conteudo, 140, false).'<a href="artigo.php?view=0&itens='.$obj->cd_artigo.'"> Ler Mais</a>'."</td>";
-				echo '<td class="actions">';
-				echo '<a href="artigo.php?view=0&itens='.$obj->cd_artigo.'" TYPE="BUTTON" NAME="submit" class="btn btn-success btn-xs botao" >Visualizar</a>';
-				echo '<a href="alterar_artigo.php?edit=0&itens='.$obj->cd_artigo.'" TYPE="BUTTON" NAME="submit" class="btn btn-warning btn-xs botao">Editar</a>';
-				echo '<a class="btn btn-danger btn-xs botao" style="color:white;" data-toggle="modal" data-target="#delete-modal';
-										echo $obj->cd_artigo.'">Excluir</a>';
-				echo '</td>';
-				echo "</tr>";
-			}
-		}else{
-			echo "Não há nenhum item cadastrado!";
-		}            
-							
-?>
-					</tbody>
-				</table>
-			</div>
-		</div>
-	</div>
-</div>
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js" ></script>
+    <script src="js/popper.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="js/footer-navbar-segundamento.js"></script>
+    <script src="js/botao.js"></script>
 <?php
     $selectmodal="SELECT * FROM `tb_artigo`";
     if ($con=$mysqli->query($selectmodal)) {
@@ -164,20 +185,5 @@ echo $obj->cd_artigo . '" tabindex="-1" role="dialog" aria-labelledby="modalLabe
         
       }}
     ?>
-
-<style type="text/css">
-
-	.botao{
-		width: 100%;
-	}
-			
-</style>
-		<!-- JavaScript -->
-		<script src="js/jquery.min.js" ></script>
-		<script src="js/popper.min.js" ></script>
-		<script src="js/bootstrap.min.js" ></script>
-		<script src="js/slick.min.js" ></script>
-		<script src="js/per.js"></script>
-		<script src="js/footer-navbar-segundamento.js"></script>
 	</body>
 </html>

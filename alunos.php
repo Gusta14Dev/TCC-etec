@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <?php
-session_start();
 include_once("includes/conexao.php");
 ?>
 <html lang="pt-br">

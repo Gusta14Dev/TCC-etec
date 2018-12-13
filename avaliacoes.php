@@ -54,7 +54,7 @@
 	            <tbody>
 								<tr>
 <?php 
-	$select="SELECT * FROM `tb_calendario` WHERE 1 ORDER BY cd_calendario ASC";
+	$select="SELECT * FROM `tb_calendario` WHERE `nm_tipo` != '' ORDER BY cd_calendario ASC";
 	    if ($con=$mysqli->query($select)) {
 	    while ($obj= $con->fetch_object()) {
 			echo  "<td>".$obj->cd_calendario."</td>";

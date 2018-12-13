@@ -11,7 +11,7 @@ $(function () {
      $(".menu").removeClass("fixed-top");
      $('.offcanvas-collapse').css("top","96px");
      $('.fechar-menu-lateral').css("top","96px");
-     $('.menu-dropdown-body').css("top","96px");
+     $('.menu-dropdown-body').css("top","56px");
     }
   });
   $('[data-toggle="menu"]').on('click', function () {

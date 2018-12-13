@@ -84,12 +84,8 @@
     </p>
 
     <div class="footer-icons">
-
-      <a href="#"><i class="fa fa-facebook-f"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-github"></i></a>
-
+      <a href="https://www.facebook.com/etecdeitanhaem"><i class="fab fa-facebook-square"></i></a>
+      <a href="http://bibliotecaetecdeitanhaem.blogspot.com"><i class="fab fa-blogger"></i></a>
     </div>
 
   </div>

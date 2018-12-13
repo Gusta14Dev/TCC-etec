@@ -27,7 +27,7 @@
 				<a class="menu-link ml-4" href="home.php"><i class="fas fa-home fa-lg mr-3"></i>Home</a>
 			</li>
 			<li class="menu-item" data-dropdawn-toggle="menu-dropdown1">
-				<a class="menu-link ml-4 " href="eventos/"><i class="far fa-calendar-alt fa-lg mr-3"></i>Eventos</i> </a>
+				<a class="menu-link ml-4 " href="gerenciar_evento.php"><i class="far fa-calendar-alt fa-lg mr-3"></i>Eventos</i> </a>
 			</li>
 
 			<li class="menu-item" data-dropdawn-toggle="menu-dropdown2">
@@ -58,9 +58,6 @@
 			</li>
 			<li class="menu-item">
 				<a class="menu-link ml-4" href="cursos.php"><i class="fas fa-graduation-cap fa-lg mr-3"></i>Cursos</a>
-			</li>
-			<li class="menu-item">
-				<a class="menu-link ml-4" href="materias.php"><i class="fas fa-book-open fa-lg mr-3"></i>Matérias</a>
 			</li>
 		</ul>
 	</div>
